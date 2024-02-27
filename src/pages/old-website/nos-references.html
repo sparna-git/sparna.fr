@@ -1,0 +1,53 @@
+---
+layout: old-website.njk
+bodyClass: page page-id-24 page-template-default
+references:
+  - id: eli-european-legislation-identifier
+    title: European Legislation Identifier (ELI)
+    subtitle:
+    abstract: Notre expertise sémantique pour un groupe de travail international, qui pose les fondations d'un "knowledge graph législatif" à l'échelle du web européen - et mondial.
+    image: /assets/old-website/uploads/2021/02/Squared_ELiSeal-160x130.png
+  - id: issn-profil-dapplication-rdf-et-versement-dans-wikidata	
+    title: "ISSN : profil d'application RDF et versement dans Wikidata"
+    subtitle:
+    abstract: Comment le plus grand catalogue bibliographique de périodiques s'est aligné sur un graphe sémantique. Et comment l'ISSN a valorisé ses données au travers de leur versement dans Wikidata.
+    image: /assets/old-website/uploads/2020/12/logo-square-160x130.jpeg
+  - id: issn-profil-dapplication-rdf-et-versement-dans-wikidata
+    title: "ISSN : profil d'application RDF et versement dans Wikidata"
+    abstract: Comment le plus grand catalogue bibliographique de périodiques s'est aligné sur un graphe sémantique. Et comment l'ISSN a valorisé ses données au travers de leur versement dans Wikidata.
+    image: /assets/old-website/uploads/2020/12/logo-square-160x130.jpeg
+  - id: scolomfr-skos
+    title: Réseau Canopé - ScoLOMFR
+    subtitle: Publication du ScoLOMFR en SKOS
+    abstract: Conseils et développement pour la diffusion d'un thesaurus dans le web de données, en prenant en compte les versions successives du thesaurus.
+    image: /assets/old-website/uploads/2017/02/Logo_CANOPE_VERT_petit-160x67.png
+  - id: gouvernement-du-luxembourg
+    title: Gouvernement du Luxembourg
+    subtitle: Portail législatif nouvelle génération
+    abstract: Un portail de recherche basé sur un graphe de liens entre les lois et sur des vocabulaires contrôlés mis en musique par Virtuoso et ElasticSearch. Un bel exemple de réalisation dans le contexte de ELI (European Legislation Identifier).
+    image: /assets/old-website/uploads/2017/02/logo-gv-lux-carre-small-130x130.jpg
+  - id: thesaurus-unesco
+    title: Thesaurus UNESCO
+    subtitle: Skosmos - VocBench - SKOS Play
+    abstract: Sparna a mené à bien en 2016, après avoir remporté l'appel d'offres correspondant, le remplacement des outils de gestion et de publication du thesaurus de l'UNESCO.
+    image: /assets/old-website/uploads/2017/02/unesco_logo_en-160x130.jpg
+  - id: office-des-publications-de-lunion-europeenne
+    title: 
+    abstract:
+    image:
+  - id:
+    title:
+    abstract:
+    image:
+---
+<h1>Nos Références</h1>
+{% for reference in references %}
+<div class="reference {% if loop.first %}first{% endif %} {% if loop.last %}last{% endif %}">
+  <div class="logo"><img width="160" height="130" src="{{reference.image}}" class="attachment-reference_thumb wp-post-image"></div>
+  <div class="informations">
+    <h2>{{reference.title}}</h2>
+    <p>{{reference.abstract}}</p>
+    <a href="{{reference.id}}" title="{{reference.title}}" class="plus">En savoir +</a>
+  </div>
+</div>
+{% endfor %}

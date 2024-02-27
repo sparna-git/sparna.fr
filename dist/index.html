@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Grab title from the page data and dump it here -->
+		<title>Hello World</title>
+
+		<link rel="stylesheet" href="assets/css/pico.min.css" />
+		<link rel="stylesheet" href="assets/css/prism-night-owl.css" />
+
+		<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://sparna.fr/#website",
+      "url": "https://sparna.fr/",
+      "name": "Sparna.fr",
+      "description": "Sparna : Web of Data / Metadata Structure / Knowledge Graph / Artificial Intelligence"
+    },
+    {
+      "@type": "WebPage",
+      "mainEntityOfPage": {
+        "@type": "WebPage"
+      },
+      "isPartOf": {
+        "@id": "https://sparna.fr/#website"
+      },
+      "headline": "Hello World",
+      "description": "Sparna : Web of Data / Metadata Structure / Knowledge Graph / Artificial Intelligence",
+      "image": "",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sparna.fr",
+        "url": "https://sparna.fr/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://example.com/images/logo.png",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    }
+  ]
+}</script>
+	</head>
+	<body>
+		<main class="container">
+		<!-- Grab the content from the page data, dump it here, and mark it as safe -->
+		<!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
+		<h1>Hello World !</h1>
+<p>List of pages in this website :</p>
+<ul>
+<li>Documentation on <a href="posts/Sparna_new_website_using_eleventy">how to build Sparna new website using Eleventy</a></li>
+<li>Documentation on <a href="posts/11ty_Data_Cascade">11ty data cascade</a></li>
+<li><a href="pages/old-website">Old website migration</a></li>
+</ul>
+
+		</main>
+	</body>
+</html>
