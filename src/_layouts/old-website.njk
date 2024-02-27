@@ -6,10 +6,10 @@
 	<title></title>
 
 	<link rel='stylesheet' id='contact-form-7-css'  href='http://www.sparna.fr/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.2' type='text/css' media='all' />
-	<link rel='stylesheet' id='style-main-css'  href='/assets/old-website/css/style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='style-main-css'  href="{{ '/assets/old-website/css/style.css' | relative(page) }}" type='text/css' media='all' />
 
-	<link rel='stylesheet' id='fonts-css'  href='/assets/old-website/css/fonts/fonts.css' type='text/css' media='all' />
-	<script type='text/javascript' src='/assets/js/sparna.js'></script>
+	<link rel='stylesheet' id='fonts-css'  href="{{ '/assets/old-website/css/fonts/fonts.css' | relative(page) }}" type='text/css' media='all' />
+	<script type='text/javascript' src="{{ '/assets/js/sparna.js' | relative(page) }}"></script>
 	<link rel='canonical' href='http://www.sparna.fr/' />
 
 	<!-- Jetpack Open Graph Tags -->
@@ -51,7 +51,7 @@
 <body class="{{bodyClass}}">
 	<div class="interieur">
 		<header id="header">
-			<div id="logo"><a href = "http://www.sparna.fr" title = "Sparna"><img src="/assets/old-website/images/logo.png" alt = "" /></a></div>
+			<div id="logo"><a href = "http://www.sparna.fr" title = "Sparna"><img src="{{ '/assets/old-website/images/logo.png' | relative(page) }} " alt = "" /></a></div>
 			<nav id = "menu">
 				<div class="menu-menu-principal-container"><ul id="menu-menu-principal" class="nav-menu"><li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-46 current_page_item menu-item-48"><a href="/">Accueil</a></li>
 <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="nos-references/">Nos références</a></li>
