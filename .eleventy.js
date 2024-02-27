@@ -48,6 +48,8 @@ module.exports = function(eleventyConfig) {
   */
 
   // filters
+  // allows to make an absolute URL relative. Use it like this :
+  // {{ '/assets/old-website/uploads/2014/09/illustration.jpg' | relative(page) }}
   eleventyConfig.addFilter(
     "relative",
     (absoluteUrl, page) => {
