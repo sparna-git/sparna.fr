@@ -10,7 +10,7 @@ bodyClass: page page-id-24 page-template-default
   <div class="informations">
     <h2>{{reference.data.title}}</h2>
     <p>{{reference.data.abstract}}</p>
-    <a href="{{reference.page.url}}" title="{{reference.data.title}}" class="plus">En savoir +</a>
+    <a href="{{ reference.page.url | relative(page) }}" title="{{reference.data.title}}" class="plus">En savoir +</a>
   </div>
 </div>
 {% endfor %}
