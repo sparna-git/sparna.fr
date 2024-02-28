@@ -1,10 +1,11 @@
+---
+layout: old-website.njk
+bodyClass: single single-reference
+---
 <h1>Etude <br />de cas</h1>
 
 <div class="logo"><img width="160" height="130" src="{{image}}" class="attachment-reference_thumb wp-post-image"></div>
-  <div class="informations">
-    <h2>{{title}}</h2>
-	{{ content }}
-		echo "<a href = '".get_permalink(24)."' title = 'Revenir à la liste des références' class = 'retour'>< Revenir à la liste des références</a>";
-	}
-	}
-	echo "</div>";
+<div class="informations">
+	{{ content | safe }}
+	<a href="{{ '/pages/old-website/nos-references' | relative(page) }}" title ="Revenir à la liste des références" class = 'retour'>Revenir à la liste des références</a>
+</div>
