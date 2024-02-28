@@ -4,7 +4,18 @@
   <div class="informations">
     <h2>European Legislation Identifier (ELI)</h2>
 	&lt;h2&gt;European Legislation Identifier (ELI)&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://eur-lex.europa.eu/eli&quot;&gt;ELI&lt;/a&gt; (European Legislation Identifier) est une initiative des Journaux Officiels de plusieurs états membres de l&#39;UE, ainsi que de l&#39;Office des Publications de l&#39;UE, visant à rendre plus visibles et interopérables les lois à l&#39;échelle européenne. Cette initiative est basée sur les fondamentaux technologiques du web sémantique :&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://eur-lex.europa.eu/eli&quot;&gt;ELI&lt;/a&gt; (European Legislation Identifier) est une initiative des Journaux Officiels de plusieurs états membres de l&#39;UE, ainsi que de l&#39;Office des Publications de l&#39;UE, visant à rendre plus visibles et interopérables les &lt;strong&gt;lois à l&#39;échelle européenne&lt;/strong&gt;. Cette initiative est basée sur les &lt;strong&gt;fondamentaux technologiques du web sémantique&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;l&#39;ELI est une URI assignée à un texte de loi, une version ou traduction d&#39;un texte, ou partie de texte, comme un article. Cette URI doit avoir quelques caractéristiques particulières :
+&lt;ul&gt;
+&lt;li&gt;elle doit contenir le composant /eli pour l&#39;identifier comme un ELI.&lt;/li&gt;
+&lt;li&gt;elle doit utiliser un certain nombre de composants d&#39;URI, comme &lt;em&gt;{jurisdiction}&lt;/em&gt;, &lt;em&gt;{year}&lt;/em&gt;, &lt;em&gt;{natural_identifier}&lt;/em&gt;, etc. que chaque implémentation d&#39;ELI peut agencer à sa façon pour créer un identifiant pérenne similaire à la façon de faire des références légales à ces textes. Cette URI se veut donc, tout en restant un identifiant technique, &amp;quot;user-friendly&amp;quot; et relativement lisible, pour faciliter la pose de liens entre lois à l&#39;échelle du web;&lt;/li&gt;
+&lt;li&gt;cette URI devrait pouvoir se &amp;quot;tronquer&amp;quot; afin de permettre une navigation simplifiée dans les corpus législatifs; par exemple si l&#39;URI &lt;code&gt;http://..../eli/2009/loi/1234&lt;/code&gt; identifie la loi numéro 1234 de l&#39;année 2009, alors l&#39;URI http://.../eli/2009/loi devrait lister toutes les lois de 2009, et l&#39;URI http://.../eli/2009 devrait lister tous les textes de loi de 2009.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/old-website/uploads/2020/12/scolomfr-screenshot.png&quot; alt=&quot;scoLOMFR screenshot&quot;&gt;&lt;/p&gt;
 
 		echo "<a href = '".get_permalink(24)."' title = 'Revenir à la liste des références' class = 'retour'>< Revenir à la liste des références</a>";
 	}
