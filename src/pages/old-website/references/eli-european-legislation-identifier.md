@@ -2,6 +2,7 @@
 layout: reference.njk
 title: European Legislation Identifier (ELI)
 subtitle:
+date: 2024-01-01
 abstract: Notre expertise sémantique pour un groupe de travail international, qui pose les fondations d'un "knowledge graph législatif" à l'échelle du web européen - et mondial.
 image: /assets/old-website/uploads/2021/02/Squared_ELiSeal-160x130.png
 tags: reference
