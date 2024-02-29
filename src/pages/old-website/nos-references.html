@@ -4,7 +4,7 @@ bodyClass: page page-id-24 page-template-default
 ---
 <h1>Nos <br/>Références</h1>
 
-{%- for reference in collections.reference -%}
+{%- for reference in collections.reference | reverse -%}
 <div class="reference{% if loop.first %} first{% endif %}{% if loop.last %} last{% endif %}{{" odd" if loop.index % 2 == 1}}{{" even" if loop.index % 2 == 0}}">
   <div class="logo"><img width="160" height="130" src="{{reference.data.image | relative(page)}}" class="attachment-reference_thumb wp-post-image"></div>
   <div class="informations">
