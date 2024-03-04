@@ -5,7 +5,7 @@ bodyClass: page page-id-20 page-template-default
 <h1>Nos <br/>Formations</h1>
 
 {%- for formation in collections.formation | reverse -%}
-<div class="formation" id="formation-{{formation.id}}">
+<div class="formation" id="{{formation.data.title | slugify}}">
   {{formation.content | safe}}
 </div>
 {% endfor %}
