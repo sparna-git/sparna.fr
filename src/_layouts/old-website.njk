@@ -64,6 +64,14 @@
 				</section>
 
 				<section class = "colonne double">
+					<h5><a class="rsswidget" href="http://blog.sparna.fr/feed"><img style="border:0" width="14" height="14" src="{{ '/assets/old-website/images/rss.png' | relative(page) }} " alt="RSS"></a> <a class="rsswidget" href="http://blog.sparna.fr/">Les derniers articles du blog</a></h5>
+					<ul>
+					{%- for p in blogPosts -%}
+						{% if loop.index0 < 5 %}
+							<li><a href="{{ p.link }}">{{ p.title }}</a></li>
+						{% endif%}
+					{% endfor %}
+					</ul>
 				</section>
 			</div>
 		</footer>

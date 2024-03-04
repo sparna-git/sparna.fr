@@ -4,10 +4,12 @@
   "description": "sparna.fr website",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-fetch": "^4.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.2.0",
     "@quasibit/eleventy-plugin-schema": "^1.11.0",
     "jsonld": "^8.3.2",
     "n3": "^1.17.2",
-    "node-html-parser": "^6.1.12"
+    "node-html-parser": "^6.1.12",
+    "rss-parser": "^3.13.0"
   }
 }
