@@ -1,5 +1,5 @@
 ---
-title: "Formation "web de données avancé : techniques et outils pour le développement d'applications" - 2 jours"
+title: "Formation Web de données avancé : techniques et outils pour le développement d'applications - 2 jours"
 date: 2023-01-01
 tags:
   - formation
