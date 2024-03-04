@@ -33,4 +33,4 @@ Nous continuons l'accompagnement de Réseau Canopé en 2021, pour pousser la log
 (en savoir plus sur le [billet de blog à propos de la diffusion du ScoLOMFR](http://blog.sparna.fr/2018/09/25/thesaurus-versions-of-scolomfr-skos/)).
 
 
-http://www.sparna.fr/wp-content/uploads/2020/12/scolomfr-screenshot.png
+![screenshot scoLOMFR](/assets/uploads/2020/12/scolomfr-screenshot.png)
