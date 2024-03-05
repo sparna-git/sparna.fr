@@ -32,13 +32,13 @@
 <body class="{{bodyClass}}">
 	<div class="interieur">
 		<header id="header">
-			<div id="logo"><a href = "http://www.sparna.fr" title = "Sparna"><img src="{{ '/assets/images/logo.png' | relative(page) }}" alt = "" /></a></div>
+			<div id="logo"><a href="{{ '/' | relative(page) }}" title = "Sparna"><img src="{{ '/assets/images/logo.png' | relative(page) }}" alt = "" /></a></div>
 			<nav id = "menu">
-				<div class="menu-menu-principal-container"><ul id="menu-menu-principal" class="nav-menu"><li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-46 current_page_item menu-item-48"><a href="/">Accueil</a></li>
-<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="{{ '/references' | relative(page) }}">Nos références</a></li>
-<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="{{ '/formations' | relative(page) }}">Nos formations</a></li>
-<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="{{ '/qui-suis-je' | relative(page) }}">Qui suis je ?</a></li>
-<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="{{ '/contact' | relative(page) }}">Contact</a></li>
+				<div class="menu-menu-principal-container"><ul id="menu-menu-principal" class="nav-menu"><li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-46 menu-item-48{% if page.url == '/' %} current-menu-item{% endif %}"><a href="{{ '/' | relative(page) }}">Accueil</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26{% if page.url == '/references/' %} current-menu-item{% endif %}"><a href="{{ '/references' | relative(page) }}">Nos références</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22{% if page.url == '/formations/' %} current-menu-item{% endif %}"><a href="{{ '/formations' | relative(page) }}">Nos formations</a></li>
+<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10{% if page.url == '/qui-suis-je/' %} current-menu-item{% endif %}"><a href="{{ '/qui-suis-je' | relative(page) }}">Qui suis je ?</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9{% if page.url == '/contact/' %} current-menu-item{% endif %}"><a href="{{ '/contact' | relative(page) }}">Contact</a></li>
 <li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://blog.sparna.fr">Blog</a></li>
 </ul></div>			</nav>
 		</header>
@@ -51,7 +51,7 @@
 		<footer id = "footer">
 			<div class = "interieur">
 				<section class = "colonne">
-					<div class="menu-menu-principal-container"><ul id="menu-menu-principal-1" class="nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-46 current_page_item menu-item-48"><a href="/">Accueil</a></li>
+					<div class="menu-menu-principal-container"><ul id="menu-menu-principal-1" class="nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-46 menu-item-48"><a href="/">Accueil</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="{{ '/references' | relative(page) }}">Nos références</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="{{ '/formations' | relative(page) }}">Nos formations</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="{{ '/qui-suis-je' | relative(page) }}">Qui suis je ?</a></li>
