@@ -54,7 +54,7 @@ bodyClass: page page-id-2 page-template-default
 <script>
   function submitToAPI(e) {
     e.preventDefault();
-    var URL = "https://is6bx3d0uh.execute-api.eu-central-1.amazonaws.com/version01/contactUs";
+    var URL = "https://is6bx3d0uh.execute-api.eu-central-1.amazonaws.com/v1/sparna_email_forward";
 
     var name = $("#name-input").val();
     var email = $("#email-input").val();
@@ -70,7 +70,7 @@ bodyClass: page page-id-2 page-template-default
     $.ajax({
               type: "POST",
               // The URL is from API Gateway 
-              url : "https://is6bx3d0uh.execute-api.eu-central-1.amazonaws.com/version01/contactUs",
+              url : "https://is6bx3d0uh.execute-api.eu-central-1.amazonaws.com/v1/sparna_email_forward",
               dataType: "json",
               crossDomain: "true",
               contentType: "application/json; charset=utf-8",
