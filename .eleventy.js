@@ -148,6 +148,7 @@ module.exports = function(eleventyConfig) {
 
   // pass-through
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/CNAME");
 
   // settings
   return {
