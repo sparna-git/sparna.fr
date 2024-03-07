@@ -9,52 +9,94 @@ bodyClass: page page-id-2 page-template-default
 <script src="https://www.google.com/recaptcha/api.js"></script>
 
 <div role="form" class="wpcf7" id="wpcf7-f43-o1" lang="fr-FR" dir="ltr">
-<div class="screen-reader-response"></div>
-<form name="" action="" id="contact-form" method="post" class="wpcf7-form" novalidate="novalidate">
-  <div style="display: none;">
-    <input type="hidden" name="_wpcf7" value="43">
-    <input type="hidden" name="_wpcf7_version" value="4.2">
-    <input type="hidden" name="_wpcf7_locale" value="fr_FR">
-    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f43-o1">
-    <input type="hidden" name="_wpnonce" value="10bba91abe">
-  </div>
-  <p>
-  <label>Nom / Prénom <span>(*)</span> :</label><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" id="name-input" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="(*) champ obligatoire"></span>  
-  </p>
-  <p>
-  <label>Adresse e-mail <span>(*)</span> :</label><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" id="email-input" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="(*) champ obligatoire"></span>
-  </p>
-  <p>
-  <label>Objet <span>(*)</span> :</label><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" id="subject-input" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="(*) champ obligatoire"></span>
-  </p>
-  <p>
-  <label>Message <span>(*)</span> :</label><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" id="description-input" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="(*) champ obligatoire"></textarea></span>
-  </p>
+  <div class="screen-reader-response"></div>
+  <form name="" action="" id="contact-form" method="post" class="wpcf7-form">
+    <div style="display: none;">
+      <input type="hidden" name="_wpcf7" value="43">
+      <input type="hidden" name="_wpcf7_version" value="4.2">
+      <input type="hidden" name="_wpcf7_locale" value="fr_FR">
+      <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f43-o1">
+      <input type="hidden" name="_wpnonce" value="10bba91abe">
+    </div>
 
-  <!--
-  <p>
-    <div style="padding-left: 25px;" class="g-recaptcha" data-sitekey="6Le7doQpAAAAAOMRKYgXlmv2MDMW3Y-MPdU0CjFq"></div>
-  </p>
-  -->
+    <p>
+      <label>Nom / Prénom <span>(*)</span> :</label>
+      <span class="wpcf7-form-control-wrap your-name">
+          <input type="text" name="your-name" id="name-input" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="(*) champ obligatoire" required>
+      </span>  
+    </p>
+    <p>
+      <label>Adresse e-mail <span>(*)</span> :</label>
+      <span class="wpcf7-form-control-wrap your-email">
+        <input type="email" name="your-email" id="email-input" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="(*) champ obligatoire" required>
+      </span>
+    </p>
+    <p>
+      <label>Objet <span>(*)</span> :</label>
+      <span class="wpcf7-form-control-wrap your-subject">
+        <input type="text" name="your-subject" id="subject-input" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="(*) champ obligatoire" required>
+      </span>
+    </p>
+    <p>
+      <label>Message <span>(*)</span> :</label>
+      <span class="wpcf7-form-control-wrap your-message">
+        <textarea name="your-message" id="description-input" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="(*) champ obligatoire" required></textarea>
+      </span>
+    </p>
 
-  <p>
-    <input type="submit" onClick="submitToAPI(event)" value="Envoyer" class="wpcf7-form-control wpcf7-submit">
+    <p>
+      <input type="submit" id="submit" onClick="submitToAPI(event)" value="Envoyer" class="wpcf7-form-control wpcf7-submit">
 
-    <img 
-      class="ajax-loader" 
-      src="http://www.sparna.fr/wp-content/plugins/contact-form-7/images/ajax-loader.gif"
-      alt="Envoi en cours ..." 
-      style="visibility: hidden;">
-  </p>
-  <div class="wpcf7-response-output wpcf7-display-none"></div>
-</form>
+      <img 
+        class="ajax-loader" 
+        src="http://www.sparna.fr/wp-content/plugins/contact-form-7/images/ajax-loader.gif"
+        alt="Envoi en cours ..." 
+        style="visibility: hidden;">
+    </p>
+    <div id="msgReponse" class="wpcf7-response-output"></div>
+  
+    <div class="wpcf7-response-output wpcf7-display-none"></div>
+  </form>
 </div>
 
 <!-- for call the function AWS-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
+  // function send email 
   function submitToAPI(e) {
     e.preventDefault();
+    
+
+    // Section of validation
+
+    // Name
+    var Namere = /[A-Za-z]{1}[A-Za-z]/;
+    if (!Namere.test($("#name-input").val())) {
+        alert ("Name can not less than 2 char");
+        return;
+    }
+    // Email validation
+    if ($("#email-input").val()=="") {
+        alert ("Please enter your email id");
+        return false;
+    }
+    var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+    if (!reeamil.test($("#email-input").val())) {
+        alert ("Please enter valid email address");
+        return false;
+    }
+    // Subject validation
+    if ($("#subject-input").val()=="") {
+        alert ("Enter your Subject");
+        return false;
+    }
+    // Message validation
+    if ($("#description-input").val()=="") {
+        alert ("Enter your message....");
+        return false;
+    }
+
+    // All is OK - execeute send email 
     var URL = "https://lyy1bpmcy3.execute-api.eu-central-1.amazonaws.com/v1/sparna_email_forward";
 
     var name = $("#name-input").val();
@@ -68,27 +110,48 @@ bodyClass: page page-id-2 page-template-default
         desc : desc
         };
 
+    
     $.ajax({
-              type: "POST",
-              // The URL is from API Gateway 
-              url : URL,
-              dataType: "json",
-              crossDomain: "true",
-              contentType: "application/json; charset=utf-8",
-              data: JSON.stringify(data),
+      type: "POST",
+      // The URL is from API Gateway 
+      url : URL,
+      dataType: "json",
+      crossDomain: "true",
+      contentType: "application/json; charset=utf-8",
+      data: JSON.stringify(data),
+      success: function (result) {
 
-              success: function () {
-                // clear form and show a success message
-                alert("Successfull");
-                document.getElementById("contact-form").reset();
-                location.reload();
-              },
-              error: function() {
-                //show an error message
-                alert("UnSuccessfull");
-              }
-             });
+        const alertMessage = document.getElementById("msgReponse");
+        const wrapper = document.createElement('div');
+        wrapper.id = "alertMsg";
+        const img_test = "<img class=\"aligncenter wp-image-10 size-full\" src=\"{{'/assets/images/contact_qui.png' | relative(page)}}\" alt=\"\">";
+        wrapper.innerHTML = ['<div>','   <div>'+img_test+'  '+result.body+' Please click Close button......   <button type="button" onClick="btnClose(event)" class="wpcf7-form-control">Close</button></img></div>','</div>'].join('');
+
+        alertMessage.append(wrapper);
+      },
+      error: function() {
+        //show an error message
+        alert("UnSuccessfull");
+        }
+      });
+  }
+  
+    
+
+    function btnClose(e) {
+        document.getElementById("contact-form").reset();
+        location.reload();
+        document.getElementById("msgReponse").reset()
     }
+
+
+    /*  
+    const check_name = document.getElementById("#name-input");
+    if (!check_name.checkValidity() || check_name.value === null) {
+      alert(check_name.validationMessage);
+      btnClose(event); 
+    }
+    */
 </script>
 
 <div id="carte">
