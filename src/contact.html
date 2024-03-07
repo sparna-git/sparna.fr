@@ -72,27 +72,27 @@ bodyClass: page page-id-2 page-template-default
     // Name
     var Namere = /[A-Za-z]{1}[A-Za-z]/;
     if (!Namere.test($("#name-input").val())) {
-        alert ("Name can not less than 2 char");
+        alert ("Le nom ne peut pas contenir moins de 2 caractères");
         return;
     }
     // Email validation
     if ($("#email-input").val()=="") {
-        alert ("Please enter your email id");
+        alert ("Veuillez entrer votre email");
         return false;
     }
     var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
     if (!reeamil.test($("#email-input").val())) {
-        alert ("Please enter valid email address");
+        alert ("Veuillez entrer une adresse e-mail valide");
         return false;
     }
     // Subject validation
     if ($("#subject-input").val()=="") {
-        alert ("Enter your Subject");
+        alert ("Entrez votre sujet");
         return false;
     }
     // Message validation
     if ($("#description-input").val()=="") {
-        alert ("Enter your message....");
+        alert ("Entrer votre message......");
         return false;
     }
 
@@ -124,14 +124,24 @@ bodyClass: page page-id-2 page-template-default
         const alertMessage = document.getElementById("msgReponse");
         const wrapper = document.createElement('div');
         wrapper.id = "alertMsg";
+
         const img_test = "<img class=\"aligncenter wp-image-10 size-full\" src=\"{{'/assets/images/contact_qui.png' | relative(page)}}\" alt=\"\">";
-        wrapper.innerHTML = ['<div>','   <div>'+img_test+'  '+result.body+' Please click Close button......   <button type="button" onClick="btnClose(event)" class="wpcf7-form-control">Close</button></img></div>','</div>'].join('');
+        wrapper.innerHTML = ['<div>','   <div>'+img_test+'  '+'E-mail envoyé avec succès, Appuyez sur le botton pour sortir   <button type="button" onClick="btnClose(event)" class="wpcf7-form-control">Fermer</button></img></div>','</div>'].join('');
 
         alertMessage.append(wrapper);
       },
       error: function() {
+
+        const alertMessage = document.getElementById("msgReponse");
+        const wrapper = document.createElement('div');
+        wrapper.id = "alertMsg";
+        const img_test = "<img class=\"aligncenter wp-image-10 size-full\" src=\"{{'/assets/images/logo.png' | relative(page)}}\" alt=\"\">";
+        wrapper.innerHTML = ['<div>','   <div>'+img_test+'  '+'Il y a eu a probleme pour envoyer l\'e-mail, Appuyez sur le botton pour sortir  <button type="button" onClick="btnClose(event)" class="wpcf7-form-control">Fermer</button></img></div>','</div>'].join('');
+
+        alertMessage.append(wrapper);
+
         //show an error message
-        alert("UnSuccessfull");
+        //alert("UnSuccessfull");
         }
       });
   }
