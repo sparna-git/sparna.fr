@@ -2,16 +2,17 @@
 layout: sparna.njk
 bodyClass: page page-id-24 page-template-default
 ---
-<h1>Nos <br/>Références</h1>
+<h1>{{ 'Reference' | i18n }}</h1>
 
-{%- for reference in collections.reference | reverse -%}
+{% set collectionsLocal = collections.reference | localeFilter(locale) %}
+{%- for reference in collectionsLocal | reverse -%}
 <div class="reference{% if loop.first %} first{% endif %}{% if loop.last %} last{% endif %}{{" odd" if loop.index % 2 == 1}}{{" even" if loop.index % 2 == 0}}">
   <div class="logo"><img width="160" height="130" src="{{reference.data.image | relative(page)}}" class="attachment-reference_thumb wp-post-image"></div>
   <div class="informations">
     <h2>{{reference.data.title}}</h2>
     {% if reference.data.subtitle %}<h3>{{ reference.data.subtitle }}</h3>{% endif %}
     <p>{{reference.data.abstract}}</p>
-    <a href="{{ reference.page.url | relative(page) }}" title="{{reference.data.title}}" class="plus">En savoir +</a>
+    <a href="{{ reference.page.url | relative(page) }}" title="{{reference.data.title}}" class="plus">{{ 'Savoir' | i18n }} +</a>
   </div>
 </div>
 {% endfor %}

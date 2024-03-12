@@ -1,0 +1,13 @@
+---
+layout: sparna.njk
+bodyClass: page page-id-20 page-template-default
+---
+<h1>{{ "Formations" | i18n }}</h1>
+
+
+{% set collectionsLocal = collections.formation | localeFilter(locale) %}
+{%- for formation in collectionsLocal | reverse -%}
+<div class="formation" id="{{formation.data.title | slugify}}">
+  {{formation.content | safe}}
+</div>
+{% endfor %}

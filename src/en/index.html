@@ -1,0 +1,95 @@
+---
+layout: sparna.njk
+bodyClass: home page page-id-46 page-template-default
+savoir_faire:
+  p1: Sparna est une société de conseil informatique spécialisée sur les enjeux d'organisation des connaissances, d'annotation et d'indexation des documents, d'ouverture et de réutilisation des données.
+  p2: Sparna a été fondée en 2012 par Thomas Francart, expert dans les systèmes de gestion d'ontologie, les graphes de connaissance, leur modélisation et leur alimentation depuis les sources de données de l'organisation.
+  p3: Thomas travaille depuis 20 ans avec les standards du web de données (RDF, OWL, SKOS, SPARQL, SHACL, etc.) les thesaurus, les ontologies et les graphes de connaissances.
+domaine_action:
+
+---
+
+<b>EN</b>
+
+
+<div id = "architecture">
+	<div id = "savoir_faire">
+
+		<img width="357" height="268" src="{{ '/assets/uploads/2014/09/illustration.jpg' | relative(page) }}" alt="illustration" />
+		<h2>Notre<br/>Savoir Faire</h2>
+
+		<h3>Web de données | structuration de l'information | accès aux connaissances</h3>
+
+		<div class="paragraphes">
+			<p class="paragraphe_1">{{ savoir_faire.p1 }}</p>
+			<p class="paragraphe_2">{{ savoir_faire.p2 }}</p>
+			<p class="paragraphe_3">{{ savoir_faire.p3 }}</p>
+		</div>
+	</div>
+
+	<div id = "domaine_action">
+			<h2>Notre Domaine d'action</h2>
+
+			<div class = "paragraphes">{% renderTemplate "md" %}
+Nos compétences couvrent tout le champ des projets d'ingénierie des données sémantiques. Depuis les formations initiales jusqu'à la réalisation, en passant par la sélection des outils, l'architecture des systèmes, l'intégration des composants, la modélisation d'ontologies ou la migration de données.
+
+Lisez **[nos études de cas](references)** pour en savoir plus sur nos projets.
+			{% endrenderTemplate %}</div>
+
+		<div id = "action_conseil">
+				<h2>Conseil</h2>
+
+				<div class="detail">{% renderTemplate "md" %}
+### Technologies sémantiques
+
+  - Choix d'outils de traitement ou de triplestore
+  - Publication de données en Linked Data
+  - Modélisation d'ontologie, (re-)structuration de thesaurus
+
+### Architectures pour rendre les contenus intelligents
+
+  - Utilisation de vocabulaires contrôlés pour l'annotation des contenus
+  - Annotation automatique ou semi-automatiques de contenus
+  - Enrichissement de moteurs de recherche avec du vocabulaire métier
+
+### Open Data
+
+  - Choix de données et de vocabulaires à réutiliser
+  - Accompagnement dans la publication de données "5 étoiles"
+  - Accompagnement dans la réutilisation de données ouvertes
+{% endrenderTemplate %}</div>
+		</div>
+
+		<div id = "action_developpement">
+			<h2>Développement</h2>
+			<div class ="detail">{% renderTemplate "md" %}
+### Data-Ware
+
+  - Reprise et migration de données vers les formats sémantiques
+  - Modélisation et choix de vocabulaires
+  - Réutilisation et exploitation de données ouvertes
+  - Traitement et indexation des données dans un moteur de recherche
+
+### Soft-ware
+
+  - Intégration d'outils dans les architectures de traitement du contenu : text-mining, moteurs de recherche, triplestores, systèmes de gestion de thesaurus
+  - Maintenance et évolutions sur les applications à base de technologies sémantiques
+  - Architectures Java/J2EE
+
+			{% endrenderTemplate %}</div>
+		</div>
+
+		<div id = "action_formation">
+			<h2>Formations</h2>
+			<div class ="detail">{% renderTemplate "md" %}
+- [Web de données, web sémantique : introduction pour une mise en oeuvre intelligente](formations#web-de-donnees-graphe-de-connaissances-introduction-pour-une-mise-en-oeuvre-intelligente)
+- [Web de données avancé : techniques et outils pour le développement d'applications](formations#formation-web-de-donnees-avance-techniques-et-outils-pour-le-developpement-d-applications-2-jours)
+- [Formations web sémantique sur-mesure](formations#autres-formations-web-semantique-sur-mesure)
+			{% endrenderTemplate %}</div>
+		</div>
+	</div>
+</div>
+
+<div id = "qui_suis_je">{% renderTemplate "md" %}
+[Nos références](references) vous donneront une idée des projets réalisés par Sparna. N'hésitez pas à [nous contacter](contact) si vous souhaitez plus d'informations.
+{% endrenderTemplate %}</div>
