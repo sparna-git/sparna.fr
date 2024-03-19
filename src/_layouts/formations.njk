@@ -2,7 +2,13 @@
 layout: sparna.njk
 bodyClass: page page-id-20 page-template-default
 ---
-<h1>{{ "Formations" | i18n }}</h1>
+{% if locale == "fr" %}
+  <h1>Nos <br> formations</h1>
+{% endif %}
+
+{% if locale == "en" %}
+  <h1><br>Formations</h1>
+{% endif %}
 
 
 {% set collectionsLocal = collections.formation | localeFilter(locale) %}
