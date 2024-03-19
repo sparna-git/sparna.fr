@@ -1,6 +1,8 @@
 name: Eleventy Build
 on:
   push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -8,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+        with:
+          ref: main
       # - name: Build
       #  uses: TartanLlama/actions-eleventy@master
       #  with:
