@@ -2,7 +2,13 @@
 layout: sparna.njk
 bodyClass: page page-id-24 page-template-default
 ---
-<h1>{{ 'Reference' | i18n }}</h1>
+{% if locale == "fr" %}
+  <h1>Nos<br>références</h1>
+{% endif %}
+
+{% if locale == "en" %}
+  <h1><br>References</h1>
+{% endif %}
 
 {% set collectionsLocal = collections.reference | localeFilter(locale) %}
 {%- for reference in collectionsLocal | reverse -%}
