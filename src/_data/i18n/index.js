@@ -14,7 +14,7 @@ module.exports = {
     },
     Qui: {
       'fr': 'Qui suis je ?',
-      'en': 'Who am i ?'
+      'en': 'Who am I ?'
     },
     Contact: {
       'fr': 'Contact',
