@@ -3,7 +3,7 @@ layout: reference.njk
 title: European Legislation Identifier (ELI)
 subtitle:
 date: 2024-01-01
-abstract: Test for other langage - Our semantic expertise for an international working group, laying the foundations for a "legislative knowledge graph" on the scale of the European - and global - web.
+abstract: Our semantic expertise for an international working group, laying the foundations for a "legislative knowledge graph" on the scale of the European - and global - web.
 image: /assets/uploads/2021/02/Squared_ELiSeal-160x130.png
 tags: reference
 permalink: en/references/{{ title | slugify }}/

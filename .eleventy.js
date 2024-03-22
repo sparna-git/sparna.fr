@@ -173,9 +173,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // pass-through
-  eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/static");
-  eleventyConfig.addPassthroughCopy("src/CNAME");
+  eleventyConfig.addPassthroughCopy({ "static": "/" });
 
   // settings
   return {
