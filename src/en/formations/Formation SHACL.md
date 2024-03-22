@@ -8,84 +8,85 @@ tags:
 
 ## {{title}}
 
-### Objectifs de la formation
+### Training goals
 
-La spécification de la structure d'un graphe de connaissance est au coeur des projets _"data centric"_. Cette spécification écrite en SHACL permet de contrôler l'intégrité des données, de documenter le modèle, de générer des interfaces, de combiner des ontologies, de décrire des règles métier.
+Specifying the structure of a knowledge graph is at the heart of data-centric projects. This specification, written in SHACL, makes it possible to control data integrity, document the model, generate interfaces, combine ontologies and describe business rules.
 
-Cette formation a pour objectifs de:
+The objectives of this training course are to:
 
-- Positionner l’utilisation de SHACL par rapport à OWL, dans une architecture graphes de connaissances
-- Connaître les éléments de base du vocabulaire SHACL;
-- Savoir mettre en œuvre des outils SHACL:
-    - Edition de règles SHACL dans des tableurs Excel
-    - Validation de données avec SHACL
-    - Génération de documentation et de diagrammes à partir de SHACL
-    - Paramétrage de l'outil d'interrogation visuelle Sparnatural à partir de SHACL
-    - Génération automatique de règles SHACL à partir de l'analyse de données RDF
-- Connaître les types de règles SHACL : règles structurelles vs. règles métiers
-- Savoir encoder des règles métier en SHACL
+- Position the use of SHACL in relation to OWL, in a knowledge graph architecture
+- Understand the basic elements of the SHACL vocabulary;
+- Learn how to implement SHACL tools:
+    - Editing SHACL rules in Excel spreadsheets
+    - Data validation with SHACL
+    - Generating documentation and diagrams from SHACL
+    - Setting up the Sparnatural visual query tool from SHACL
+    - Automatic generation of SHACL rules from RDF data analysis
+- Learn about SHACL rule types: structural rules vs. business rules
+- Know how to encode business rules in SHACL
 
 
-### Durée
+### Duration
 
-1 journée. Cette formation peut être adaptée sur 1,5 jour.
+1 day. This course can be adapted to 1.5 days.
 
-### À qui s'adresse cette formation ?
+### Who is this training for?
 
-- Profils de **documentalistes orientés data** devant documenter la structure d'un graphe de connaissances
-- **Ingénieurs** devant mettre en oeuvre une chaine de traitement de données sémantique (migration, gestion, publication de données RDF)
-- **Data scientists** devant contrôler l'intégrité de graphes de connaissances
+- Profiles of **data-oriented documentalists** who need to document the structure of a knowledge graph
+- **Engineers** needing to implement a semantic data processing chain (migration, management, publication of RDF data)
+- **Data scientists** needing to check the integrity of knowledge graphs.
 
-### Prérequis
+### Prerequisites
 
-Les stagiaires qui assistent à cette formation doivent :
+Trainees attending this course should :
   
-  -  Connaitre la structure de base des graphes RDF (un rappel sera fait en début de formation)
-  -  Connaittre la syntaxe RDF Turtle
-  -  Avoir des notions de OWL (savoir ce qu’est une classe et une propriété)
-  -  Avoir des notions de requête SPARQL
+  - Be familiar with the basic structure of RDF graphs (a reminder will be given at the start of the course)
+  - Be familiar with RDF Turtle syntax
+  - OWL notions (know what a class and a property are)
+  - Notions of SPARQL querying
 
 
-### Programme de la formation
+### Program
 
-#### Rappels sur la structure RDF
+#### Review of RDF structure
 
-- Rappel du modèle de données RDF : triplets, URIs, litéraux, noeuds anonymes
-- Rappel de la syntaxe Turtle
-- Positionnement de SHACL par rapport à OWL
+- RDF data model: triplets, URIs, literals, anonymous nodes
+- Reminder of Turtle syntax
+- Positioning SHACL in relation to OWL
 
-#### Le modèle SHACL
+#### The SHACL model
 
-- Les spécifications SHACL au coeur d'un système de graphes de connaissances
-- Notion de shapes, avec leur target
-- Notion de contraintes 
-- Structure d’un rapport de validation
-- Shapes fermées / ouvertes
-- Exercice SHACL théorique
-- Application de SHACL à plusieurs niveaux dans le workflow:
-  - Shapes de validation de conversion de données
-  - Shapes de profil d’application
-  - Shapes de description des datasets
+- SHACL specifications at the heart of a knowledge graph system
+- Notion of shapes, with their targets
+- Notion of constraints 
+- Structure of a validation report
+- Closed / open shapes
+- Theoretical SHACL exercise
+- Application of SHACL at several workflow levels:
+  - Shapes for data conversion validation
+  - Application profile maps
+  - Dataset description maps
 
-#### Editer du SHACL et valider des données
+#### SHACL editing and data validation
 
-- Manipulation d’outil : tableau Excel de saisie SHACL
-  - Principes du convertisseur
-  - Saisie de Shapes simples sur un modèle du client
-- Manipulation d’outil : validateur SHACL en ligne de commande pour générer des rapports de validation
-- Manipulation d’outil : support de SHACL dans GraphDB
-- Exemples des spécifications du Parlement Européen documentées en SHACL
+- Tool handling: SHACL Excel input table
+  - Converter principles
+  - Entering simple Shapes on a customer model
+- Tool handling: command-line SHACL validator for generating validation reports
+- Tool handling: SHACL support in GraphDB
+- Examples of European Parliament specifications documented in SHACL
 
-#### SHACL avancé
+#### Advanced SHACL
 
-- SHACL avancé:
-  - SHACL-AF : SPARQL-based targets
-  - Ecrire des règles métiers à base de requêtes SPARQL
-  - Etendre SHACL avec de nouvelles contraintes
-- Les extensions du vocabulaire DASH
+- SHACL advanced:
+  - SHACL-AF: SPARQL-based targets
+  - Writing business rules based on SPARQL queries
+  - Extending SHACL with new constraints
+- DASH vocabulary extensions
 
 
-### Adapter cette formation
+### Adapt this training
 
-[Contactez-nous](contact) pour adapter cette formation à votre projet. En particulier cette formation peut être adaptée sur la base des données existantes dans votre projet.
+[Contact us](https://sparna.fr/contact/) to adapt this course to your project. In particular, this course can be adapted to your project's existing data.
+
 

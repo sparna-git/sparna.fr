@@ -3,32 +3,32 @@ layout: reference.njk
 title: "ISSN : RDF application profile and loading records in Wikidata"
 subtitle:
 date: 2023-01-01
-abstract: Comment le plus grand catalogue bibliographique de périodiques s'est aligné sur un graphe sémantique. Et comment l'ISSN a valorisé ses données au travers de leur versement dans Wikidata.
+abstract: How the largest bibliographic catalog of periodicals aligned itself with a semantic graph. And how ISSN has added value to its data by uploading it to Wikidata.
 image: /assets/uploads/2020/12/logo-square-160x130.jpeg
 tags: reference
 permalink: en/references/{{ title | slugify }}/
 ---
 
-## ISSN : profil d'application RDF et versement dans Wikidata
+## ISSN: RDF application profile and upload to Wikidata
 
-Le Centre International de l'ISSN, situé à Paris, maintient le répertoire de tous les identifiants ISSN attribués à des publications en série. C’est la **source de référence la plus complète au monde en matière d’identification de publications en série**. La base contient plus de 2.5 millions d’ISSN qui ont été attribués par le Réseau des centres régionaux de l'ISSN. Entre 60000 et 70000 notices sont ajoutées par ans.
+The International ISSN Center, located in Paris, maintains the directory of all ISSN identifiers assigned to serial publications. It is the **world's most comprehensive reference source for serial identification**. The database contains over 2.5 million ISSNs assigned by the ISSN Regional Centers Network. Between 60,000 and 70,000 records are added each year.
 
-Notre intervention à l'ISSN depuis 2016 a consisté en 4 points :
+Our intervention at ISSN since 2016 has consisted of 4 points:
 
-- Une formation initiale permettant de poser les enjeux et les bases théoriques et techniques des standards du web sémantique;
-- Un accompagnement à la formalisation et à la documentation du [profil d'application de l'ISSN pour la diffusion des données dans le linked data](https://www.issn.org/understanding-the-issn/assignment-rules/issn-linked-data-application-profile/), ainsi que de son alignement depuis les notices en MARC21;
-- Une analyse et une spécification pour la diffusion des données du [portail de l'ISSN](https://portal.issn.org/) à destination des moteurs de recherche en utilisant [schema.org](http://schema.org/);
-- Une analyse et un développement spécifique pour la synchronisation des données librement accessibles du catalogue de l'ISSN avec [Wikidata](http://wikidata.org/); ce développement, d'abord envisagé avec OpenRefine, a été finalement développé sous la forme d'un "bot" Wikidata : [ISSNBot](https://github.com/CIEPS/ISSNBot), capable de réaliser la synchronisation entre les données du registre de l'ISSN et les données présentes dans Wikidata. On peut trouver plus d'informations sur ce projet et la modélisation choisie sur la [page de discussion du projet sur Wikidata](https://www.wikidata.org/wiki/Wikidata_talk:WikiProject_Periodicals/Archive_2#Data_donation_from_ISSN_Register_-_Feedback_welcome).
+- Initial training on the theoretical and technical foundations of semantic web standards;
+- Support in formalizing and documenting the [ISSN application profile for data dissemination in linked data](https://www.issn.org/understanding-the-issn/assignment-rules/issn-linked-data-application-profile/), as well as its alignment from MARC21 records;
+- An analysis and specification for the dissemination of [ISSN portal](https://portal.issn.org/) data to search engines using [schema.org](http://schema.org/);
+- An analysis and specific development for the synchronization of freely accessible ISSN catalog data with [Wikidata](http://wikidata.org/); this development, initially envisaged with OpenRefine, was finally developed in the form of a Wikidata "bot": [ISSNBot](https://github.com/CIEPS/ISSNBot), capable of performing synchronization between ISSN registry data and data present in Wikidata. More information on this project and the chosen model can be found on the [Wikidata project talk page](https://www.wikidata.org/wiki/Wikidata_talk:WikiProject_Periodicals/Archive_2#Data_donation_from_ISSN_Register_-_Feedback_welcome).
 
-Les bénéfices pour l'ISSN de ces interventions :
+The benefits for ISSN of these interventions:
 
-- Une meilleure compréhension et conceptualisation de la structure interne de son catalogue;
-- Un nouveau canal de diffusion de ses données pour ses clients, au travers d'accès via la négociation de contenu et d'un SPARQL endpoint (en accès payant);
-- Une visibilité des données accrue par une annotation sémantique en schema.org;
-- Un partage et une valorisation des données gratuites du catalogue au travers de Wikidata;
-- À terme, un enrichissement du catalogue ISSN par la récupération des données de Wikidata;
+- A better understanding and conceptualization of the internal structure of its catalog;
+- A new data distribution channel for its customers, through access via content negotiation and a SPARQL endpoint (for a fee);
+- Enhanced data visibility through semantic annotation in schema.org;
+- Sharing and enhancement of free catalog data via Wikidata;
+- Eventually, the ISSN catalog will be enriched by recovering data from Wikidata;
 
-Nous continuons notre accompagnement auprès de l'ISSN pour toutes les questions de données liées et de web sémantique, en particulier la modélisation du [Keepers Registry](https://keepers.issn.org/) à l'aide de schema.org.
+We continue to support ISSN in all matters relating to linked data and the semantic web, in particular the modeling of the [Keepers Registry](https://keepers.issn.org/) using schema.org.
 
 
 http://www.sparna.fr/wp-content/uploads/2020/12/screenshot-issn-wikidata.png

@@ -8,75 +8,75 @@ tags:
 
 ## {{title}}
 
-### Objectifs de la formation
+### Training goals
 
-Cette formation technique, pour les développeurs, elle a pour objectif de donner les capacités aux participants d'utiliser les bonnes méthodes et les outils importants pour la mise en oeuvre d'un projet de graphe de connaissances. Elle s'adresse à des développeurs ou des data scientists.
+The aim of this technical training course for developers is to enable participants to use the right methods and tools to implement a knowledge graph project. It is aimed at developers and data scientists.
 
-Cette formation permettra aux participants de répondre aux questions suivantes :
+This course will enable participants to answer the following questions:
 
-- Comment tirer parti de requêtes SPARQL avancées ? (requêtes fédérées, requêtes de transformation de données, etc.)
-- Comment manipuler des données RDF dans des scripts, des programmes (Java), en utilisant RDF4J ou Jena, pour faire des transformations de données ?
-- Comment alimenter un graphe de connaissances avec des données relationelles, XML, CSV, JSON, etc. ?
-- Comment exposer des données RDF sur le web ?
-- Quels sont les principaux modèles d'ontologies à connaître pour réutiliser, traiter ou publier des données ?
+- How to take advantage of advanced SPARQL queries (federated queries, data transformation queries, etc.).
+- How to manipulate RDF data in scripts, programs (Java), using RDF4J or Jena, to perform data transformations?
+- How to feed a knowledge graph with relational data, XML, CSV, JSON, etc.?
+- How can I expose RDF data on the Web?
+- What are the main ontology models to be aware of when reusing, processing or publishing data?
 
-### Durée
+### Duration
 
-1,5 jours. Cette formation peut être adaptée sur 1 ou 2 journée.
+1.5 days. This course can be adapted to 1 or 2 days.
 
-### À qui s'adresse cette formation ?
+### Who is this training for ?
 
-Cette formation web de données avancée s'adresse à des **développeurs**, **data scientists**, chefs de projet ou consultants désireux de se perfectionner sur le web de données ou qui sont dans une phase de réalisation d'un projet utilisant les technologies du web de données.
+This advanced Web of data training course is aimed at **developers**, **data scientists**, project managers or consultants who wish to perfect their Web of data skills, or who are in the implementation phase of a project using Web of data technologies.
 
-### Prérequis
+### Prerequisites
 
-- Avoir des notions de XML, de JSON
-- Savoir écrire des requêtes SQL est un plus
-- Avoir des notions de RDF (un rappel sera fait en début de formation)
+- Knowledge of XML and JSON
+- Ability to write SQL queries is a plus
+- notions of RDF (a reminder will be given at the beginning of the course)
 
-### Programme de la formation
+### Program
 
-#### Rappels sur la structure RDF
+#### RDF structure reminder
 
-- Rappel du modèle de données RDF
-- Rappel de la syntaxe Turtle
+- RDF data model reminder
+- Turtle syntax reminder
 
-#### RDF et SPARQL avancé
-  - SPARQL Update : les opérations de mise à jour SPARQL
-  - SPARQL avancé : tirer parti des graphes nommés
-  - SPARQL opérations non-standards : recherche full-text et recherche spatiale
+#### RDF and advanced SPARQL
+  - SPARQL Update: SPARQL update operations
+  - Advanced SPARQL: taking advantage of named graphs
+  - SPARQL non-standard operations: full-text search and spatial search
 
-#### JSON-LD : encodage de triplets RDF en JSON
-  - Rappel des bases du JSON
-  - La notion de context JSON-LD
-  - Créer des fichiers JSON compatibles RDF avec un context JSON-LD
-  - JSON-LD Framing : exporter des fichiers JSON à partir d'une spécification JSON-LD
+#### JSON-LD: encoding RDF triplets in JSON
+  - JSON basics
+  - The notion of JSON-LD context
+  - Creating RDF-compatible JSON files with a JSON-LD context
+  - JSON-LD Framing: exporting JSON files from a JSON-LD specification
 
-#### Conversion de données natives en RDF
-  - Convertir du XML en RDF/XML en utilisant une feuille de style XSLT
-  - Utilisation d'outils de mapping de données natives vers RDF :
+#### Converting native data to RDF
+  - Convert XML to RDF/XML using an XSLT stylesheet
+  - Use native data to RDF mapping tools :
     - xls2rdf
     - SPARQLAnything
-    - OntoRefine de GraphDB
-  - R2RML et Direct Mapping : conversion d'une base relationnelle en RDF avec OnTop
+    - GraphDB's OntoRefine
+  - R2RML and Direct Mapping: converting a relational database to RDF with OnTop
 
-#### SPARQL et SPARQL update
-  - Opérateurs SPARQL (en fonction du degré de familiarité des stagiaires)
-  - GeoSPARQL pour l'interrogation de données géographiques
-  - Utilisation de SPARQL pour mettre à jour les données
-  - Utilisation de SPARQL pour exporter les données
+#### SPARQL and SPARQL update
+  - SPARQL operators (depending on trainees' level of familiarity)
+  - GeoSPARQL for querying geographic data
+  - Using SPARQL to update data
+  - Using SPARQL to export data
 
-#### Le Triplestore GraphDB
-  - Installer et configurer GraphDB
-  - Utiliser l'interface d'administration
-  - Charger des données, explorer et visualiser des données
-  - Stratégie de maintenance des données dans un triplestore : les graphes nommées
+#### The GraphDB Triplestore
+  - Installing and configuring GraphDB
+  - Using the administration interface
+  - Loading, exploring and visualizing data
+  - Data maintenance strategy in a triplestore: named graphs
 
-#### Les API RDF en Java et en Python
-  - L'API Java RDF4J : lecture/écriture de RDF, exécution de requêtes SPARQL
-  - L'API rdflib en Python
-  - Apache Jena : les lignes de commande : SPARQL, inférence et traitements sans écriture de code
+#### RDF APIs in Java and Python
+  - RDF4J Java API: read/write RDF, execute SPARQL queries
+  - The rdflib API in Python
+  - Apache Jena: command lines: SPARQL, inference and processing without writing code
 
-### Adapter cette formation
+### Adapt this course
 
-Par nature, cette formation web de données pour les développeurs nécessite une adaptation particulière en fonction du projet, des données. Si votre problématique nécessite l'emploi d'outils particuliers (moteurs d'inférences, bases RDF, ETL sémantiques), ou de modèles de données particuliers, le contenu de base de la formation sera adapté pour les prendre en compte. Pour cela, [contactez-nous](contact).
+By its very nature, this Web of Data training course for developers requires special adaptation to suit your project and data. If your problem requires the use of particular tools (inference engines, RDF bases, semantic ETLs), or particular data models, the basic training content will be adapted to take them into account. Please [contact us](https://sparna.fr/contact/).

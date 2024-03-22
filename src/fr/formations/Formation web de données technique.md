@@ -1,5 +1,5 @@
 ---
-title: "Formation web de données technique : développer un système de graphe de connaissances"
+title: "Formation Web de données technique : développer un système de graphe de connaissances"
 date: 2023-01-01
 permalink: "fr/formation/{{ title | slugify }}/"
 tags:
@@ -10,23 +10,23 @@ tags:
 
 ### Objectifs de la formation
 
-Cette formation technique, pour les développeurs, elle a pour objectif de donner les capacités aux participants d'utiliser les bonnes méthodes et les outils importants pour la mise en oeuvre d'un projet de graphe de connaissances. Elle s'adresse à des développeurs ou des data scientists.
+Cette formation technique, pour les développeurs, a pour objectif de donner les capacités aux participants d'utiliser les bonnes méthodes et les outils importants pour la mise en oeuvre d'un projet de graphe de connaissances. Elle s'adresse à des développeurs ou des data scientists.
 
 Cette formation permettra aux participants de répondre aux questions suivantes :
 
 - Comment tirer parti de requêtes SPARQL avancées ? (requêtes fédérées, requêtes de transformation de données, etc.)
 - Comment manipuler des données RDF dans des scripts, des programmes (Java), en utilisant RDF4J ou Jena, pour faire des transformations de données ?
 - Comment alimenter un graphe de connaissances avec des données relationelles, XML, CSV, JSON, etc. ?
-- Comment exposer des données RDF sur le web ?
+- Comment exposer des données RDF sur le Web ?
 - Quels sont les principaux modèles d'ontologies à connaître pour réutiliser, traiter ou publier des données ?
 
 ### Durée
 
-1,5 jours. Cette formation peut être adaptée sur 1 ou 2 journée.
+1,5 jour. Cette formation peut être adaptée sur 1 ou 2 journées.
 
 ### À qui s'adresse cette formation ?
 
-Cette formation web de données avancée s'adresse à des **développeurs**, **data scientists**, chefs de projet ou consultants désireux de se perfectionner sur le web de données ou qui sont dans une phase de réalisation d'un projet utilisant les technologies du web de données.
+Cette formation Web de données avancée s'adresse à des **développeurs**, **data scientists**, chefs de projet ou consultants désireux de se perfectionner sur le Web de données ou qui sont dans une phase de réalisation d'un projet utilisant les technologies du Web de données.
 
 ### Prérequis
 
@@ -70,7 +70,7 @@ Cette formation web de données avancée s'adresse à des **développeurs**, **d
   - Installer et configurer GraphDB
   - Utiliser l'interface d'administration
   - Charger des données, explorer et visualiser des données
-  - Stratégie de maintenance des données dans un triplestore : les graphes nommées
+  - Stratégie de maintenance des données dans un triplestore : les graphes nommés
 
 #### Les API RDF en Java et en Python
   - L'API Java RDF4J : lecture/écriture de RDF, exécution de requêtes SPARQL
@@ -79,4 +79,4 @@ Cette formation web de données avancée s'adresse à des **développeurs**, **d
 
 ### Adapter cette formation
 
-Par nature, cette formation web de données pour les développeurs nécessite une adaptation particulière en fonction du projet, des données. Si votre problématique nécessite l'emploi d'outils particuliers (moteurs d'inférences, bases RDF, ETL sémantiques), ou de modèles de données particuliers, le contenu de base de la formation sera adapté pour les prendre en compte. Pour cela, [contactez-nous](contact).
+Par nature, cette formation Web de données pour les développeurs nécessite une adaptation particulière en fonction du projet, des données. Si votre problématique nécessite l'emploi d'outils particuliers (moteurs d'inférences, bases RDF, ETL sémantiques), ou de modèles de données particuliers, le contenu de base de la formation sera adapté pour les prendre en compte. Pour cela, [contactez-nous](https://sparna.fr/contact/).

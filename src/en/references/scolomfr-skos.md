@@ -1,37 +1,37 @@
 ---
 layout: reference.njk
-title: Réseau Canopé et le ScoLOMFR en SKOS
-subtitle: PUBLICATION DU SCOLOMFR EN SKOS
+title: Réseau Canopé and ScoLOMFR in SKOS
+subtitle: SCOLOMFR PUBLICATION IN SKOS
 date: 2022-01-01
-abstract: Conseils et développement pour la diffusion d'un thésaurus dans le web de données, en prenant en compte les versions successives du thésaurus.
+abstract: Advice and development for the dissemination of a thesaurus in the web of data, taking into account the successive versions of the thesaurus.
 image: /assets/uploads/2017/02/Logo_CANOPE_VERT_petit-160x67.png
 tags: reference
 permalink: en/references/{{ title | slugify }}/
 ---
 
-## Réseau Canopé et le ScoLOMFR en SKOS
+## Réseau Canopé and ScoLOMFR in SKOS
 
-### Publication du ScolomFr en SKOS
+### Publication of ScolomFr in SKOS
 
-[Réseau Canopé](https://www.reseau-canope.fr/) (ex CNDP / CRDP), réseau de création et d'accompagnement pédagogique, est en charge de la diffusion du [ScoLOMFR](https://www.reseau-canope.fr/scolomfr/accueil.html), un thésaurus de description des ressources numériques de l’enseignement scolaire. Ce thésaurus est subdivisé en 46 micro-thésaurus, pour un total de près de 15000 concepts.
+[Réseau Canopé](https://www.reseau-canope.fr/) (formerly CNDP / CRDP), a network for educational creation and support, is in charge of distributing [ScoLOMFR](https://www.reseau-canope.fr/scolomfr/accueil.html), a thesaurus describing digital resources for school education. This thesaurus is subdivided into 46 micro-thesauri, for a total of almost 15,000 concepts.
 
-Le ScoLOMFR est constitué de 2 parties : un schéma de description des ressources, qui liste les champs possibles pour la description d'une ressource pédagogique, et les vocabulaires contrôlés dans lesquels certains de ces champs prennent leur valeur.
+The ScoLOMFR consists of 2 parts: a resource description schema, which lists the possible fields for describing an educational resource, and the controlled vocabularies in which some of these fields take their value.
 
-Le ScoLOMFR suit rigoureusement les textes officiels concernant les programmes scolaires, et est mis à jour à chaque réforme.
+ScoLOMFR rigorously follows the official texts concerning school curricula, and is updated with each reform.
 
-Nous accompagnons Réseau Canopé depuis 2016 pour la diffusion du ScoLOMFR. La diffusion de ces vocabulaires est aujourd'hui **à la pointe de l'état de l'art en terme de diffusion de vocabulaires contrôlés dans le web de données**. Les grands domaines d'intervention pour cet accompagnement ont été :
+We have been working with Réseau Canopé since 2016 to distribute ScoLOMFR. The distribution of these vocabularies is today **at the cutting edge in terms of controlled vocabulary distribution in the web of data**. The main areas of intervention for this support were:
 
-- Une politique de versionnement claire des vocabulaires;
-- Une gestion des évolutions dans la structure des vocabulaires entre chaque version : concepts dépréciés, obsolètes, fusionnés, découpés, déplacés;
-- Une chaîne de production pour l'export des données depuis l'outil de back-office vers les données diffusées RDF;
-- Un [portail de navigation/visualisation des vocabulaires](https://www.reseau-canope.fr/scolomfr/data/fr/), dans lequel les versions successives du thésaurus sont navigables; ce portail de navigation est basé sur l'outil [Skosmos](http://skosmos.org/), avec un développement particulier pour l'affichage des frises temporelles sur la page de chaque concept;
-- Une [ontologie de représentation des aspects spécifiques du ScoLOMFR](https://www.reseau-canope.fr/scolomfr/fileadmin/user_upload/ontologie/index-fr.html) : les relations entres certains vocabulaires ("un domaine de connaissance est enseigné dans un niveau éducatif", "un point de programme fait partie d'un domaine de connaissance", etc.);
-- Un [profil d'application pour la publication des données](https://www.reseau-canope.fr/scolomfr/fileadmin/user_upload/ontologie/Scolomfr-regles_SHACL-v-6-0.zip), c'est-à-dire un modèle de données s'appuyant sur SKOS, DublinCore, PROV, et l'ontologie spécifique de ScoLOMFR. Ce profil d'application est formellement décrit à l'aide de [SHACL](https://www.w3.org/TR/shacl/);
-- Une génération automatique d'un tableau de toutes les modifications qui sont intervenues entre 2 versions d'un vocabulaire (un "diff" de thésaurus);
+- A clear vocabulary versioning policy;
+- Management of changes in vocabulary structure between versions: concepts deprecated, obsolete, merged, cut out, moved;
+- A production chain for exporting data from the back-office tool to RDF broadcast data;
+- A [vocabulary browsing/visualization portal](https://www.reseau-canope.fr/scolomfr/data/fr/), in which successive versions of the thesaurus can be browsed; this browsing portal is based on the [Skosmos] tool(http://skosmos.org/), with special development for displaying timelines on the page for each concept;
+- An [ontology for representing specific aspects of ScoLOMFR](https://www.reseau-canope.fr/scolomfr/fileadmin/user_upload/ontologie/index-fr.html): relationships between certain vocabularies ("a knowledge domain is taught in an educational level", "a program point is part of a knowledge domain", etc.);
+- A [data publication application profile](https://www.reseau-canope.fr/scolomfr/fileadmin/user_upload/ontologie/Scolomfr-regles_SHACL-v-6-0.zip), i.e. a data model based on SKOS, DublinCore, PROV, and the specific ScoLOMFR ontology. This application profile is formally described using [SHACL](https://www.w3.org/TR/shacl/);
+- Automatic generation of a table of all the modifications that have occurred between 2 versions of a vocabulary (a thesaurus "diff");
 
-Nous continuons l'accompagnement de Réseau Canopé en 2021, pour pousser la logique de modification de ce thésaurus vers une ontologie, en enrichissant les relations entre concepts.
+We are continuing to support Réseau Canopé in 2021, to push the logic of modifying this thesaurus towards an ontology, by enriching the relationships between concepts.
 
-(en savoir plus sur le [billet de blog à propos de la diffusion du ScoLOMFR](http://blog.sparna.fr/2018/09/25/thesaurus-versions-of-scolomfr-skos/)).
+(read more on the [blog post about the ScoLOMFR release](http://blog.sparna.fr/2018/09/25/thesaurus-versions-of-scolomfr-skos/)).
 
 
 ![screenshot scoLOMFR](/assets/uploads/2020/12/scolomfr-screenshot.png)

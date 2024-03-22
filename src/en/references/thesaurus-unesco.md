@@ -1,25 +1,25 @@
 ---
 layout: reference.njk
-title: Thésaurus de l'UNESCO
+title: UNESCO Thesaurus
 subtitle: SKOSMOS - VOCBENCH - SKOS PLAY
 date: 2020-01-01
-abstract: Sparna a mené à bien en 2016, après avoir remporté l'appel d'offres correspondant, le remplacement des outils de gestion et de publication du thésaurus de l'UNESCO.
+abstract: Sparna successfully completed the replacement of UNESCO's thesaurus management and publication tools in 2016, after winning the corresponding tender.
 image: /assets/uploads/2017/02/unesco_logo_en-160x130.jpg
 tags: reference
 permalink: en/references/{{ title | slugify }}/
 ---
 
-## Thésaurus de l'UNESCO
+## UNESCO Thesaurus
 
-### Gestion et Diffusion d'un Thesaurus SKOS à base de composants open-source
+### Management and distribution of a SKOS Thesaurus based on open-source components
 
-Sparna a mené à bien en 2016, après avoir remporté l'appel d'offres correspondant, le **remplacement des outils de gestion et de publication du thésaurus de l'UNESCO**. La proposition de Sparna combinait l'utilisation de composants open-source : [SKOSMOS](http://skosmos.org/) pour le portail de navigation/recherche dans le thésaurus, [SKOS Play](http://labs.sparna.fr/skos-play/) pour la génération de documents PDFs, [Fuseki](https://jena.apache.org/documentation/fuseki2/) pour le service d'interrogation public SPARQL et [VocBench](http://vocbench.uniroma2.it/) pour la gestion du thésaurus. Le nouveau portail du thésaurus est consultable à http://vocabularies.unesco.org.
+Sparna successfully completed the **replacement of UNESCO's thesaurus management and publishing tools** in 2016, after winning the corresponding tender. Sparna's proposal combined the use of open-source components: [SKOSMOS](http://skosmos.org/) for the thesaurus navigation/search portal, [SKOS Play](http://labs.sparna.fr/skos-play/) for PDF document generation, [Fuseki](https://jena.apache.org/documentation/fuseki2/) for the SPARQL public query service and [VocBench](http://vocbench.uniroma2.it/) for thesaurus management. The new thesaurus portal can be accessed at http://vocabularies.unesco.org.
 
-Dans une première phase, le thésaurus constitué de 4400 concepts, 32000 termes et 4 langues a été converti en [SKOS](http://www.sparna.fr/skos/SKOS-traduction-francais.html) puis publié dans SKOSMOS. Cela a permis d'avoir un résultat visible rapidement. Les gestionnaires du thesaurus témoignent : "Le bénéfice immédiat a été une interface utilisateur agréable, ce qui a permis d'améliorer les retours des utilisateurs et de mieux valoriser le thesaurus. La capacité à produire des exports dans différents format grâce à SKOS Play et au service SPARQL nous permet d'extraire des parties du thésaurus pour répondre aux besoins de nos utilisateurs.".
+In the first phase, the thesaurus, comprising 4,400 concepts, 32,000 terms and 4 languages, was converted to [SKOS](http://www.sparna.fr/skos/SKOS-traduction-francais.html) and then published in SKOSMOS. The result was quickly visible. Thesaurus managers testify: "The immediate benefit was a pleasant user interface, which improved user feedback and enhanced the value of the thesaurus. The ability to produce exports in different formats thanks to SKOS Play and the SPARQL service enables us to extract parts of the thesaurus to meet the needs of our users".
 
-La seconde phase a été le remplacement de l'outil de gestion de thésaurus actuel par VocBench : plateforme open-source basée sur le standard SKOS, elle permet maintenant à l'UNESCO de travailler de façon collaborative sur le thésaurus (et notamment les traductions arabes et chinoises à venir) grâce à une gestion fine des droits utilisateurs et un mécanisme de workflow de validation permettant de valider les contributions.
+The second phase was the replacement of the current thesaurus management tool by VocBench: an open-source platform based on the SKOS standard, it now enables UNESCO to work collaboratively on the thesaurus (and in particular on the forthcoming Arabic and Chinese translations), thanks to detailed management of user rights and a validation workflow mechanism for validating contributions.
 
-Le résultat ? **un thésaurus valorisé, support à l'interopérabilité, conforme aux standards du web de données, et sans coût de licence**. Plus de détails sur le projet sont donnés dans [l'annonce sur le blog (en anglais)](http://blog.sparna.fr/2017/02/06/unesco-thesaurus-published-with-semantic-web-standards-and-open-source-software/).
+The result? **An enhanced thesaurus, supporting interoperability, conforming to Web of Data standards, and with no licensing costs**. More details on the project can be found in the blog announcement (http://blog.sparna.fr/2017/02/06/unesco-thesaurus-published-with-semantic-web-standards-and-open-source-software/).
 
 
 http://www.sparna.fr/wp-content/uploads/2017/02/screenshot-skosmos-small1.png

@@ -10,15 +10,15 @@ tags:
 
 ### Objectifs de la formation
 
-Les ontologies forment une partie importante de l'écosystème du web de données, et un passage obligé pour atteindre une bonne interopérabilité sémantique des données (_"ce qui est compris des données est bien ce qui a été publié"_). Cette formation vise à :
-  - dresser un panorama des ontologies les plus communes sur le web de données
+Les ontologies forment une partie importante de l'écosystème du Web de données, et un passage obligé pour atteindre une bonne interopérabilité sémantique des données (_"ce qui est compris des données est bien ce qui a été publié"_). Cette formation vise à :
+  - dresser un panorama des ontologies les plus communes sur le Web de données
   - positionner et comprendre les grands modèles conceptuels de description des données patrimoniales et des autres secteurs
-  - comprendre les opérateurs RDFS et OWL disponibles pour décrire un domaine de connaissances
+  - comprendre les opérateurs RDFS et OWL disponibles pour décrire un domaine de connaissance
   - s'outiller pour créer sa propre ontologie OWL dans Protégé
 
 ### Durée
 
-1,5 jours. Cette formation peut être adaptée sur 1 ou 2 journée.
+1,5 jours. Cette formation peut être adaptée sur 1 ou 2 journées.
 
 ### À qui s'adresse cette formation ?
 
@@ -29,8 +29,8 @@ Les ontologies forment une partie importante de l'écosystème du web de donnée
 ### Prérequis
 
 Les stagiaires qui assistent à cette formation doivent :
-  - Connaitre la structure de base des graphes RDF (un rappel sera fait en début de formation)
-  - Etre à l'aise avec les outils informatiques (éditeurs texte, éditeurs de requêtes, outils de gestion de base de données, etc...)
+  - Connaître la structure de base des graphes RDF (un rappel sera fait en début de formation)
+  - Être à l'aise avec les outils informatiques (éditeurs texte, éditeurs de requêtes, outils de gestion de base de données, etc...)
 
 
 ### Programme de la formation
@@ -53,9 +53,9 @@ Les stagiaires qui assistent à cette formation doivent :
 - Opérateurs OWL : propriétés inverses, transitives
 - Restrictions OWL : restrictions de cardinalités, de domain, de range
 
-#### Les ontologies à connaitre sur le web de données
+#### Les ontologies à connaître sur le Web de données
 
-- DublinCore : métadonnées documentaires générique
+- DublinCore : métadonnées documentaires génériques
 - FOAF : description des personnes
 - SKOS : vocabulaires contrôlés
 - ORG : description des organisations
@@ -67,7 +67,7 @@ Les stagiaires qui assistent à cette formation doivent :
 
 - Exercice d'utilisation de Protégé pour comprendre les opérateurs OWL et éditer une ontologie
 - Utilisation d'un raisonneur
-- Exemple d'ontologie utilisation de la classification automatique : intercations médicamenteuses
+- Exemple d'ontologie utilisation de la classification automatique : interactions médicamenteuses
 - Mise en oeuvre du raisonnement automatique dans un triplestore : manipulation de GraphDB
 
 #### Les modèles conceptuels des données patrimoniales
@@ -86,5 +86,5 @@ Les stagiaires qui assistent à cette formation doivent :
 
 ### Adapter cette formation
 
-[Contactez-nous](contact) pour adapter cette formation à votre projet. En particulier cette formation peut être adaptée sur la base des données existantes dans votre projet.
+[Contactez-nous](https://sparna.fr/contact/) pour adapter cette formation à votre projet. En particulier cette formation peut être adaptée sur la base des données existantes dans votre projet.
 

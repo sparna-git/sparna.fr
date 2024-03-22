@@ -1,27 +1,27 @@
 ---
 layout: reference.njk
-title: Office des Publications de l'Union Européenne
+title: Publications Office of the European Union
 subtitle: CELLAR, ELI, EUROVOC
 date: 2019-01-01
-abstract: Un repository de métadonnées centralisé qui gère, dans un modèle FRBR, les métadonnées multilingues et multiformats des publications de l'UE.
+abstract: A centralized metadata repository that manages, in a FRBR model, the multilingual and multi-format metadata of EU publications.
 image: /assets/uploads/2015/01/EU-Publications-Office-logo.svg--160x130.png
 tags: reference
 permalink: en/references/{{ title | slugify }}/
 ---
 
-## Office des Publications de l'Union Européenne
+## Publications Office of the European Union
 
-L’[Office des Publications](http://publications.europa.eu/) est un organisme interinstitutionnel, basé au Luxembourg, et assure l’édition des publications des institutions des Communautés européennes et de l’Union européenne, notamment le [Journal Officiel de l'Union européenne](http://eur-lex.europa.eu/oj/direct-access.html) en 23 ou 24 langues. Sa mission d'éditeur juridique à destination des citoyens européens l'a conduit à mettre en place il y a plusieurs années le projet [Cellar](http://www.w3.org/International/multilingualweb/luxembourg/slides/41-schmitz.pdf); celui-ci vise à rendre accessible dans un endroit central les métadonnées et les contenus publiés par l'Office.
+The [Publications Office](http://publications.europa.eu/) is an inter-institutional body based in Luxembourg, responsible for publishing the publications of the institutions of the European Communities and the European Union, in particular the [Official Journal of the European Union](http://eur-lex.europa.eu/oj/direct-access.html) in 23 or 24 languages. Its mission as a legal publisher for European citizens led it to set up the [Cellar](http://www.w3.org/International/multilingualweb/luxembourg/slides/41-schmitz.pdf) project several years ago, which aims to make the metadata and content published by the Office accessible in a central location.
 
-Le Cellar est largement basé sur les technologies sémantiques; il stocke en effet, dans un modèle [FRBR](http://fr.wikipedia.org/wiki/Sp%C3%A9cifications_fonctionnelles_des_notices_bibliographiques), les métadonnées multilingues et multiformats (celles que l'on retrouve sur le portail [Eur-Lex](http://eur-lex.europa.eu/)) de toutes les publications de l'office, soit environ 1,5 milliards de triplets. Cette base est au coeur du système éditorial de l'Office, en intégrant les métadonnées issues de plusieurs applications sources, et les diffusant vers plusieurs portails ou outils cibles.
+Cellar is largely based on semantic technologies; in fact, it stores, in a [FRBR](http://fr.wikipedia.org/wiki/Sp%C3%A9cifications_fonctionnelles_des_notices_bibliographiques) model, the multilingual and multi-format metadata (those found on the [Eur-Lex](http://eur-lex.europa.eu/) portal) of all the Office's publications, i.e. some 1.5 billion triplets. This database is at the heart of the Office's editorial system, integrating metadata from several source applications, and disseminating them to several portals or target tools.
 
 http://www.sparna.fr//wp-content/uploads/2015/01/cellar-architecture.png
 
 
-Notre intervention - limitée au regard de l'ampleur du projet Cellar - s'est faite en plusieurs sous-projets distincts.
+Our involvement - limited in relation to the scope of the Cellar project - was divided into several distinct sub-projects.
 
-### Développement d'un outil d'édition de données RDF
+### Development of an RDF data editing tool
 
-Les données stockées dans le Cellar sont issues d'applications tierces, et, une fois ingérées, ne sont plus directement modifiables sans retourner dans l'application tierce à la source des données. Cependant, des corrections directement dans le Cellar sont parfois nécessaires, pour des raisons de facilité, de rapidité ou de flexibilité. L'Office des Publications avait donc besoin d'une interface permettant de rechercher, visualiser et modifier les métadonnées directement dans le RDF du Cellar.
+The data stored in the Cellar comes from third-party applications and, once ingested, cannot be directly modified without returning to the third-party application at the source of the data. However, corrections directly in the Cellar are sometimes necessary, for reasons of ease, speed or flexibility. The Publications Office therefore needed an interface enabling metadata to be searched, viewed and modified directly in the Cellar RDF.
 
-Cet outil que nous avons développé, baptisé RDFEdit, est entièrement dynamique et basé sur une ontologie OWL pour générer les interfaces d'affichage et de modification. Il intègre pour cela le composant [RDForms](http://rdforms.org/). RDFEdit est [publié sur Joinup](https://joinup.ec.europa.eu/software/rdfedit/description) où vous trouverez plus de détails sur sa conception.
+The tool we developed, called RDFEdit, is entirely dynamic and based on an OWL ontology to generate the display and editing interfaces. To this end, it integrates the [RDForms] component (http://rdforms.org/). RDFEdit is [published on Joinup](https://joinup.ec.europa.eu/software/rdfedit/description) where you'll find more details on its design.

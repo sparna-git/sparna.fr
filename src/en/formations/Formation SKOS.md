@@ -8,82 +8,82 @@ tags:
 
 ## {{title}}
 
-### Objectifs de la formation
+### Training goals
 
-Une formation pour se familiariser avec la structuration des thesaurus, taxonomies, vocabulaires contrôlés, listes d'autorités pour le web de données. Les stagiaires seront capables de maintenir et de publier les données de ses référentiels en SKOS.
-
-
-### Durée
-
-1,5 jours. Cette formation peut être adaptée sur 1 ou 2 journée.
+Training to become familiar with the structuring of thesauri, taxonomies, controlled vocabularies and authority lists for the Web of Data. Trainees will be able to maintain and publish data from these repositories in SKOS.
 
 
-### À qui s'adresse cette formation ?
+### Duration
 
-- **Professionnels de l'information** responsables de la maintenance ou de la création de vocabulaires contrôlés.
-- **Data scientists** ayant besoin de structurer des données où interviennent des vocabulaires contrôlés
-
-### Prérequis
-
-- Notions de structuration des données en RDF (un rappel est fait en début de formation)
-- Savoir ce qu'est et à quoi sert un vocabulaire contrôlé
+1.5 days. This training can be adapted over 1 or 2 days.
 
 
-### Programme de la formation
+### Who is this training for ?
+
+- **Information professionals** responsible for maintaining or creating controlled vocabularies.
+- **Data scientists** needing to structure data involving controlled vocabularies.
+
+### Prerequisites
+
+- Notions of data structuring in RDF (a reminder is given at the start of the course).
+- Knowledge of what a controlled vocabulary is and what it is used for.
 
 
-#### Rappels sur la structure RDF
+### Program
 
-- Rappel sur les enjeux du web de données, les URIs
-- Rappel du modèle de données RDF
-- Rappel de la syntaxe Turtle
 
-#### Le modèle de données SKOS
+#### RDF structure reminder
 
-- La structuration des Concept SKOS
-- Les labels, les notes, les codes, les relations sémantiques et les alignements
-- SKOS-XL pour la description des labels
-- URIs pérennes : ARK, DOI
+- Web of data issues, URIs
+- RDF data model
+- Reminder of Turtle syntax
 
-#### Problématiques de gestion des vocabulaires contrôlés
+#### The SKOS data model
 
-- Métadonnées descriptives d'un vocabulaire contrôlés
-- Versionnement des vocabulaires contrôlés et dépréciation
-- Publication sur le web
+- Structuring SKOS concepts
+- Labels, notes, codes, semantic relations and alignments
+- SKOS-XL for label description
+- Perennial URIs: ARK, DOI
 
-#### Exemples de thesaurus publiés sur le web de données
+#### Controlled vocabulary management issues
 
-- Thesaurus de l'UNESCO
+- Descriptive metadata for controlled vocabularies
+- Versioning and depreciation of controlled vocabularies
+- Web publishing
+
+#### Examples of thesauri published on the Web of Data
+
+- UNESCO Thesaurus
 - Eurovoc
 - GEMET
-- Vocabulaires de l'INRAE et de l'INIST (Loterre)
+- INRAE and INIST vocabularies (Loterre)
 
-#### Outils d'édition, alignement et publication de vocabulaires SKOS
+#### Tools for editing, aligning and publishing SKOS vocabularies
 
-- **xls2rdf** : maintenir des vocabulaires contrôlés dans des tableaux Excel. Exemples de formats de tableaux Excel pour produire du SKOS ou d'autres structures RDF
-- **SKOS Play** : visualisation et contrôle de vocabulaires SKOS
-- **VocBench** : outil de gestion avancé pour les vocabulaires contrôlés et les ontologies
-- **Skosmos** et **Showvoc** : publication des vocabulaires contrôlés
+- **xls2rdf**: maintain controlled vocabularies in Excel tables. Examples of Excel table formats for producing SKOS or other RDF structures
+- **SKOS Play**: visualize and control SKOS vocabularies
+- **VocBench**: advanced management tool for controlled vocabularies and ontologies
+- **Skosmos** and **Showvoc**: publication of controlled vocabularies
 
-#### Alignement de vocabulaires contrôlés
+#### Alignment of controlled vocabularies
 
-- **OnaGUI** : outil d'alignement semi-automatique de vocabulaires
-- Exercice d'alignement semi-automatique de vocabulaires contrôlés
+- **OnaGUI**: semi-automatic vocabulary alignment tool
+- Semi-automatic controlled vocabulary alignment exercise
 
 
-### Adapter cette formation
+### Adapt this training
 
-[Contactez-nous](contact) pour adapter cette formation à votre projet. Cette formation peut être adaptée sur un format plus court d'une journée, et adaptée sur les référentiels déjà utilisés dans le système d'information.
+[Contact us](https://sparna.fr/contact/) to adapt this training to your project. This training can be adapted to a shorter one-day format, and adapted to the repositories already used in the information system.
 
-### Comment adapter les formations ?
+### How to adapt training courses?
 
-Vous souhaitez mettre au point une formation adaptée pour vos équipes ? Le processus est le suivant :
+Would you like to develop an adapted training course for your teams? The process is as follows:
 
-Nous définissons ensemble lors d'un rendez-vous téléphonique vos besoins en termes de :
-- contenu
-- durée
-- effectif formé
+During a telephone meeting, we define your needs in terms of :
+- content
+- duration
+- number of people trained
 
-Je rédige un plan de formation détaillé qui propose un déroulé heure par heure du contenu de la formation.
-En parallèle nous nous assurons que tous les stagiaires maîtrisent les prérequis nécessaires par le biais d'un questionnaire QCM.
-Nous ajustons si besoin ensemble le plan de formation et une fois finalisé il est intégré dans un devis final.
+I draw up a detailed training plan, outlining the course content hour by hour.
+At the same time, we check that all trainees have mastered the necessary prerequisites by means of a MCQ questionnaire.
+If necessary, we adjust the training plan together, and once finalized it is integrated into the training program.
