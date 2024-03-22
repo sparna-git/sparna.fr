@@ -8,83 +8,83 @@ tags:
 
 ## {{title}}
 
-### Objectifs de la formation
+### Training goals
 
-Les ontologies forment une partie importante de l'écosystème du web de données, et un passage obligé pour atteindre une bonne interopérabilité sémantique des données (_"ce qui est compris des données est bien ce qui a été publié"_). Cette formation vise à :
-  - dresser un panorama des ontologies les plus communes sur le web de données
-  - positionner et comprendre les grands modèles conceptuels de description des données patrimoniales et des autres secteurs
-  - comprendre les opérateurs RDFS et OWL disponibles pour décrire un domaine de connaissances
-  - s'outiller pour créer sa propre ontologie OWL dans Protégé
+Ontologies are an important part of the Web of Data ecosystem, and a prerequisite for achieving good semantic interoperability of data (_"what is understood from the data is what has been published"_). This course aims to:
+  - provide an overview of the most common ontologies used on the Web of Data
+  - position and understand the main conceptual models for describing heritage data and other sectors
+  - understand the RDFS and OWL operators available to describe a domain of knowledge
+  - create your own OWL ontology in Protégé
 
-### Durée
+### Duration
 
-1,5 jours. Cette formation peut être adaptée sur 1 ou 2 journée.
+1.5 days. This training can be adapted over 1 or 2 days.
 
-### À qui s'adresse cette formation ?
+### Who is this training for ?
 
-- Profils de **documentalistes orientés data** devant spécifier un domaine de connaissance
-- **Ingénieurs et développeurs** devant mettre en oeuvre une chaine de traitement de données sémantique impliquant du raisonnement automatique
-- **Data scientists** devant migrer des données dans un graphe de connaissances
+- **Data-oriented documentalists** who need to specify a knowledge domain
+- **Engineers and developers** needing to implement a semantic data processing chain involving automatic reasoning
+- **Data scientists** needing to migrate data into a knowledge graph
 
-### Prérequis
+### Prerequisites
 
-Les stagiaires qui assistent à cette formation doivent :
-  - Connaitre la structure de base des graphes RDF (un rappel sera fait en début de formation)
-  - Etre à l'aise avec les outils informatiques (éditeurs texte, éditeurs de requêtes, outils de gestion de base de données, etc...)
+Trainees attending this course should:
+  - Be familiar with the basic structure of RDF graphs (a reminder will be given at the start of the course)
+  - Be comfortable using IT tools (text editors, query editors, database management tools, etc.).
 
 
-### Programme de la formation
+### Program
 
-#### Rappels sur la structure RDF
+#### RDF structure reminder
 
-- Rappel du modèle de données RDF
-- Rappel de la syntaxe Turtle
+- RDF data model
+- Reminder of Turtle syntax
 
-#### Introduction aux ontologies
+#### Introduction to ontologies
 
-- Qu'est-ce qu'une ontologie ?
-- Quelle est la différence entre une ontologie OWL, un vocabulaire contrôlé SKOS, une spécification SHACL ?
-- Ontologies haut-niveau versus ontologies de domaine : principes d'extension des ontologies
-- Ontologies "légères" versus "modèles conceptuels rigides" : les approches de formalisation d'une ontologie
+- What is an ontology?
+- What's the difference between an OWL ontology, a SKOS controlled vocabulary and a SHACL specification?
+- High-level ontologies versus domain ontologies: principles of ontology extension
+- "Lightweight" ontologies versus "rigid conceptual models": approaches to ontology formalization
 
-#### Les opérateurs des ontologies
+#### Ontology operators
 
-- Opérateurs de base RDFS : subClassOf, subpropertyOf, domain, range
-- Opérateurs OWL : propriétés inverses, transitives
-- Restrictions OWL : restrictions de cardinalités, de domain, de range
+- Basic RDFS operators: subClassOf, subpropertyOf, domain, range
+- OWL operators: inverse and transitive properties
+- OWL restrictions: cardinalities, domain, range restrictions
 
-#### Les ontologies à connaitre sur le web de données
+#### Ontologies for the Web of Data
 
-- DublinCore : métadonnées documentaires générique
-- FOAF : description des personnes
-- SKOS : vocabulaires contrôlés
-- ORG : description des organisations
-- schema.org : les données structurées pour les moteurs de recherche
-- PROV : description de la provenance et de l'historique des données
-- DCAT : description des jeux de données
+- DublinCore: generic documentary metadata
+- FOAF: description of people
+- SKOS: controlled vocabularies
+- ORG: description of organizations
+- schema.org: structured data for search engines
+- PROV: description of data provenance and history
+- DCAT: description of datasets
 
-#### Protégé : un éditeur d'ontologies OWL
+#### Protégé: an OWL ontology editor
 
-- Exercice d'utilisation de Protégé pour comprendre les opérateurs OWL et éditer une ontologie
-- Utilisation d'un raisonneur
-- Exemple d'ontologie utilisation de la classification automatique : intercations médicamenteuses
-- Mise en oeuvre du raisonnement automatique dans un triplestore : manipulation de GraphDB
+- Exercise using Protégé to understand OWL operators and edit an ontology
+- Using a reasoner
+- Example ontology using automatic classification: drug interactions
+- Implementing automatic reasoning in a triplestore: manipulating GraphDB
 
-#### Les modèles conceptuels des données patrimoniales
+#### Conceptual models for heritage data
 
-- Historiques des modèles conceptuels en bibliothèque, musées et archives
-- FRBR / LRM : structuration des notices bibliographiques
-- CIDOC-CRM : description des objets patrimoniaux
-- Records In Contexts : structuration des notices archivistiques
-- Utiliser ou étendre ces modèles conceptuels dans son projet
+- History of conceptual models in libraries, museums and archives
+- FRBR / LRM: structuring bibliographic records
+- CIDOC-CRM: description of heritage objects
+- Records In Contexts: structuring archival records
+- Use or extend these conceptual models in your project
 
-#### Diffuser son ontologie sur le web
+#### Disseminate your ontology on the web
 
-- Décrire son ontologie avec les bonnes métadonnées
-- Bonne pratique de publication des ontologies
-- Outils de documentation et de publication automatique des ontologies
+- Describing your ontology with the right metadata
+- Best practices for publishing ontologies
+- Tools for documenting and automatically publishing ontologies
 
-### Adapter cette formation
+### Adapt this training
 
-[Contactez-nous](contact) pour adapter cette formation à votre projet. En particulier cette formation peut être adaptée sur la base des données existantes dans votre projet.
+[Contact us](https://sparna.fr/contact/) to adapt this course to your project. In particular, this course can be adapted to your project's existing data.
 

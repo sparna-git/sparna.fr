@@ -10,19 +10,19 @@ tags:
 
 ### Objectifs de la formation
 
-Le web de données recouvre plusieurs problématiques différentes : la structuration des contenus, les métadonnées, le linked open data, la réutilisation de données ouvertes, les bases de graphes et les graphes de connaissances, etc. Cette formation donne un panorama complet des problématiques, des principaux standards, des "gisements de données" incontournables et des types d'outils utilisables dans le contexte d'un projet exploitant ces technologies. Elle donne également les clés pour bien aborder un projet utilisant les technologies du web de données.
+Le Web de données recouvre plusieurs problématiques différentes : la structuration des contenus, les métadonnées, le Linked Open Data, la réutilisation de données ouvertes, les bases de graphes et les graphes de connaissances, etc. Cette formation donne un panorama complet des problématiques, des principaux standards, des "gisements de données" incontournables et des types d'outils utilisables dans le contexte d'un projet exploitant ces technologies. Elle donne également les clés pour bien aborder un projet utilisant les technologies du Web de données.
 
-A l'issue de cette formation, dispensée par un spécialiste avec 20 ans d'expérience de terrain, vous aurez les réponses aux questions suivantes :
+À l'issue de cette formation, dispensée par un spécialiste de 20 ans d'expérience de terrain, vous aurez les réponses aux questions suivantes :
 
-- qu'est-ce que le web de données ? à quels problématiques répond-il ?
+- qu'est-ce que le Web de données ? à quelles problématiques répond-il ?
 - comment encoder des informations en triplets RDF ? comment produire des fichiers RDF ?
 - qu'est-ce que schema.org ? qu'est-ce que le SEO sémantique ?
 - qu'est-ce qu'une ontologie ? comment réutiliser des ontologies existantes ? comment spécifier son profil d'application à l'aide de SHACL ?
-- qu'est-ce qu'un thesaurus, un vocabulaire contrôlé ? comment structurer un vocabulaire en SKOS ?
+- qu'est-ce qu'un thésaurus, un vocabulaire contrôlé ? comment structurer un vocabulaire en SKOS ?
 - comment écrire des requêtes en langage SPARQL ?
 - qu'est-ce que Wikidata ? comment interroger Wikidata en SPARQL ? comment contribuer à Wikidata ?
-- comment déployer son propre graphe de connaissance dans un triplestore ?
-- quels sont les différents moyens de publier des données structurées sur le web ?
+- comment déployer son propre graphe de connaissances dans un triplestore ?
+- quels sont les différents moyens de publier des données structurées sur le Web ?
 
 ### Durée
 
@@ -31,7 +31,7 @@ A l'issue de cette formation, dispensée par un spécialiste avec 20 ans d'expé
 
 ### À qui s'adresse cette formation ?
 
-Au croisement du web, des données, et des enjeux documentaires, cette formation s'adresse aussi bien à spécialistes en sciences de l'information (documentalistes, bibliothécaires, veilleurs) qu'à des profils techniques (développeurs) ou des profils métier (chefs de projet, architecte de données). L'accent est mis plutôt sur le côté documentation ou plutôt sur le côté technique en fonction de l'auditoire.
+Au croisement du Web, des données, et des enjeux documentaires, cette formation s'adresse aussi bien à spécialistes en sciences de l'information (documentalistes, bibliothécaires, veilleurs) qu'à des profils techniques (développeurs) ou des profils métier (chefs de projet, architectes de données). L'accent est mis plutôt sur le côté documentation ou plutôt sur le côté technique en fonction de l'auditoire.
 
 Cette formation est une porte d'entrée vers les autres formations plus précises disponibles au catalogue.
 
@@ -41,9 +41,9 @@ Connaissance de HTML et XML indispensables. Notions de modélisation (UML ou aut
 
 ### Programme de la formation
          	
-#### Introduction au web de données
+#### Introduction au Web de données
   - Enjeux des projets de graphes de connaissances
-  - Notions de bases pour la structuration des données
+  - Notions de base pour la structuration des données
   - Les URIs
   - Le Linked Open Data, schema.org, Wikidata
   - Exemples d'applications
@@ -59,9 +59,9 @@ Connaissance de HTML et XML indispensables. Notions de modélisation (UML ou aut
   - Les différentes syntaxes RDF. Savoir décoder la syntaxe Turtle
 
 #### Les thésaurus SKOS
-  - Les thésaurus et leur intérêt pour le web de données
+  - Les thésaurus et leur intérêt pour le Web de données
   - Structurer un thésaurus en SKOS
-  - Exemple de thésaurus publiés en SKOS sur le web de données
+  - Exemple de thésaurus publiés en SKOS sur le Web de données
   - Les outils SKOS
 
 #### SPARQL sur Wikidata
@@ -69,16 +69,16 @@ Connaissance de HTML et XML indispensables. Notions de modélisation (UML ou aut
   - Exercices d'écriture de requêtes sur Wikidata et/ou les données du client
 
 #### Les ontologies OWL
-  - Introduction aux ontologies. Différences entre ontologie et thesaurus
-  - Les modéles conceptuels documentaires à connaitre : CIDOC-CRM, FRBR/LRM, Records In Contexts (RIC-O)
+  - Introduction aux ontologies. Différences entre ontologie et thésaurus
+  - Les modéles conceptuels documentaires à connaître : CIDOC-CRM, FRBR/LRM, Records In Contexts (RIC-O)
   - Les opérateurs de construction d'une ontologie en RDFS et OWL
  
 #### Mise en pratique
-  - Peuplement d'un graphe de connaissance à partir de fichiers Excel
+  - Peuplement d'un graphe de connaissances à partir de fichiers Excel
   - Installation et manipulation d'un triplestore
   - Chargement des données et manipulation des données
 
 
 ### Adapter cette formation
 
-Cette formation, dispensée par un spécialiste avec 20 ans d'expérience, est réalisable **dans vos locaux** et **modulable** en fonction de vos problématiques : le format peut être adapté (2 jours au lieu de 3), le contenu modulé en fonction des stagiaires, ou des données spécifiques peuvent être utilisées comme support. Pour cela, [contactez-nous](contact).
+Cette formation, dispensée par un spécialiste de 20 ans d'expérience, est réalisable **dans vos locaux** et **modulable** en fonction de vos problématiques : le format peut être adapté (2 jours au lieu de 3), le contenu modulé en fonction des stagiaires, ou des données spécifiques peuvent être utilisées comme support. Pour cela, [contactez-nous](https://sparna.fr/contact/).

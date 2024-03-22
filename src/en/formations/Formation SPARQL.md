@@ -8,72 +8,72 @@ tags:
 
 ## {{title}}
 
-### Objectifs de la formation
+### Training goals
 
-Une formation entièrement dédiée au langage SPARQL. Pour des équipes désireuses de se perfectionner sur ce langage et en tirer le meilleur parti. Les exercices sont typiquement faits directement sur les données RDF des participants pour coller au maximum aux attentes. Des manipulations sont également proposées sur Wikidata et DBPedia.
+A training course entirely dedicated to the SPARQL language. For teams wishing to perfect their knowledge of this language and get the most out of it. Exercises are typically carried out directly on the participants' RDF data, to meet expectations as closely as possible. Wikidata and DBPedia are also included.
+
+### Duration
+
+1.5 days. This training can be adapted over 1 or 2 days.
+
+### Who is this training for ?
+
+- Developers who need to write SPARQL queries to interrogate semantic data.
+- Documentalists familiar with "data" issues.
+- Anyone wishing to learn how to query Wikidata.
+
+### Prerequisites
+
+- Notions of data structuring in RDF (a reminder is given at the start of the course).
+- Previous experience in writing SQL queries is a plus
+
+### Program
+
+#### RDF structure reminder
+
+- RDF data model
+- Turtle syntax reminder
+
+#### My first SPARQL query
+
+- Basic structure of a SPARQL query
+- Writing your first query on DBPedia
+- Selection using Basic Graph Patterns
+
+#### Understanding SPARQL operators
+
+- FILTER and OPTIONAL operators
+- Filter functions: STR, REGEX, STRSTARTS, etc.
+- Assignment mechanism
+- Aggregation mechanism (COUNT and GROUP BY)
+
+#### Wikidata SPARQL query tutorial
+
+- Using SPARQL operators to query Wikidata
+- Specific data structuring in Wikidata
+- Specific display of SPARQL search results in Wikidata
+- Integration and retrieval of Wikidata data in SPARQL
+
+#### Advanced SPARQL operators
+
+- Using property paths
+- Negation searches 
+- Federated queries (SERVICE)
+
+#### SPARQL for semantic data maintenance
+
+- Modification operations (INSERT, DELETE)
+- CONSTRUCT queries for data transformation
+- Possibly, depending on the triplestore of choice, non-standard full-text or spatial search operators (GeoSPARQL)
+
+#### SPARQL tools
+
+- Transform CSV, JSON and XML data into RDF using SPARQL : SPARQLAnything
+- Sparnatural: Visual query tool in SPARQL
 
 
-### Durée
+### Adapt this training
 
-1,5 jours. Cette formation peut être adaptée sur 1 ou 2 journée.
+[Contact us](https://sparna.fr/contact/) to adapt this course to your project. In particular, this course can be adapted to your project's existing data.
 
-### À qui s'adresse cette formation ?
-
-- Les développeurs ayant besoin d'écrire des requêtes SPARQL pour interroger des données sémantiques.
-- Les documentalistes familiers des problématiques "data"
-- Les personnes désireuses de savoir itnerroger Wikidata
-
-### Prérequis
-
-- Notions de structuration des données en RDF (un rappel est fait en début de formation)
-- Avoir déjà écrit des requêtes SQL est un plus
-
-### Programme de la formation
-
-#### Rappels sur la structure RDF
-
-- Rappel du modèle de données RDF
-- Rappel de la syntaxe Turtle
-
-#### Ma première requête SPARQL
-
-- Structure de base d'une requête SPARQL
-- Ecriture d'une première requête sur DBPedia
-- La sélection à l'aide de "Basic Graph Patterns"
-
-#### Comprendre les opérateurs SPARQL
-
-- Opérateurs FILTER, OPTIONAL
-- Fonctions de filtrage : STR, REGEX, STRSTARTS, etc.
-- Mécanisme d'assignation
-- Mécanisme d'aggrégation (COUNT et GROUP BY)
-
-#### Tutorial d'interrogation de Wikidata en SPARQL
-
-- Application des opérateurs SPARQL pour interroger Wikidata
-- Spécificatés de structuration des données dans Wikidata
-- Affichage spécifique des résultats de recherche SPARQL dans Wikidata
-- Intégrer et récupérer les données de Wikidata en SPARQL
-
-#### Opérateurs SPARQL avancés
-
-- Utilisation des property paths
-- Recherches par négation 
-- Requêtes fédérées (SERVICE)
-
-#### SPARQL pour la maintenance des données sémantiques
-
-- Opérations de modifications (INSERT, DELETE)
-- Requêtes CONSTRUCT pour la transformation de données
-- Eventuellement, en fonction du triplestore de prédilection, opérateurs non-standard de recherche plein-texte ou de recherche spatiale (GeoSPARQL)
-
-#### Les outils SPARQL
-
-- Transformer des données CSV, JSON, XML vers RDF à l'aide SPARQL : SPARQLAnything
-- Sparnatural : Outil de requêtage visuel en SPARQL
-
-
-### Adapter cette formation
-
-[Contactez-nous](contact) pour adapter cette formation à votre projet. En particulier cette formation peut être adaptée sur la base des données existantes dans votre projet.
 

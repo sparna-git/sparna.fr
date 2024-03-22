@@ -3,7 +3,7 @@ layout: reference.njk
 title: European Legislation Identifier (ELI)
 subtitle:
 date: 2024-01-01
-abstract: Test for other langage -  Notre expertise sémantique pour un groupe de travail international, qui pose les fondations d'un "knowledge graph législatif" à l'échelle du web européen - et mondial.
+abstract: Test for other langage - Our semantic expertise for an international working group, laying the foundations for a "legislative knowledge graph" on the scale of the European - and global - web.
 image: /assets/uploads/2021/02/Squared_ELiSeal-160x130.png
 tags: reference
 permalink: en/references/{{ title | slugify }}/
@@ -11,76 +11,76 @@ permalink: en/references/{{ title | slugify }}/
 
 ## European Legislation Identifier (ELI)
 
-[ELI](http://eur-lex.europa.eu/eli) (European Legislation Identifier) est une initiative des Journaux Officiels de plusieurs États membres de l'UE, ainsi que de l'Office des Publications de l'UE, visant à rendre plus visibles et interopérables les **lois à l'échelle européenne**. Cette initiative est basée sur les **fondamentaux technologiques du web sémantique** :
+[ELI](http://eur-lex.europa.eu/eli) (European Legislation Identifier) is an initiative of the Official Journals of several EU Member States and the Publications Office of the EU, aimed at making **legislation more visible and interoperable on a European scale**. This initiative is based on the **technological fundamentals of the semantic web**:
 
-- l'ELI est une URI assignée à un texte de loi, une version ou traduction d'un texte, ou partie de texte, comme un article. Cette URI doit avoir quelques caractéristiques particulières :
-  - elle doit contenir le composant /eli pour l'identifier comme un ELI.
-  - elle doit utiliser un certain nombre de composants d'URI, comme _{jurisdiction}_, _{year}_, _{natural_identifier}_, etc. que chaque implémentation d'ELI peut agencer à sa façon pour créer un identifiant pérenne similaire à la façon de faire des références légales à ces textes. Cette URI se veut donc, tout en restant un identifiant technique, "user-friendly" et relativement lisible, pour faciliter la pose de liens entre lois à l'échelle du web;
-  - cette URI devrait pouvoir se "tronquer" afin de permettre une navigation simplifiée dans les corpus législatifs; par exemple si l'URI `http://..../eli/2009/loi/1234` identifie la loi numéro 1234 de l'année 2009, alors l'URI http://.../eli/2009/loi devrait lister toutes les lois de 2009, et l'URI http://.../eli/2009 devrait lister tous les textes de loi de 2009.
-- ELI définit [une ontologie de description des textes législatifs](http://publications.europa.eu/resource/dataset/eli), fruit d'une collaboration et de compromis entre les différents Journaux Officiels. Cette ontologie reprend la structuration FRBR de description des notices bibliographiques, et l'applique à la caractérisation des lois. Typiquement :
-  - un niveau abstrait représente la loi indépendamment de ses versions;
-  - un niveau représente une version particulière de la loi;
-  - un niveau représente une variante linguistique particulière de cette version de la loi;
-  - et le dernier niveau représente un format spécifique (PDF authentifié, papier, HTML etc.) d'une variante linguistique particulière d'une version d'un texte;
-  - cette ontologie est par ailleurs complémentée par [ELI-DL (Draft Legislation)](https://joinup.ec.europa.eu/collection/eli-european-legislation-identifier/solution/eli-ontology-draft-legislation-eli-dl), une ontologie de description des lois en cours d'élaboration. L'objectif d'ELI-DL est de promouvoir la transparence et d'optimiser les processus d'élaboration des textes législatifs au travers d'une description structurée de leurs données;
+- the ELI is a URI assigned to a legal text, a version or translation of a text, or part of a text, such as an article. This URI must have a number of specific characteristics:
+  - it must contain the /eli component to identify it as an ELI.
+  - it must use a certain number of URI components, such as _{jurisdiction}_, _{year}_, _{natural_identifier}_, etc., which each ELI implementation can arrange in its own way to create a perennial identifier similar to the way legal references are made to these texts. While remaining a technical identifier, this URI is intended to be "user-friendly" and relatively legible, to facilitate the establishment of links between laws on a web scale;
+  - this URI should be able to be "truncated" to enable simplified navigation through the legislative corpus; for example, if the URI `http://..../eli/2009/loi/1234` identifies law number 1234 of the year 2009, then the URI http://.../eli/2009/loi should list all the laws of 2009, and the URI http://.../eli/2009 should list all the legal texts of 2009.
+- ELI defines [an ontology for describing legislative texts](http://publications.europa.eu/resource/dataset/eli), the result of collaboration and compromise between the various Journaux Officiels. This ontology takes the FRBR structuring for describing bibliographic records, and applies it to the characterization of laws. Typically :
+  - an abstract level represents the law independently of its versions;
+  - a level represents a particular version of the law;
+  - one level represents a particular linguistic variant of that version of the law;
+  - and the last level represents a specific format (authenticated PDF, paper, HTML etc.) of a particular linguistic variant of a version of a text;
+  - This ontology is also complemented by [ELI-DL (Draft Legislation)](https://joinup.ec.europa.eu/collection/eli-european-legislation-identifier/solution/eli-ontology-draft-legislation-eli-dl), an ontology for describing legislation currently under development. The aim of ELI-DL is to promote transparency and optimize the process of drafting legislation through a structured description of its data;
 
-- ELI promeut les standards d'annotation de contenu [RDFa](http://rdfa.info/) et [JSON-LD](https://json-ld.org/) pour que les Journaux Officiels des différents participants - ainsi que tout fournisseur de réglementation ou de contenu - puisse sémantiser le contenu des pages web existantes de son portail
+- ELI promotes the content annotation standards [RDFa](http://rdfa.info/) and [JSON-LD](https://json-ld.org/) so that the Official Journals of the various participants - as well as any regulatory or content provider - can semantize the content of existing web pages on its portal.
 
-Le groupe de travail ELI a par ailleurs proposé une [extension du vocabulaire schema.org pour décrire les lois](http://schema.org/Legislation), basée sur ELI. Cette extension vise à donner plus de visibilité aux lois à l'échelle du web.
+The ELI working group has also proposed an [extension to the schema.org vocabulary for describing laws](http://schema.org/Legislation), based on ELI. The aim of this extension is to make laws more visible on the Web.
   
 ---------
 
-## Notre expertise pour ELI
+## Our expertise for ELI
 
-J'interviens comme **expert technique auprès de la Taskforce ELI depuis 2014**. À ce titre j'ai pu apporter ma contribution sur les aspects suivants
+I've been working as **technical expert to the ELI Taskforce since 2014**. In this capacity, I have been able to contribute to the following aspects
 
-### Formation, assistance et documentation pour les organisations souhaitant implémenter ELI
+### Training, support and documentation for organizations wishing to implement ELI.
 
-Une partie importante de l'expertise consiste dans la formation et l'assistance aux participants du groupe de travail ELI, pour faciliter l'implémentation de ELI dans les sites web des journaux officiels des États membres. A ce titre j'ai pu mener des ateliers de formation auprès des journaux officiels des pays suivants (par ordre chronologique):
+An important part of the expertise consists of training and assistance to the participants of the ELI Taskforce, to facilitate the implementation of ELI in the websites of the Official Journals of the Member States. As such, I have been able to conduct training workshops with official newspapers in the following countries (in chronological order):
 
-- Danemark
-- Italie
+- Denmark
+- Italy
 - France
-- Finlande
-- Luxembourg
-- Autriche
-- Croatie
-- Irlande
-- Malte
-- Slovaquie
+- Finland
+- Luxemburg
+- Austria
+- Croatia
+- Ireland
+- Malta
+- Slovakia
 
-Ces ateliers sont suivis par des périodes d'assistance à distance et de validation de l'implémentation de chaque État.
+These workshops are followed by periods of remote assistance and validation of each state's implementation.
 
-Par ailleurs ces ateliers sont complémentés par la rédaction d'un [guide technique pour l'implémentation de ELI](https://op.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1/language-fr/format-PDF) qui donne les réponses aux questions techniques principales qu'une équipe information peut se poser lors de l'implémentation de ELI. Ce guide s'appuie sur les retours collectés lors des différents ateliers.
+These workshops are complemented by the drafting of a [technical guide for ELI implementation](https://op.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1/language-fr/format-PDF) which provides answers to the main technical questions that an information team may have when implementing ELI. This guide is based on feedback gathered during the various workshops.
 
-Ces travaux de formation initiale ont été complémentés, pour certains cas, par du consulting spécifique pour une implémentation particulière, au [Luxembourg pour Legilux](http://www.sparna.fr/reference/gouvernement-du-luxembourg/) ou à l'[Office des Publications pour le Cellar](http://www.sparna.fr/reference/office-des-publications-de-lunion-europeenne/) par exemple.
+In some cases, this initial training work was supplemented by specific consulting for a particular implementation, for example in [Luxembourg for Legilux](http://www.sparna.fr/reference/gouvernement-du-luxembourg/) or at [Office des Publications for Cellar](http://www.sparna.fr/reference/office-des-publications-de-lunion-europeenne/).
 
-### Modélisation d'ontologies
+### Modeling ontologies
 
-J'apporte une expertise sur OWL et la formalisation des besoins métier dans les différentes ontologies de ELI :
+I provide expertise on OWL and the formalization of business requirements in the various ELI ontologies:
 
-- L'[ontologie ELI](http://publications.europa.eu/resource/dataset/eli) elle-même, qui a fait l'objet de 4 révisions depuis 2014 (1.0, 1.1, 1.2 et 1.3 en 2020)
-- L'[ontologie ELI-DL](https://joinup.ec.europa.eu/collection/eli-european-legislation-identifier/solution/eli-ontology-draft-legislation-eli-dl) qui s'inscrit dans le cadre conceptuel du [CIDOC-CRM](http://www.cidoc-crm.org/), pour la description des activités d'un processus législatif et des documents associés
-- La modélisation de l'[extension Legislation schema.org](http://schema.or/Legislation)
+- The [ELI ontology](http://publications.europa.eu/resource/dataset/eli) itself, which has undergone 4 revisions since 2014 (1.0, 1.1, 1.2 and 1.3 in 2020)
+- The [ELI-DL ontology](https://joinup.ec.europa.eu/collection/eli-european-legislation-identifier/solution/eli-ontology-draft-legislation-eli-dl), which is part of the [CIDOC-CRM](http://www.cidoc-crm.org/) conceptual framework, for describing the activities of a legislative process and the associated documents
+- The [Legislation schema.org extension] model(http://schema.or/Legislation)
 
-### Spécifications pour l'interopérabilité en lien avec ELI
+### Specifications for interoperability with ELI
 
-J'ai conduit et rédigé un certain nombre de spécifications complémentaires au standard ELI de départ
+I led and wrote a number of specifications to complement the original ELI standard
 
-- La [spécification ELI/XML](https://eur-lex.europa.eu/eli-register/resources.html);
-- La [spécification pour la description des datasets ELI](https://eur-lex.europa.eu/eli-register/resources.html);
+- The [ELI/XML specification](https://eur-lex.europa.eu/eli-register/resources.html);
+- The [ELI dataset description specification](https://eur-lex.europa.eu/eli-register/resources.html);
 
-### Dissémination et intervention auprès d'autres initiatives
+### Dissemination and involvement in other initiatives
 
-L'initiative ELI s'articule avec d'autres initiatives connexes qu'il s'agit de suivre et pour lesquelles l'interopérabilité doit parfois être assurée :
+The ELI initiative is linked to other related initiatives that need to be followed, and for which interoperability must sometimes be ensured:
 
-- [Akoma Ntoso](http://www.akomantoso.org/), schema XML pour la rédaction d'actes législatifs;
-- [Groupe de travail OASIS LegalCiteM](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legalcitem) pour la structuration des références juridiques;
-- [Communauté schema.org](https://github.com/schemaorg/schemaorg/issues/1156) pour l'extension Legislation
-- Et, en émergence, [Wikidata](http://wikidata.org/) pour la diffusion des données des lois;
+- Akoma Ntoso](http://www.akomantoso.org/), XML schema for drafting legislative acts;
+- OASIS LegalCiteM Working Group](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legalcitem) for structuring legal references;
+- schema.org Community](https://github.com/schemaorg/schemaorg/issues/1156) for the Legislation extension.
+- And, in emergence, [Wikidata](http://wikidata.org/) for the dissemination of legislation data;
 
-Par ailleurs je suis l'auteur de la publication suivante sur l'ELI : [The European Legislation Identifier, Thomas Francart, John Dann, Roberto Pappalardo, Carmen Malagon and Marco Pellegrino](http://ebooks.iospress.nl/volume/knowledge-of-the-law-in-the-big-data-age), dans Knowledge of the Law in the Big Data Age, IOS Press, 2019, p137-148
+In addition, I am the author of the following publication on ELI: [The European Legislation Identifier, Thomas Francart, John Dann, Roberto Pappalardo, Carmen Malagon and Marco Pellegrino](http://ebooks.iospress.nl/volume/knowledge-of-the-law-in-the-big-data-age), in Knowledge of the Law in the Big Data Age, IOS Press, 2019, p137-148
 
-### Développement d'applications
+### Application development
 
-Dans l'objectif d'assister les États membres à l'implémentation de ELI, le groupe de travail ELI a mis au point [un validateur de métadonnées ELI basé sur SHACL](https://webgate.ec.europa.eu/eli-validator/). Ce validateur de métadonnées, développé en 2017, s'est très tôt appuyé sur [SHACL](https://www.w3.org/TR/shacl/), avant sa finalisation comme recommandation W3C officielle. Ce validateur permet d'extraire les métadonnées structurées publiées dans une page web et de valider leur conformité sémantique avec l'ontologie ELI, en fournissant un rapport de validation.
+With the aim of assisting member states with the implementation of ELI, the ELI working group has developed [an ELI metadata validator based on SHACL](https://webgate.ec.europa.eu/eli-validator/). This metadata validator, developed in 2017, relied early on [SHACL](https://www.w3.org/TR/shacl/), before its finalization as an official W3C recommendation. This validator extracts structured metadata published in a web page and validates their semantic conformity with the ELI ontology, providing a validation report.

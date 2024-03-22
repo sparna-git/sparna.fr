@@ -10,12 +10,12 @@ tags:
 
 ### Objectifs de la formation
 
-Une formation pour se familiariser avec la structuration des thesaurus, taxonomies, vocabulaires contrôlés, listes d'autorités pour le web de données. Les stagiaires seront capables de maintenir et de publier les données de ses référentiels en SKOS.
+Une formation pour se familiariser avec la structuration des thésaurus, taxonomies, vocabulaires contrôlés, listes d'autorités pour le Web de données. Les stagiaires seront capables de maintenir et de publier les données de ces référentiels en SKOS.
 
 
 ### Durée
 
-1,5 jours. Cette formation peut être adaptée sur 1 ou 2 journée.
+1,5 jour. Cette formation peut être adaptée sur 1 ou 2 journées.
 
 
 ### À qui s'adresse cette formation ?
@@ -34,7 +34,7 @@ Une formation pour se familiariser avec la structuration des thesaurus, taxonomi
 
 #### Rappels sur la structure RDF
 
-- Rappel sur les enjeux du web de données, les URIs
+- Rappel sur les enjeux du Web de données, les URIs
 - Rappel du modèle de données RDF
 - Rappel de la syntaxe Turtle
 
@@ -47,13 +47,13 @@ Une formation pour se familiariser avec la structuration des thesaurus, taxonomi
 
 #### Problématiques de gestion des vocabulaires contrôlés
 
-- Métadonnées descriptives d'un vocabulaire contrôlés
+- Métadonnées descriptives d'un vocabulaire contrôlé
 - Versionnement des vocabulaires contrôlés et dépréciation
-- Publication sur le web
+- Publication sur le Web
 
-#### Exemples de thesaurus publiés sur le web de données
+#### Exemples de thésaurus publiés sur le Web de données
 
-- Thesaurus de l'UNESCO
+- Thésaurus de l'UNESCO
 - Eurovoc
 - GEMET
 - Vocabulaires de l'INRAE et de l'INIST (Loterre)
@@ -73,7 +73,7 @@ Une formation pour se familiariser avec la structuration des thesaurus, taxonomi
 
 ### Adapter cette formation
 
-[Contactez-nous](contact) pour adapter cette formation à votre projet. Cette formation peut être adaptée sur un format plus court d'une journée, et adaptée sur les référentiels déjà utilisés dans le système d'information.
+[Contactez-nous](https://sparna.fr/contact/) pour adapter cette formation à votre projet. Cette formation peut être adaptée sur un format plus court d'une journée, et adaptée sur les référentiels déjà utilisés dans le système d'information.
 
 ### Comment adapter les formations ?
 

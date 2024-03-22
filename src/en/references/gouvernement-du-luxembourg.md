@@ -1,28 +1,27 @@
 ---
 layout: reference.njk
-title: Gouvernement du Luxembourg
-subtitle: PORTAIL LÉGISLATIF NOUVELLE GÉNÉRATION
+title: Government of Luxembourg
+subtitle: NEW GENERATION LEGISLATIVE PORTAL
 date: 2021-01-01
-abstract: Un portail de recherche basé sur un graphe de liens entre les lois et sur des vocabulaires contrôlés mis en musique par Virtuoso et ElasticSearch. Un bel exemple de réalisation dans le contexte de ELI (European Legislation Identifier).
+abstract: A search portal based on a graph of links between laws and on controlled vocabularies set to music by Virtuoso and ElasticSearch. A fine example of implementation in the context of ELI (European Legislation Identifier).
 image: /assets/uploads/2017/02/logo-gv-lux-carre-small-130x130.jpg
 tags: reference
 permalink: en/references/{{ title | slugify }}/
 ---
 
-## Gouvernement du Luxembourg
+## Government of Luxembourg
 
 ### legilux.public.lu / Casemates
 
-Le Luxembourg a mis en ligne le 1er janvier 2017 la nouvelle version de son portail législatif http://legilux.public.lu. Dans la mouvance combinée de l'initiative [ELI](http://blog.sparna.fr/2015/05/31/eli-european-legislation-identifier-web-de-donnees-legislatif-europeen/) (European Legislation Idenfier), de l'open data et du web de données, celui-ci s'appuie sur un **graphe de connaissance législatif**, ouvert et interrogeable : la base "Casemates", accessible à http://data.legilux.public.lu/.
+Luxembourg launched the new version of its legislative portal http://legilux.public.lu on January 1, 2017. In the combined movement of the [ELI](http://blog.sparna.fr/2015/05/31/eli-european-legislation-identifier-web-de-donnees-legislatif-europeen/) (European Legislation Idenfier) initiative, open data and the web of data, this is based on an open, searchable **legislative knowledge graph**: the "Casemates" database, accessible at http://data.legilux.public.lu/.
 
-Ce graphe de connaissance s'appuie sur une modélisation des textes législatifs en FRBR-OO (la dernière évolution en terme de description bibliographique), qui distingue précisément une loi de façon générale, une version particulière de la loi (publiée au Journal Officiel, consolidée à telle date, etc.), et un format spécifique (HTML, XML, PDF) d'une version particulière. Le graphe capture ensuite l'ensemble des relations entre les textes de loi : liens de citation, d'amendement, d'abrogation, de transposition, de projet de loi, etc. Les vocabulaires contrôlés font également partie du graphe de connaissance : liste des communes luxembourgeoises, des thématiques, des types de texte, des ministères, etc.
+This knowledge graph is based on a modeling of legislative texts in FRBR-OO (the latest evolution in terms of bibliographic description), which precisely distinguishes a law in general, a particular version of the law (published in the Journal Officiel, consolidated on such and such a date, etc.), and a specific format (HTML, XML, PDF) from a particular version. The graph then captures all the relationships between legal texts: citation links, amendment links, repeal links, transposition links, bill links, etc. Controlled vocabularies also form part of the knowledge graph: list of Luxembourg communes, themes, text types, ministries, etc.
 
-La richesse de ce graphe permet une **autocompletion intelligente et des facettes de recherche précises** dans le moteur de recherche de Legilux : l'utilisateur est guidé par des icônes pour sélectionner un ministère, un lieu, une thématique, ou bien directement un texte de loi. ElasticSearch motorise la recherche dans Legilux.
+The richness of this graph enables **intelligent autocompletion and precise search facets** in the Legilux search engine: the user is guided by icons to select a ministry, a place, a theme, or even a legal text directly. ElasticSearch powers the Legilux search engine.
 
 http://www.sparna.fr/wp-content/uploads/2017/02/legilux-autocompletion.png
 
 
-Le graphe de connaissance "brut" - en RDF - est ouvert sur le web : par des métadonnées ELI (et schema.org) incluses dans les notices de Legilux, par des URIs déréférençables, par des exports téléchargeables, par un service d'interrogation directe en SPARQL. **L'ouverture des données est complète**.
+The "raw" knowledge graph - in RDF - is open on the web: through ELI (and schema.org) metadata included in Legilux records, through dereferenceable URIs, through downloadable exports, through a direct query service in SPARQL. **Data openness is complete**.
 
-Je suis intervenu comme assistance à maitrise d'ouvrage en amont du projet : synthèse des besoins et des objectifs, architecture fonctionnelle, rédaction des deux cahiers des charges Casemates puis Legilux. Je suis également intervenu lors du suivi de la réalisation confié à la société [SWORD](http://www.sword-group.com/fr/) pour assurer le respect des spécifications. Le résultat est **un système de publication de la loi à la pointe de l'état de l'art** par rapport aux standards du web, et aux contraintes de diffusion des données vers les citoyens, les éditeurs juridiques et les moteurs de recherche.
-
+I provided project management assistance upstream of the project: summary of requirements and objectives, functional architecture, drafting of both Casemates and Legilux specifications. I was also involved in monitoring the implementation, entrusted to [SWORD](http://www.sword-group.com/fr/), to ensure compliance with the specifications. The result is **a state-of-the-art law publication system** in line with web standards, and data dissemination constraints for citizens, legal publishers and search engines.

@@ -1,9 +1,9 @@
 ---
 layout: reference.njk
 title: INRA
-subtitle: PUBLICATION DE NOTICES BIBLIOGRAPHIQUES DANS LE WEB DE DONNÉES
+subtitle: PUBLICATION OF BIBLIOGRAPHICAL NOTICES IN THE DATA WEB
 date: 2018-01-01
-abstract: Migration de notices et de référentiels (laboratoires et chercheurs) XML vers le web de données en utilisant la plate-forme VIVO.
+abstract: Migration of XML records and repositories (laboratories and researchers) to the web of data using the VIVO platform.
 image: /assets/uploads/2015/01/logo-inra-small-160x130.png
 tags: reference
 permalink: en/references/{{ title | slugify }}/
@@ -11,26 +11,26 @@ permalink: en/references/{{ title | slugify }}/
 
 ## INRA
 
-### Publication de notices bibliographiques dans le web de données
+### Publication of bibliographic records in the web of data
 
-Le portail [ProdInra](http://prodinra.inra.fr/) est l'outil de recherche qui donne accès aux productions de l'[Institut National de la Recherche Agronomique](http://inra.fr/), en particulier aux notices d'articles écrits par les chercheurs de l'institut. L'INRA souhaite étudier la diffusion des métadonnées contenues dans cette base, avec plusieurs objectifs :
+The [ProdInra] portal (http://prodinra.inra.fr/) is the search tool that provides access to the productions of the [Institut National de la Recherche Agronomique] (http://inra.fr/), in particular to the records of articles written by the institute's researchers. INRA wishes to study the dissemination of the metadata contained in this database, with several objectives in mind:
 
-- la publication des métadonnées en respectant les bonnes pratiques du web de données;
-- l'ajout de liens vers des référentiels internes à l'INRA (structures de recherche centres/départements/unités, activités de recherches, personnes, champs thématiques), aujourd'hui accessibles via des web services internes séparés;
-- l'ajout de liens vers des référentiels externes, en s'aidant d'outils de text-mining :
-  - [Agrovoc](http://aims.fao.org/fr/agrovoc)
-  - [Gene ontology](http://geneontology.org/)
-  - Banques de données génomiques et génétiques
-- Offrir des fonctions de recherche et de visualisation plus intelligentes
+- publication of the metadata in compliance with Web of Data best practices;
+- adding links to INRA's internal repositories (research structures, centers/departments/units, research activities, people, thematic fields), currently accessible via separate internal web services;
+- adding links to external repositories, using text-mining tools:
+  - Agrovoc](http://aims.fao.org/fr/agrovoc)
+  - Gene ontology](http://geneontology.org/)
+  - Genomic and genetic databases
+- Offer more intelligent search and visualization functions
 
-Un premier prototype dans le cadre de cette étude a été réalisé à l'aide de l'outil [VIVO](http://www.vivoweb.org/).
+An initial prototype for this study was produced using the [VIVO](http://www.vivoweb.org/) tool.
 
 http://www.sparna.fr//wp-content/uploads/2015/01/vivo-web-large-v1.jpg
 
-VIVO est une plate-forme open-source qui permet la diffusion et la gestion des publications scientifiques, des profils de chercheurs, de laboratoires de recherche, et d'informations sur les conférences, les événements scientifiques (voir le [billet de blog](http://blog.sparna.fr/vivo-vitro-edition-publication-rdf-ontologie/) qui y est consacré). VIVO est entièrement **basé sur les technologies sémantiques** (RDF, SPARQL, OWL), intègre nativement les fonctionnalités de diffusion des données brutes en RDF via les URIs, et ses écrans sont configurables via une ontologie. VIVO intègre également nativement des [fonctionnalités de visualisation de données](http://vivo.cns.iu.edu/gallery.html).
+VIVO is an open-source platform for disseminating and managing scientific publications, researcher profiles, research laboratories, and information on conferences and scientific events (see the [blog post](http://blog.sparna.fr/vivo-vitro-edition-publication-rdf-ontologie/) dedicated to it). VIVO is entirely **based on semantic technologies** (RDF, SPARQL, OWL), natively integrates raw data dissemination functionalities in RDF via URIs, and its screens are configurable via an ontology. VIVO also natively integrates [data visualization functionalities](http://vivo.cns.iu.edu/gallery.html).
 
 http://www.sparna.fr//wp-content/uploads/2015/01/inra-map-of-science.png
 
-Dans un premier temps nous avons réalisé pour le compte de l'INRA plusieurs [journées de formation sur-mesure](http://www.sparna.fr//?page_id=20) sur les enjeux, les standards et les technologies du web de données. Suite à ces formations initiales nous avons implémenté **la migration des données** de la base ProdInra et des référentiels internes vers des données RDF compatibles avec [l'ontologie VIVO](https://wiki.duraspace.org/display/VIVO/VIVO-ISF+Ontology). Cette transformation, basée sur des appels de web-service SOAP et des feuilles de transformation XSLT, a permis de générer plusieurs fichiers de données RDF qui ont été ensuite importés dans VIVO. Nous avons également réalisé une **extension de l'ontologie VIVO** spécifiquement pour les besoins de l'INRA, [présentée ici lors de la conférence semweb.pro](http://fr.slideshare.net/SemWebPro/04-edzale).
+Initially, on behalf of INRA, we carried out several [customized training days](http://www.sparna.fr//?page_id=20) on the issues, standards and technologies of the web of data. Following this initial training, we implemented **the migration of data** from the ProdInra database and internal repositories to RDF data compatible with [the VIVO ontology](https://wiki.duraspace.org/display/VIVO/VIVO-ISF+Ontology). This transformation, based on SOAP web service calls and XSLT transformation sheets, generated several RDF data files which were then imported into VIVO. We also produced an **extension of the VIVO** ontology specifically for INRA's needs, [presented here at the semweb.pro conference](http://fr.slideshare.net/SemWebPro/04-edzale).
 
-VIVO a permis dans cette phase du projet d'arriver à **un prototypage rapide** d'un résultat, proposant nativement des visualisations de données intéressantes. Ce prototype va permettre de démontrer et d'expliquer l'intérêt de la diffusion et de la mise en lien des notices bibliographiques dans le web de données pour leur valorisation.
+In this phase of the project, VIVO made it possible to achieve **a rapid prototyping** of a result, natively proposing interesting data visualizations. This prototype will be used to demonstrate and explain the benefits of disseminating and linking bibliographic records in the Web of Data, and thus enhancing their value.

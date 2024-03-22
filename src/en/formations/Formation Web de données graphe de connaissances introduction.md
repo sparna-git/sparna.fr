@@ -8,77 +8,77 @@ tags:
 
 ## {{title}}
 
-### Objectifs de la formation
+### Training goals
 
-Le web de données recouvre plusieurs problématiques différentes : la structuration des contenus, les métadonnées, le linked open data, la réutilisation de données ouvertes, les bases de graphes et les graphes de connaissances, etc. Cette formation donne un panorama complet des problématiques, des principaux standards, des "gisements de données" incontournables et des types d'outils utilisables dans le contexte d'un projet exploitant ces technologies. Elle donne également les clés pour bien aborder un projet utilisant les technologies du web de données.
+The Web of data covers several different issues: content structuring, metadata, Linked Open Data, open data reuse, graph databases and knowledge graphs, etc. This training provides a complete overview of the issues, the main standards, the essential “data repositories” and the types of tools that can be used in the context of a project using these technologies. It also gives the keys to properly tackling a project using Web of data technologies.
 
-A l'issue de cette formation, dispensée par un spécialiste avec 20 ans d'expérience de terrain, vous aurez les réponses aux questions suivantes :
+At the end of this training course, given by a specialist with 20 years' experience in the field, you'll have the answers to the following questions:
 
-- qu'est-ce que le web de données ? à quels problématiques répond-il ?
-- comment encoder des informations en triplets RDF ? comment produire des fichiers RDF ?
-- qu'est-ce que schema.org ? qu'est-ce que le SEO sémantique ?
-- qu'est-ce qu'une ontologie ? comment réutiliser des ontologies existantes ? comment spécifier son profil d'application à l'aide de SHACL ?
-- qu'est-ce qu'un thesaurus, un vocabulaire contrôlé ? comment structurer un vocabulaire en SKOS ?
-- comment écrire des requêtes en langage SPARQL ?
-- qu'est-ce que Wikidata ? comment interroger Wikidata en SPARQL ? comment contribuer à Wikidata ?
-- comment déployer son propre graphe de connaissance dans un triplestore ?
-- quels sont les différents moyens de publier des données structurées sur le web ?
+- What is the Web of Data ? What issues does it address ?
+- How to encode information in RDF triplets ? how to produce RDF files ?
+- What is schema.org ? what is semantic SEO ?
+- What is an ontology ? how can I reuse existing ontologies ? how can I specify my application profile using SHACL ?
+- What is a thesaurus, a controlled vocabulary ? how to structure a vocabulary in SKOS ?
+- How to write SPARQL queries ?
+- What is Wikidata ? how to query Wikidata in SPARQL ? how to contribute to Wikidata ?
+- How to deploy your own knowledge graph in a triplestore ?
+- What are the different ways of publishing structured data on the Web ?
 
-### Durée
+### Duration
 
-3 jours. Cette formation peut être adaptée sur 2 jours.
+3 days. This course can be adapted over 2 days.
 
 
-### À qui s'adresse cette formation ?
+### Who is this training for ?
 
-Au croisement du web, des données, et des enjeux documentaires, cette formation s'adresse aussi bien à spécialistes en sciences de l'information (documentalistes, bibliothécaires, veilleurs) qu'à des profils techniques (développeurs) ou des profils métier (chefs de projet, architecte de données). L'accent est mis plutôt sur le côté documentation ou plutôt sur le côté technique en fonction de l'auditoire.
+At the crossroads of the Web, data and documentary issues, this training course is aimed at information science specialists (documentalists, librarians, watchers) as well as technical profiles (developers) or business profiles (project managers, data architects). Depending on the audience, the emphasis is on the documentation side or the technical side.
 
-Cette formation est une porte d'entrée vers les autres formations plus précises disponibles au catalogue.
+This training is a gateway to the other more specific training courses available in the catalog.
 
-### Prérequis
+### Prerequisites
 
-Connaissance de HTML et XML indispensables. Notions de modélisation (UML ou autre). Notions de bases de données (SQL). Maîtrise et compréhension d'Internet (clients, serveurs, HTTP) et des moteurs de recherche.
+Knowledge of HTML and XML essential. Modeling skills (UML or other). Knowledge of databases (SQL). Knowledge and understanding of the Internet (clients, servers, HTTP) and search engines.
 
-### Programme de la formation
+### Program
          	
-#### Introduction au web de données
-  - Enjeux des projets de graphes de connaissances
-  - Notions de bases pour la structuration des données
-  - Les URIs
-  - Le Linked Open Data, schema.org, Wikidata
-  - Exemples d'applications
+#### Introduction to the Web of Data
+  - The challenges of knowledge graph projects
+  - Basics of data structuring
+  - URIs
+  - Linked Open Data, schema.org, Wikidata
+  - Application examples
 
 #### schema.org
-  - Schema.org : le modèle de structuration des données pour les moteurs de recherche
-  - Analyse d'une entité dans le modèle schema.org
-  - Différence entre sémantique et syntaxe
+  - Schema.org: the data structuring model for search engines
+  - Analyzing an entity in the schema.org model
+  - The difference between semantics and syntax
 
-#### RDF : modèle de structuration des données
-  - Modèle RDF - encodage des données en triplets
-  - Exercice d'encodage d'un énoncé à l'aide de FOAF
-  - Les différentes syntaxes RDF. Savoir décoder la syntaxe Turtle
+#### RDF: the data structuring model
+  - RDF model - encoding data in triples
+  - Exercise in encoding a statement using FOAF
+  - The different RDF syntaxes. Decoding Turtle syntax
 
-#### Les thésaurus SKOS
-  - Les thésaurus et leur intérêt pour le web de données
-  - Structurer un thésaurus en SKOS
-  - Exemple de thésaurus publiés en SKOS sur le web de données
-  - Les outils SKOS
+#### SKOS thesauri
+  - Thesauri and their relevance to the Web of Data
+  - Structuring a thesaurus in SKOS
+  - Example of thesauri published in SKOS on the Web of Data
+  - SKOS tools
 
-#### SPARQL sur Wikidata
-  - Syntaxe et opérateurs de requêtes SPARQL
-  - Exercices d'écriture de requêtes sur Wikidata et/ou les données du client
+#### SPARQL on Wikidata
+  - SPARQL query syntax and operators
+  - Exercises in writing queries on Wikidata and/or client data
 
-#### Les ontologies OWL
-  - Introduction aux ontologies. Différences entre ontologie et thesaurus
-  - Les modéles conceptuels documentaires à connaitre : CIDOC-CRM, FRBR/LRM, Records In Contexts (RIC-O)
-  - Les opérateurs de construction d'une ontologie en RDFS et OWL
+#### OWL ontologies
+  - Introduction to ontologies. Differences between ontologies and thesauri
+  - Documentary conceptual models: CIDOC-CRM, FRBR/LRM, Records In Contexts (RIC-O)
+  - Operators for building an ontology in RDFS and OWL
  
-#### Mise en pratique
-  - Peuplement d'un graphe de connaissance à partir de fichiers Excel
-  - Installation et manipulation d'un triplestore
-  - Chargement des données et manipulation des données
+#### Practical application
+  - Populating a knowledge graph from Excel files
+  - Installing and manipulating a triplestore
+  - Loading and manipulating data
 
 
-### Adapter cette formation
+### Adapt this training
 
-Cette formation, dispensée par un spécialiste avec 20 ans d'expérience, est réalisable **dans vos locaux** et **modulable** en fonction de vos problématiques : le format peut être adapté (2 jours au lieu de 3), le contenu modulé en fonction des stagiaires, ou des données spécifiques peuvent être utilisées comme support. Pour cela, [contactez-nous](contact).
+This training course, given by a specialist with 20 years' experience, can be run **on your premises** and **can be adapted** to suit your needs: the format can be adapted (2 days instead of 3), the content can be adapted to suit the trainees, or specific data can be used as support. Please [contact us](https://sparna.fr/contact/).
