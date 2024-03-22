@@ -7,7 +7,7 @@ bodyClass: page page-id-24 page-template-default
 {% endif %}
 
 {% if locale == "en" %}
-  <h1><br>References</h1>
+  <h1>Client <br>use-cases</h1>
 {% endif %}
 
 {% set collectionsLocal = collections.reference | localeFilter(locale) %}
@@ -18,7 +18,7 @@ bodyClass: page page-id-24 page-template-default
     <h2>{{reference.data.title}}</h2>
     {% if reference.data.subtitle %}<h3>{{ reference.data.subtitle }}</h3>{% endif %}
     <p>{{reference.data.abstract}}</p>
-    <a href="{{ reference.page.url | relative(page) }}" title="{{reference.data.title}}" class="plus">{{ 'Savoir' | i18n }} +</a>
+    <a href="{{ reference.page.url | relative(page) }}" title="{{reference.data.title}}" class="plus">{{ 'Savoir' | i18n }}</a>
   </div>
 </div>
 {% endfor %}
