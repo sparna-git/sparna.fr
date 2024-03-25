@@ -22,4 +22,4 @@ The second phase was the replacement of the current thesaurus management tool by
 The result? **An enhanced thesaurus, supporting interoperability, conforming to Web of Data standards, and with no licensing costs**. More details on the project can be found in the blog announcement (http://blog.sparna.fr/2017/02/06/unesco-thesaurus-published-with-semantic-web-standards-and-open-source-software/).
 
 
-http://www.sparna.fr/wp-content/uploads/2017/02/screenshot-skosmos-small1.png
+![screenshot Unesco](/assets/uploads/2017/02/screenshot-skosmos-small1.png)

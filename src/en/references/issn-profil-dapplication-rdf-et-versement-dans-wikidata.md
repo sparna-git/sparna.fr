@@ -31,4 +31,4 @@ The benefits for ISSN of these interventions:
 We continue to support ISSN in all matters relating to linked data and the semantic web, in particular the modeling of the [Keepers Registry](https://keepers.issn.org/) using schema.org.
 
 
-http://www.sparna.fr/wp-content/uploads/2020/12/screenshot-issn-wikidata.png
+![screenshot ISSN](/assets/uploads/2020/12/screenshot-issn-wikidata.png)
