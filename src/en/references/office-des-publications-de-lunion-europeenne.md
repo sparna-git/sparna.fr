@@ -15,7 +15,7 @@ The [Publications Office](http://publications.europa.eu/) is an inter-institutio
 
 Cellar is largely based on semantic technologies; in fact, it stores, in a [FRBR](http://fr.wikipedia.org/wiki/Sp%C3%A9cifications_fonctionnelles_des_notices_bibliographiques) model, the multilingual and multi-format metadata (those found on the [Eur-Lex](http://eur-lex.europa.eu/) portal) of all the Office's publications, i.e. some 1.5 billion triplets. This database is at the heart of the Office's editorial system, integrating metadata from several source applications, and disseminating them to several portals or target tools.
 
-http://www.sparna.fr//wp-content/uploads/2015/01/cellar-architecture.png
+![screenshot POEU](/assets/uploads/2015/01/cellar-architecture.png)
 
 
 Our involvement - limited in relation to the scope of the Cellar project - was divided into several distinct sub-projects.

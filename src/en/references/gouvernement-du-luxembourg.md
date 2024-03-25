@@ -19,7 +19,7 @@ This knowledge graph is based on a modeling of legislative texts in FRBR-OO (the
 
 The richness of this graph enables **intelligent autocompletion and precise search facets** in the Legilux search engine: the user is guided by icons to select a ministry, a place, a theme, or even a legal text directly. ElasticSearch powers the Legilux search engine.
 
-http://www.sparna.fr/wp-content/uploads/2017/02/legilux-autocompletion.png
+![screenshot legilux](/assets/uploads/2017/02/legilux-autocompletion.png)
 
 
 The "raw" knowledge graph - in RDF - is open on the web: through ELI (and schema.org) metadata included in Legilux records, through dereferenceable URIs, through downloadable exports, through a direct query service in SPARQL. **Data openness is complete**.

@@ -25,11 +25,11 @@ The [ProdInra] portal (http://prodinra.inra.fr/) is the search tool that provide
 
 An initial prototype for this study was produced using the [VIVO](http://www.vivoweb.org/) tool.
 
-http://www.sparna.fr//wp-content/uploads/2015/01/vivo-web-large-v1.jpg
+![screenshot INRA 1](/assets/uploads/2015/01/vivo-web-large-v1.jpg)
 
 VIVO is an open-source platform for disseminating and managing scientific publications, researcher profiles, research laboratories, and information on conferences and scientific events (see the [blog post](http://blog.sparna.fr/vivo-vitro-edition-publication-rdf-ontologie/) dedicated to it). VIVO is entirely **based on semantic technologies** (RDF, SPARQL, OWL), natively integrates raw data dissemination functionalities in RDF via URIs, and its screens are configurable via an ontology. VIVO also natively integrates [data visualization functionalities](http://vivo.cns.iu.edu/gallery.html).
 
-http://www.sparna.fr//wp-content/uploads/2015/01/inra-map-of-science.png
+![screenshot INRA 2](/assets/uploads/2015/01/inra-map-of-science.png)
 
 Initially, on behalf of INRA, we carried out several [customized training days](http://www.sparna.fr//?page_id=20) on the issues, standards and technologies of the web of data. Following this initial training, we implemented **the migration of data** from the ProdInra database and internal repositories to RDF data compatible with [the VIVO ontology](https://wiki.duraspace.org/display/VIVO/VIVO-ISF+Ontology). This transformation, based on SOAP web service calls and XSLT transformation sheets, generated several RDF data files which were then imported into VIVO. We also produced an **extension of the VIVO** ontology specifically for INRA's needs, [presented here at the semweb.pro conference](http://fr.slideshare.net/SemWebPro/04-edzale).
 
