@@ -36,5 +36,21 @@ module.exports = {
       'fr' : 'Les derniers articles du blog',
       'en' : 'Last articles from the blog'
 	},
+	NomPrenom: {
+      'fr' : 'Nom / Prénom',
+      'en' : 'Last name / First name'
+    },
+	Email: {
+      'fr' : 'Adresse e-mail',
+      'en' : 'Email'
+    },
+	Objet: {
+      'fr' : 'Objet',
+      'en' : 'Subject'
+    },
+	Message: {
+      'fr' : 'Message',
+      'en' : 'Message'
+    },
 	
   };
