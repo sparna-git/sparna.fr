@@ -1,5 +1,5 @@
 ---
-title: "Formation SHACL : spécifier la structure d'un grape de connaissances"
+title: "Formation SHACL : spécifier la structure d'un graphe de connaissances"
 date: 2022-02-01
 permalink: "fr/formation/{{ title | slugify }}/"
 tags:
