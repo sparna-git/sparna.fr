@@ -32,4 +32,9 @@ module.exports = {
       'fr' : 'Revenir à la liste des références',
       'en' : 'Back to the list of use cases'
     },
+	ArticlesBlog: {
+      'fr' : 'Les derniers articles du blog',
+      'en' : 'Last articles from the blog'
+	},
+	
   };
