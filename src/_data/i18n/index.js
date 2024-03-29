@@ -52,5 +52,9 @@ module.exports = {
       'fr' : 'Message',
       'en' : 'Message'
     },
+	ChampObligatoire: {
+      'fr' : 'champ obligatoire',
+      'en' : 'required'
+    },
 	
   };
