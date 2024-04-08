@@ -17,7 +17,7 @@ L’[International Institute for Educational Planning](http://www.iiep.unesco.or
 
 Ce projet a été réalisé en collaboration avec l'[IRI](http://www.iri.centrepompidou.fr/) (Institut de Recherche et d'Innovation du Centre Pompidou) qui a réalisé un outil de saisie de notices documentaires basé un triplestore RDF, et [Mondeca](http://www.mondeca.com/) qui a amené sa solution [ITM pour la gestion des référentiels](http://www.mondeca.com/Products/Intelligent-Topic-Manager), et une chaine d'indexation de données RDF dans SolR.
 
-http://www.sparna.fr//wp-content/uploads/2014/09/plan4learning-screenshot-1.png
+![screenshot scoLOMFR](/assets/uploads/2014/09/plan4learning-screenshot-1.png)
 
 Basé sur le moteur de recherche [SolR](http://lucene.apache.org/solr), le portail final se distingue par plusieurs aspects :
 

@@ -22,4 +22,4 @@ La seconde phase a été le remplacement de l'outil de gestion de thésaurus act
 Le résultat ? **un thésaurus valorisé, support à l'interopérabilité, conforme aux standards du web de données, et sans coût de licence**. Plus de détails sur le projet sont donnés dans [l'annonce sur le blog (en anglais)](http://blog.sparna.fr/2017/02/06/unesco-thesaurus-published-with-semantic-web-standards-and-open-source-software/).
 
 
-http://www.sparna.fr/wp-content/uploads/2017/02/screenshot-skosmos-small1.png
+![screenshot scoLOMFR](/assets/uploads/2017/02/screenshot-skosmos-small1.png)

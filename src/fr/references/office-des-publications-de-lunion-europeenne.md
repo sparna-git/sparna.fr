@@ -15,7 +15,7 @@ L’[Office des Publications](http://publications.europa.eu/) est un organisme i
 
 Le Cellar est largement basé sur les technologies sémantiques; il stocke en effet, dans un modèle [FRBR](http://fr.wikipedia.org/wiki/Sp%C3%A9cifications_fonctionnelles_des_notices_bibliographiques), les métadonnées multilingues et multiformats (celles que l'on retrouve sur le portail [Eur-Lex](http://eur-lex.europa.eu/)) de toutes les publications de l'office, soit environ 1,5 milliards de triplets. Cette base est au coeur du système éditorial de l'Office, en intégrant les métadonnées issues de plusieurs applications sources, et les diffusant vers plusieurs portails ou outils cibles.
 
-http://www.sparna.fr//wp-content/uploads/2015/01/cellar-architecture.png
+![screenshot scoLOMFR](/assets/uploads/2015/01/cellar-architecture.png)
 
 
 Notre intervention - limitée au regard de l'ampleur du projet Cellar - s'est faite en plusieurs sous-projets distincts.

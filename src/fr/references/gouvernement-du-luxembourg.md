@@ -19,7 +19,7 @@ Ce graphe de connaissance s'appuie sur une modélisation des textes législatifs
 
 La richesse de ce graphe permet une **autocompletion intelligente et des facettes de recherche précises** dans le moteur de recherche de Legilux : l'utilisateur est guidé par des icônes pour sélectionner un ministère, un lieu, une thématique, ou bien directement un texte de loi. ElasticSearch motorise la recherche dans Legilux.
 
-http://www.sparna.fr/wp-content/uploads/2017/02/legilux-autocompletion.png
+![screenshot scoLOMFR](/assets/uploads/2017/02/legilux-autocompletion.png)
 
 
 Le graphe de connaissance "brut" - en RDF - est ouvert sur le web : par des métadonnées ELI (et schema.org) incluses dans les notices de Legilux, par des URIs déréférençables, par des exports téléchargeables, par un service d'interrogation directe en SPARQL. **L'ouverture des données est complète**.
