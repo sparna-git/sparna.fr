@@ -6,15 +6,15 @@ module.exports = {
     },
     Reference: {
       'fr': 'Nos références',
-      'en': 'Client use cases'
+      'en': 'Use cases'
     },
     Formations: {
       'fr': 'Nos formations',
-      'en': 'Trainings'
+      'en': 'Training offers'
     },
     Qui: {
-      'fr': 'Qui suis je ?',
-      'en': 'Who am I ?'
+      'fr': 'Notre équipe',
+      'en': 'The team'
     },
     Contact: {
       'fr': 'Contact',
