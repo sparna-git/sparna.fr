@@ -25,11 +25,11 @@ Le portail [ProdInra](http://prodinra.inra.fr/) est l'outil de recherche qui don
 
 Un premier prototype dans le cadre de cette étude a été réalisé à l'aide de l'outil [VIVO](http://www.vivoweb.org/).
 
-http://www.sparna.fr//wp-content/uploads/2015/01/vivo-web-large-v1.jpg
+![screenshot scoLOMFR](/assets/uploads/2015/01/vivo-web-large-v1.jpg)
 
 VIVO est une plate-forme open-source qui permet la diffusion et la gestion des publications scientifiques, des profils de chercheurs, de laboratoires de recherche, et d'informations sur les conférences, les événements scientifiques (voir le [billet de blog](http://blog.sparna.fr/vivo-vitro-edition-publication-rdf-ontologie/) qui y est consacré). VIVO est entièrement **basé sur les technologies sémantiques** (RDF, SPARQL, OWL), intègre nativement les fonctionnalités de diffusion des données brutes en RDF via les URIs, et ses écrans sont configurables via une ontologie. VIVO intègre également nativement des [fonctionnalités de visualisation de données](http://vivo.cns.iu.edu/gallery.html).
 
-http://www.sparna.fr//wp-content/uploads/2015/01/inra-map-of-science.png
+![screenshot scoLOMFR](/assets/uploads//2015/01/inra-map-of-science.png)
 
 Dans un premier temps nous avons réalisé pour le compte de l'INRA plusieurs [journées de formation sur-mesure](http://www.sparna.fr//?page_id=20) sur les enjeux, les standards et les technologies du web de données. Suite à ces formations initiales nous avons implémenté **la migration des données** de la base ProdInra et des référentiels internes vers des données RDF compatibles avec [l'ontologie VIVO](https://wiki.duraspace.org/display/VIVO/VIVO-ISF+Ontology). Cette transformation, basée sur des appels de web-service SOAP et des feuilles de transformation XSLT, a permis de générer plusieurs fichiers de données RDF qui ont été ensuite importés dans VIVO. Nous avons également réalisé une **extension de l'ontologie VIVO** spécifiquement pour les besoins de l'INRA, [présentée ici lors de la conférence semweb.pro](http://fr.slideshare.net/SemWebPro/04-edzale).
 

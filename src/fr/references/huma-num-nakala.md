@@ -17,7 +17,7 @@ La mission de la Très grande Infrasctructure de Recherche du CNRS [Huma-Num](ht
 
 Nakala permet le stockage et l'archivage pérenne des données, leur description (à l'aide de métadonnées [dcterms](http://www.sparna.fr/reference/huma-num-nakala/dublincore.org/documents/dcmi-terms/)), et la rediffusion de ces métadonnées à la fois sous forme de flux [OAI](http://www.openarchives.org/OAI/openarchivesprotocol.html), d’URI déréférençables, et de [service SPARQL](http://www.nakala.fr/sparql). Nakala permet de démontrer la flexibilité des technologies du web de données par rapport à d’autres technologies de diffusion telles que l’OAI. Plus d'informations sur la solution mise en oeuvre sont disponibles sur la [page de description du service Nakala](http://www.huma-num.fr/service/nakala).
 
-http://www.sparna.fr//wp-content/uploads/2014/09/nakala-services-proposes.jpg
+![screenshot scoLOMFR](/assets/uploads/2014/09/nakala-services-proposes.jpg)
 
 Au niveau technologique, la solution proposée se démarque par l’utilisation d’un [triplestore Virtuoso](http://virtuoso.openlinksw.com/) comme point central de l’architecture (pas de base relationnelle), et par la mise en œuvre de composants open-source : [PROAI](http://proai.sourceforge.net/) pour la partie OAI, [PUBBY](http://wifo5-03.informatik.uni-mannheim.de/pubby/) pour l'accès aux métadonnées, et par une intégration avec le système d’authentification de la [fédération d'identités Renater](https://services.renater.fr/federation/index).
 
