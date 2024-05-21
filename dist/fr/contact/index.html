@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr" dir="ltr">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title></title>
 
-	<link rel='stylesheet' id='style-main-css'  href="..&#92;..&#92;assets&#92;css&#92;style.css" type='text/css' media='all' />
-	<link rel='stylesheet'  href="..&#92;..&#92;assets&#92;css&#92;contact-form.css" type='text/css' media='all' />
+	<link rel="alternate" hreflang="fr" href="/fr/contact/"/>
 
-	<link rel='stylesheet' id='fonts-css'  href="..&#92;..&#92;assets&#92;css&#92;fonts&#92;fonts.css" type='text/css' media='all' />
+	<link rel='stylesheet' id='style-main-css'  href="../../assets/css/style.css" type='text/css' media='all' />
+	<link rel='stylesheet'  href="../../assets/css/contact-form.css" type='text/css' media='all' />
+
+	<link rel='stylesheet' id='fonts-css'  href="../../assets/css/fonts/fonts.css" type='text/css' media='all' />
 
 	<script
 			  src="https://code.jquery.com/jquery-3.7.1.min.js"
 			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
 			  crossorigin="anonymous"></script>
 
-	<script type='text/javascript' src="..&#92;..&#92;assets&#92;js&#92;sparna.js"></script>
+	<script type='text/javascript' src="../../assets/js/sparna.js"></script>
 
 	<!-- Jetpack Open Graph Tags -->
 	<meta property="og:type" content="website" />
@@ -23,8 +25,8 @@
 	<meta property="og:description" content="Web de données | Architecture de l&#039;informations | Accès aux connaissances" />
 	<meta property="og:url" content="http://www.sparna.fr/" />
 	<meta property="og:site_name" content="Sparna" />
-	<meta property="og:image" content="..&#92;..&#92;assets&#92;images&#92;logo.png" />
-	<meta property="og:locale" content="fr_FR" />
+	<meta property="og:image" content="../../assets/images/logo.png" />
+	<meta property="og:locale" content="fr" />
 	<meta name="twitter:card" content="summary" />
 
 </head>
@@ -32,17 +34,30 @@
 <body class="page page-id-2 page-template-default">
 	<div class="interieur">
 		<header id="header">
-			<div id="logo"><a href="..&#92;.." title = "Sparna"><img src="..&#92;..&#92;assets&#92;images&#92;logo.png" alt = "" /></a></div>
+			<div id="logo"><a href="/fr" title = "Sparna"><img src="../../assets/images/logo.png" alt = "" /></a></div>
 			<nav id = "menu">
-				<div class="menu-menu-principal-container"><ul id="menu-menu-principal" class="nav-menu"><li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-46 menu-item-48"><a href="..&#92;..">Accueil</a></li>
-<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="..&#92;..&#92;references">Nos références</a></li>
-<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="..&#92;..&#92;formations">Nos formations</a></li>
-<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="..&#92;..&#92;qui-suis-je">Qui suis je ?</a></li>
-<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="..&#92;..&#92;contact">Contact</a></li>
-<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://blog.sparna.fr" target="_blank">Blog</a></li>
-</ul></div>			</nav>
-		</header>
+				<div class="menu-menu-principal-container">
+					<ul id="menu-menu-principal" class="nav-menu">
+						<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-46 menu-item-48"><a href="/fr/">Accueil</a></li>
+						<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="/fr/references">Nos références</a></li>
+						<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="/fr/formations">Nos formations</a></li>
+						<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="/fr/team">Notre équipe</a></li>
+						<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="/fr/contact">Contact</a></li>
+						<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://blog.sparna.fr" target="_blank">Blog</a></li>
+						<li>
+							<div class="menu-menu-principal-container">
+								
 
+								
+									<a href="/en/contact/" lang="en" hreflang="en"><img src="/assets/images/EN.png" alt =""/></a>
+								
+							</div>					
+						</li>
+					</ul>
+				</div>			
+			</nav>			
+		</header>
+		
 		<section id = "contenu">
 			<h1>Nous <br/>Contacter</h1>
 <h2>Vous avez une question ?</h2>
@@ -167,7 +182,7 @@
         const wrapper = document.createElement('div');
         wrapper.id = "alertMsg";
 
-        const img_test = "<img class=\"aligncenter wp-image-10 size-full\" src=\"..&#92;..&#92;assets&#92;images&#92;contact_qui.png\" alt=\"\">";
+        const img_test = "<img class=\"aligncenter wp-image-10 size-full\" src=\"../../assets/images/contact_qui.png\" alt=\"\">";
         wrapper.innerHTML = ['<div>','   <div>'+img_test+'  '+'E-mail envoyé avec succès, Appuyez sur le botton pour sortir   <button type="button" onClick="btnClose(event)" class="wpcf7-form-control">Fermer</button></img></div>','</div>'].join('');
 
         alertMessage.append(wrapper);
@@ -177,7 +192,7 @@
         const alertMessage = document.getElementById("msgReponse");
         const wrapper = document.createElement('div');
         wrapper.id = "alertMsg";
-        const img_test = "<img class=\"aligncenter wp-image-10 size-full\" src=\"..&#92;..&#92;assets&#92;images&#92;logo.png\" alt=\"\">";
+        const img_test = "<img class=\"aligncenter wp-image-10 size-full\" src=\"../../assets/images/logo.png\" alt=\"\">";
         wrapper.innerHTML = ['<div>','   <div>'+img_test+'  '+'Il y a eu a probleme pour envoyer l\'e-mail, Appuyez sur le botton pour sortir  <button type="button" onClick="btnClose(event)" class="wpcf7-form-control">Fermer</button></img></div>','</div>'].join('');
 
         alertMessage.append(wrapper);
@@ -207,7 +222,7 @@
 </script>
 
 <div id="carte">
-  <img src="..&#92;..&#92;assets&#92;images&#92;carte.png " alt="">
+  <img src="../../assets/images/carte.png " alt="">
   <h3>Sparna Tours</h3>
   <p>30 rue André Theuriet<br>37000 Tours</p>
 </div>
@@ -217,40 +232,42 @@
 		<footer id = "footer">
 			<div class = "interieur">
 				<section class = "colonne">
-					<div class="menu-menu-principal-container"><ul id="menu-menu-principal-1" class="nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-46 menu-item-48"><a href="/">Accueil</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="..&#92;..&#92;references">Nos références</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="..&#92;..&#92;formations">Nos formations</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="..&#92;..&#92;qui-suis-je">Qui suis je ?</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="..&#92;..&#92;contact">Contact</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://blog.sparna.fr" target="_blank">Blog</a></li>
-</ul></div>				</section>
-
-				<section class = "colonne double">
+					<div class="menu-menu-principal-container">
+						<ul id="menu-menu-principal-1" class="nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-46 menu-item-48"><a href="/">Accueil</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="/fr/references">Nos références</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="/fr/formations">Nos formations</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="/fr/qui-suis-je">Notre équipe</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="/fr/contact">Contact</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://blog.sparna.fr" target="_blank">Blog</a></li>
+						</ul>
+					</div>
 				</section>
 
+				<section class = "colonne double"></section>
+
 				<section class = "colonne double">
-					<h5><a class="rsswidget" href="http://blog.sparna.fr/feed"><img style="border:0" width="14" height="14" src="..&#92;..&#92;assets&#92;images&#92;rss.png " alt="RSS"></a> <a class="rsswidget" href="http://blog.sparna.fr/">Les derniers articles du blog</a></h5>
+					<h5><a class="rsswidget" href="http://blog.sparna.fr/feed"><img style="border:0" width="14" height="14" src="../../assets/images/rss.png " alt="RSS"></a> <a class="rsswidget" href="http://blog.sparna.fr/">Les derniers articles du blog</a></h5>
 					<ul>
-							<li><a href="http://blog.sparna.fr/2024/01/15/cordis-a-sparql-endpoint-is-born/">CORDIS : a SPARQL endpoint is born !</a></li>
+								<li><a href="https://blog.sparna.fr/2024/01/15/cordis-a-sparql-endpoint-is-born/">CORDIS : a SPARQL endpoint is born !</a></li>
+							
 						
-					
-							<li><a href="http://blog.sparna.fr/2023/03/13/2013-2023-tis-skosplays-birthday/">2013-2023 : ‘Tis SKOSPlay!’s Birthday !</a></li>
+								<li><a href="https://blog.sparna.fr/2023/03/13/2013-2023-tis-skosplays-birthday/">2013-2023 : ‘Tis SKOSPlay!’s Birthday !</a></li>
+							
 						
-					
-							<li><a href="http://blog.sparna.fr/2022/10/31/sparnatural-a-semweb-pro-2022-le-8-novembre/">Sparnatural à SemWeb.pro 2022 le 8 novembre</a></li>
+								<li><a href="https://blog.sparna.fr/2022/10/31/sparnatural-a-semweb-pro-2022-le-8-novembre/">Sparnatural à SemWeb.pro 2022 le 8 novembre</a></li>
+							
 						
-					
-							<li><a href="http://blog.sparna.fr/2022/10/18/dashboards-from-sparql-knowledge-graphs-using-looker-studio-google-data-studio/">Dashboards from SPARQL knowledge graphs using Looker Studio (Google Data Studio)</a></li>
+								<li><a href="https://blog.sparna.fr/2022/10/18/dashboards-from-sparql-knowledge-graphs-using-looker-studio-google-data-studio/">Dashboards from SPARQL knowledge graphs using Looker Studio (Google Data Studio)</a></li>
+							
 						
-					
-							<li><a href="http://blog.sparna.fr/2022/07/20/clean-json-ld-from-rdf-using-framing/">Clean JSON(-LD) from RDF using Framing</a></li>
+								<li><a href="https://blog.sparna.fr/2022/07/20/clean-json-ld-from-rdf-using-framing/">Clean JSON(-LD) from RDF using Framing</a></li>
+							
 						
-					
-					
-					
-					
-					
-					
+						
+						
+						
+						
+						
 					</ul>
 				</section>
 			</div>
