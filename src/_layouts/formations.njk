@@ -1,0 +1,19 @@
+---
+layout: sparna.njk
+bodyClass: page page-id-20 page-template-default
+---
+{% if locale == "fr" %}
+  <h1>Nos <br> formations</h1>
+{% endif %}
+
+{% if locale == "en" %}
+  <h1>Our <br> training offers</h1>
+{% endif %}
+
+
+{% set collectionsLocal = collections.formation | localeFilter(locale) %}
+{%- for formation in collectionsLocal | reverse -%}
+<div class="formation" id="{{formation.data.title | slugify}}">
+  {{formation.content | safe}}
+</div>
+{% endfor %}

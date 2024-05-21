@@ -1,0 +1,96 @@
+---
+layout: sparna.njk
+bodyClass: home page page-id-46 page-template-default
+savoir_faire:
+  p1: Sparna is an IT consultancy specializing in the organization of knowledge, document annotation and indexing, and the opening up and reuse of data.
+  p2: Sparna was founded in 2012 by Thomas Francart, an expert in ontology management systems, knowledge graphs, their modeling and feeding from organizational data sources.
+  p3: Thomas has been working for 20 years with web data standards (RDF, OWL, SKOS, SPARQL, SHACL, etc.), thesauri, ontologies and knowledge graphs.
+domaine_action:
+
+---
+
+
+<div id = "architecture">
+	<div id = "savoir_faire">
+
+		<img width="357" height="268" src="{{ '/assets/uploads/2014/09/illustration.jpg' | relative(page) }}" alt="illustration" />
+		<h2>Expertise in<br/>Knowledge Graphs</h2>
+
+		<h3>Web of data | information structure | accessing knowledge</h3>
+
+		<div class="paragraphes">
+			<p class="paragraphe_1">{{ savoir_faire.p1 }}</p>
+			<p class="paragraphe_2">{{ savoir_faire.p2 }}</p>
+			<p class="paragraphe_3">{{ savoir_faire.p3 }}</p>
+		</div>
+	</div>
+
+	<div id = "domaine_action">
+			<h2>Our field of action</h2>
+
+			<div class = "paragraphes">{% renderTemplate "md" %}
+Our skills cover the entire spectrum of semantic data engineering projects. From initial training to implementation, including tool selection, system architecture, component integration, ontology modeling and data migration.
+
+Read **[our case studies](https://www.sparna.fr/en/references)** to find out more about our projects.
+			{% endrenderTemplate %}</div>
+
+		<div id = "action_conseil">
+				<h2>Consulting</h2>
+
+				<div class="detail">{% renderTemplate "md" %}
+### Semantic technologies
+
+  - Choice of processing or triplestore tools
+  - Linked Data publishing
+  - Ontology modeling, thesaurus (re-)structuring
+
+### Architectures for intelligent content
+
+  - Use of controlled vocabularies for content annotation
+  - Automatic or semi-automatic content annotation
+  - Enriching search engines with business vocabulary
+
+### Open Data
+
+  - Selection of data and vocabularies for reuse
+  - Support in publishing "5-star" data
+  - Support in reusing open data
+{% endrenderTemplate %}</div>
+		</div>
+
+		<div id = "action_developpement">
+			<h2>Development</h2>
+			<div class ="detail">{% renderTemplate "md" %}
+### Data-Ware
+
+  - Data transfer and migration to semantic formats
+  - Modeling and vocabulary selection
+  - Reuse and exploitation of open data
+  - Data processing and indexing in a search engine
+
+### Soft-ware
+
+  - Integration of tools into content processing architectures: text-mining, search engines, triplestores, thesaurus management systems
+  - Maintenance and upgrades of applications based on semantic technologies
+  - Java/J2EE architectures
+
+			{% endrenderTemplate %}</div>
+		</div>
+
+		<div id = "action_formation">
+			<h2>Training</h2>
+			<div class ="detail">{% renderTemplate "md" %}
+- [Web of data and knowledge graphs : an introduction to kickstart your project](formations#web-of-data-and-knowledge-graphs-an-introduction-to-kickstart-your-project)
+- [Web of data technical training : develop your knowledge graph based system](formations#web-of-data-technical-training-develop-your-knowledge-graph-based-system)
+- [SPARQL training : query knowledge graphs and the web of data](formations#sparql-training-query-knowledge-graphs-and-the-web-of-data)
+- [SKOS training : thesaurus, controlled vocabularies and alignments](formations#skos-training-thesaurus-controlled-vocabularies-and-alignments)
+- [SHACL training : specify the structure of your knowledge graph](formations#shacl-training-specify-the-structure-of-your-knowledge-graph)
+- [OWL Training : ontologies and conceptual models for knowledge graphs](formations#owl-training-ontologies-and-conceptual-models-for-knowledge-graphs)
+			{% endrenderTemplate %}</div>
+		</div>
+	</div>
+</div>
+
+<div id = "qui_suis_je">{% renderTemplate "md" %}
+[Our references will give you an idea of the projects Sparna has completed. Don't hesitate to [contact us](contact) if you'd like more information.
+{% endrenderTemplate %}</div>
