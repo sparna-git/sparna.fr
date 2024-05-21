@@ -122,6 +122,10 @@ body.page-id-2 #header #menu li.current-menu-item a, body #header #menu li#menu-
   border-bottom-color: #94c56e;
 }
 
+body.single-reference div.informations img {
+  width:100%;
+}
+
 #contenu {
   float: left;
   width: 100%;
@@ -377,7 +381,7 @@ body.home #architecture #domaine_action #action_formation .detail {
 }
 body.home #qui_suis_je {
   position: absolute;
-  top: 1850px;
+  top: 1900px;
   left: 0;
   line-height: 18px;
 }
