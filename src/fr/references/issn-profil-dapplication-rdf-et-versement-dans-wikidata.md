@@ -31,4 +31,4 @@ Les bénéfices pour l'ISSN de ces interventions :
 Nous continuons notre accompagnement auprès de l'ISSN pour toutes les questions de données liées et de web sémantique, en particulier la modélisation du [Keepers Registry](https://keepers.issn.org/) à l'aide de schema.org.
 
 
-http://www.sparna.fr/wp-content/uploads/2020/12/screenshot-issn-wikidata.png
+![screenshot scoLOMFR](/assets/uploads/2020/12/screenshot-issn-wikidata.png)
