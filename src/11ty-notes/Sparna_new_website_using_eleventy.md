@@ -284,3 +284,262 @@ eleventyComputed:
 ## Rendering markdown files inside Nunjuck templates
 
 Use `renderFile` plugin : https://www.11ty.dev/docs/plugins/render/
+
+
+# Internationalization 
+
+## Installation 
+
+Add to your configuration *.eleventy.js* file
+
+```javascript
+const { EleventyI18nPlugin } = require("@11ty/eleventy");
+
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(EleventyI18nPlugin, {
+    // any valid BCP 47-compatible language tag is supported
+    defaultLanguage: "fr", // Required
+  });
+};
+```
+
+## Add plugin [eleventy-plugin-i18n](https://github.com/adamduncan/eleventy-plugin-i18n)
+
+This plugin to assist with internationalization and dictionary translation.
+
+
+# Installation
+
+```sh
+npm install eleventy-plugin-i18n --save
+
+```
+
+## Configuration
+
+### Define language site directories
+
+* Create directories at the site root for each language code (e.g. "fr" and "en")
+
+```
+├─ src
+   └─ en      
+   └─ fr
+```
+
+* Create directory data file
+
+In each language site directory, create a local data file (e.g. fr/fr.json), include locale values.
+
+```
+├─ src
+   └─ en
+       └─ en.json
+           {
+              "locale": "en"
+            }
+   └─ fr
+       └─ fr.json
+            {
+              "locale": "fr"
+            }
+```
+
+* Add on eleventy configuration
+
+Add 2 plugins eleventy-plugin-i18n and translation.
+
+`const i18n = require('eleventy-plugin-i18n');` This is where we provide the translations and fallbackLocales as plugin options .
+
+`const translations = require('./src/_data/i18n');` This object contains our dictionary translation for each respective language .
+
+```javascript
+// .eleventy.js
+const i18n = require('eleventy-plugin-i18n');
+const translations = require('./src/_data/i18n');
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(i18n, {
+    translations,
+    fallbackLocales: {
+      '*': 'fr'
+    }
+  });
+};
+```
+
+- Create index.js file in the ./src/_data/i18n (translations)
+
+This object contains our dictionary translation for each respective language .
+
+Schema file: ` {  [key] : [local] : 'string' } `
+e.g.:
+```javascript
+  module.exports = {
+    Accueil: {
+          'fr': 'Accueil',
+          'en': 'Home'
+        },
+    Reference: {
+      'fr': 'Nos références',
+      'en': 'References'
+    },
+    Formations: {
+      'fr': 'Nos formations',
+      'en': 'Formations'
+    },
+    ........
+  };
+```
+
+
+## Usage
+For use the i18n translation, automatically determine the correct translation, no need to pass *locale* . 
+
+Format: 
+
+```
+{ { 'Accueil' | i18n }}
+```
+
+e.g.
+```
+  <a href="/{{ locale }}/">{{'Accueil' | i18n }}</a> 
+```
+
+Example in the sparna.njk file:
+```javascript
+<header id="header">
+  <div id="logo"><a href="{{ '/fr' }}" title = "Sparna"><img src="{{ '/assets/images/logo.png' | relative(page) }}" alt = "" /></a></div>
+  <nav id = "menu">
+    <div class="menu-menu-principal-container">
+      <ul id="menu-menu-principal" class="nav-menu">
+        <li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-46 menu-item-48"><a href="/{{ locale }}/">{{'Accueil' | i18n }}</a></li>
+        <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="/{{ locale }}/references">{{'Reference' | i18n }}</a></li>
+        <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="/{{ locale }}/formations">{{'Formations' | i18n }}</a></li>
+        <li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="/{{ locale }}/qui-suis-je">{{'Qui' | i18n }}</a></li>
+        <li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="/{{ locale }}/contact">Contact</a></li>
+        <li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://blog.sparna.fr" target="_blank">Blog</a></li>
+        <li>
+          <div class="menu-menu-principal-container">
+            {{ languages[page.lang].availableText }}
+
+            {% for link in page.url | locale_links %} {%-if not loop.first %}/{% endif %}
+              <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}"><img src="{{ '/assets/images/'}}{{ link.lang | upper }}{{'.png' }}" alt =""/></a>
+            {% endfor %}
+          </div>					
+        </li>
+      </ul>
+    </div>			
+  </nav>
+</header>
+```
+
+### In each language site directory, add all theme for display in Sparna.fr 
+
+Website Map:
+```bash
+sparna.fr
+│   .eleventy.js
+└───src
+    ├───en
+    │   │   contact.html
+    │   │   en.json
+    │   │   formations.html
+    │   │   index.html
+    │   │   qui-suis-je.html
+    │   │   references.html
+    │   │   
+    │   ├───formations
+    │   │       Autres formations web sémantique sur-mesure.md
+    │   │       Formation web de données avancé techniques et outils pour le développement d\\'applications 2 jours.md
+    │   │       Formation Web de données graphe de connaissances introduction pour une mise en oeuvre intelligente.md
+    │   │       
+    │   └───references
+    │           eli-european-legislation-identifier.md
+    │           gouvernement-du-luxembourg.md
+    │           huma-num-nakala.md
+    │           inra.md
+    │           issn-profil-dapplication-rdf-et-versement-dans-wikidata.md
+    │           ministere-de-la-culture-publication-de-thesaurus-skos-en-pdf.md
+    │           office-des-publications-de-lunion-europeenne.md
+    │           scolomfr-skos.md
+    │           thesaurus-unesco.md
+    │           unesco-iiep.md
+    │           
+    ├───fr
+    │   │   contact.html
+    │   │   formations.html
+    │   │   fr.json
+    │   │   index.html
+    │   │   qui-suis-je.html
+    │   │   references.html
+    │   │   
+    │   ├───formations
+    │   │       Autres formations web sémantique sur-mesure.md
+    │   │       Formation web de données avancé techniques et outils pour le développement d'applications 2 jours.md
+    │   │       Formation Web de données graphe de connaissances introduction pour une mise en oeuvre intelligente.md
+    │   │       
+    │   └───references
+    │           eli-european-legislation-identifier.md
+    │           gouvernement-du-luxembourg.md
+    │           huma-num-nakala.md
+    │           inra.md
+    │           issn-profil-dapplication-rdf-et-versement-dans-wikidata.md
+    │           ministere-de-la-culture-publication-de-thesaurus-skos-en-pdf.md
+    │           office-des-publications-de-lunion-europeenne.md
+    │           scolomfr-skos.md
+    │           thesaurus-unesco.md
+    │           unesco-iiep.md
+    │           
+    └───_data
+       └───i18n
+              index.js
+    
+```
+
+
+> ## Website Map Sparna.fr
+
+This is website map for sparna.fr:
+
+```
+sparna.fr
+│   .eleventy.js
+│   .gitignore
+│   package-lock.json
+│   package.json
+│   serve.sh
+│   
+├───.cache
+├───.github 
+├───dist    
+├───node_modules           
+└───src
+    │   CNAME
+    │   
+    ├───11ty-notes
+    ├───assets      
+    ├───en          
+    ├───fr      
+    ├───_data
+    │   └───i18n
+    └───_layouts
+```
+
+## **Directories & files**
+
+### File
+* `.eleventy.js` Eleventy config file.
+* `index.js` This file contains our dictionary of translations for each respective language.
+
+### Directories
+
+* `src` Main Directory
+* `src\11ty-notes` Directory save all notes for how to developer Eleventy 11 for Sparna website.
+* `src\assets` Directory for save css, javascript, image files.
+* `src\en` Directory for save all document for display in Sparna.fr.
+* `src\fr` Directory for save all document for display in Sparna.fr.
+* `src\_data` Directory standard for save all file config.
+* `src\_data\i18n` Directory for save index.js file .
+* `src\_layout` Main directory for save template all.

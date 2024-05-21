@@ -2,6 +2,12 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const plugin_syntaxhighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const plugin_schema = require("@quasibit/eleventy-plugin-schema");
 
+
+/* Internationalization i18n : Jorge */
+const { EleventyI18nPlugin } = require("@11ty/eleventy");
+const i18n = require('eleventy-plugin-i18n');
+const translations = require('./src/_data/i18n');
+
 /*
 Thomas : this is to work with N3 triplestore when parsing schema.org metadata
 const HTMLParser = require('node-html-parser');
@@ -145,10 +151,29 @@ module.exports = function(eleventyConfig) {
   });
   */
 
+  // internationalization 
+  eleventyConfig.addPlugin(EleventyI18nPlugin, {
+    defaultLanguage: 'fr', // Required
+    errorMode: 'allow-fallback' // Opting out of "strict"
+  });
+
+
+  eleventyConfig.addPlugin(i18n, {
+    translations,
+    fallbackLocales: {
+      '*': 'fr'
+    },
+  });
+
+  // filter for collections
+  eleventyConfig.addFilter('localeFilter', function(collection, locale) {
+    if (!locale) return collection;
+      const filtered = collection.filter(item => item.data.locale == locale)
+      return filtered;
+  });
 
   // pass-through
-  eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/CNAME");
+  eleventyConfig.addPassthroughCopy({ "static": "/" });
 
   // settings
   return {
