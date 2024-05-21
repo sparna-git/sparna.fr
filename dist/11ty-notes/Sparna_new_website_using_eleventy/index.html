@@ -8,8 +8,8 @@
 		<!-- Grab title from the page data and dump it here -->
 		<title></title>
 
-		<link rel="stylesheet" href="..&#92;..&#92;assets&#92;11ty-notes&#92;css&#92;pico.min.css" />
-		<link rel="stylesheet" href="..&#92;..&#92;assets&#92;11ty-notes&#92;css&#92;prism-night-owl.css" />
+		<link rel="stylesheet" href="../../assets/11ty-notes/css/pico.min.css" />
+		<link rel="stylesheet" href="../../assets/11ty-notes/css/prism-night-owl.css" />
 
 		<script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -174,6 +174,109 @@ Iterate on collections and output the feed</p>
 </code></pre>
 <h2>Rendering markdown files inside Nunjuck templates</h2>
 <p>Use <code>renderFile</code> plugin : https://www.11ty.dev/docs/plugins/render/</p>
+<h1>Internationalization</h1>
+<h2>Installation</h2>
+<p>Add to your configuration <em>.eleventy.js</em> file</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token punctuation">{</span> EleventyI18nPlugin <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@11ty/eleventy"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  eleventyConfig<span class="token punctuation">.</span><span class="token function">addPlugin</span><span class="token punctuation">(</span>EleventyI18nPlugin<span class="token punctuation">,</span> <span class="token punctuation">{</span><br>    <span class="token comment">// any valid BCP 47-compatible language tag is supported</span><br>    <span class="token literal-property property">defaultLanguage</span><span class="token operator">:</span> <span class="token string">"fr"</span><span class="token punctuation">,</span> <span class="token comment">// Required</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<h2>Add plugin <a href="https://github.com/adamduncan/eleventy-plugin-i18n">eleventy-plugin-i18n</a></h2>
+<p>This plugin to assist with internationalization and dictionary translation.</p>
+<h1>Installation</h1>
+<pre class="language-sh"><code class="language-sh"><span class="token function">npm</span> <span class="token function">install</span> eleventy-plugin-i18n <span class="token parameter variable">--save</span><br></code></pre>
+<h2>Configuration</h2>
+<h3>Define language site directories</h3>
+<ul>
+<li>Create directories at the site root for each language code (e.g. &quot;fr&quot; and &quot;en&quot;)</li>
+</ul>
+<pre><code>├─ src
+   └─ en      
+   └─ fr
+</code></pre>
+<ul>
+<li>Create directory data file</li>
+</ul>
+<p>In each language site directory, create a local data file (e.g. fr/fr.json), include locale values.</p>
+<pre><code>├─ src
+   └─ en
+       └─ en.json
+           {
+              &quot;locale&quot;: &quot;en&quot;
+            }
+   └─ fr
+       └─ fr.json
+            {
+              &quot;locale&quot;: &quot;fr&quot;
+            }
+</code></pre>
+<ul>
+<li>Add on eleventy configuration</li>
+</ul>
+<p>Add 2 plugins eleventy-plugin-i18n and translation.</p>
+<p><code>const i18n = require('eleventy-plugin-i18n');</code> This is where we provide the translations and fallbackLocales as plugin options .</p>
+<p><code>const translations = require('./src/_data/i18n');</code> This object contains our dictionary translation for each respective language .</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// .eleventy.js</span><br><span class="token keyword">const</span> i18n <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'eleventy-plugin-i18n'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token keyword">const</span> translations <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./src/_data/i18n'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  eleventyConfig<span class="token punctuation">.</span><span class="token function">addPlugin</span><span class="token punctuation">(</span>i18n<span class="token punctuation">,</span> <span class="token punctuation">{</span><br>    translations<span class="token punctuation">,</span><br>    <span class="token literal-property property">fallbackLocales</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token string-property property">'*'</span><span class="token operator">:</span> <span class="token string">'fr'</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li>Create index.js file in the ./src/_data/i18n (translations)</li>
+</ul>
+<p>This object contains our dictionary translation for each respective language .</p>
+<p>Schema file: <code>{  [key] : [local] : 'string' }</code>
+e.g.:</p>
+<pre class="language-javascript"><code class="language-javascript">  module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><br>    <span class="token literal-property property">Accueil</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>          <span class="token string-property property">'fr'</span><span class="token operator">:</span> <span class="token string">'Accueil'</span><span class="token punctuation">,</span><br>          <span class="token string-property property">'en'</span><span class="token operator">:</span> <span class="token string">'Home'</span><br>        <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">Reference</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token string-property property">'fr'</span><span class="token operator">:</span> <span class="token string">'Nos références'</span><span class="token punctuation">,</span><br>      <span class="token string-property property">'en'</span><span class="token operator">:</span> <span class="token string">'References'</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token literal-property property">Formations</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token string-property property">'fr'</span><span class="token operator">:</span> <span class="token string">'Nos formations'</span><span class="token punctuation">,</span><br>      <span class="token string-property property">'en'</span><span class="token operator">:</span> <span class="token string">'Formations'</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token operator">...</span><span class="token operator">...</span><span class="token punctuation">.</span><span class="token punctuation">.</span><br>  <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<h2>Usage</h2>
+<p>For use the i18n translation, automatically determine the correct translation, no need to pass <em>locale</em> .</p>
+<p>Format:</p>
+<pre><code>{ { 'Accueil' | i18n }}
+</code></pre>
+<p>e.g.</p>
+<pre><code>  &lt;a href=&quot;//&quot;&gt;Accueil&lt;/a&gt; 
+</code></pre>
+<p>Example in the sparna.njk file:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>header id<span class="token operator">=</span><span class="token string">"header"</span><span class="token operator">></span><br>  <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"logo"</span><span class="token operator">></span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"/fr"</span> title <span class="token operator">=</span> <span class="token string">"Sparna"</span><span class="token operator">></span><span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/images/logo.png"</span> alt <span class="token operator">=</span> <span class="token string">""</span> <span class="token operator">/</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><br>  <span class="token operator">&lt;</span>nav id <span class="token operator">=</span> <span class="token string">"menu"</span><span class="token operator">></span><br>    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"menu-menu-principal-container"</span><span class="token operator">></span><br>      <span class="token operator">&lt;</span>ul id<span class="token operator">=</span><span class="token string">"menu-menu-principal"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"nav-menu"</span><span class="token operator">></span><br>        <span class="token operator">&lt;</span>li id<span class="token operator">=</span><span class="token string">"menu-item-48"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"menu-item menu-item-type-post_type menu-item-object-page page_item page-item-46 menu-item-48"</span><span class="token operator">></span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"//"</span><span class="token operator">></span>Accueil<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span><br>        <span class="token operator">&lt;</span>li id<span class="token operator">=</span><span class="token string">"menu-item-26"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"menu-item menu-item-type-post_type menu-item-object-page menu-item-26"</span><span class="token operator">></span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"//references"</span><span class="token operator">></span>Nos références<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span><br>        <span class="token operator">&lt;</span>li id<span class="token operator">=</span><span class="token string">"menu-item-22"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"menu-item menu-item-type-post_type menu-item-object-page menu-item-22"</span><span class="token operator">></span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"//formations"</span><span class="token operator">></span>Nos formations<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span><br>        <span class="token operator">&lt;</span>li id<span class="token operator">=</span><span class="token string">"menu-item-10"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"menu-item menu-item-type-post_type menu-item-object-page menu-item-10"</span><span class="token operator">></span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"//qui-suis-je"</span><span class="token operator">></span>Notre équipe<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span><br>        <span class="token operator">&lt;</span>li id<span class="token operator">=</span><span class="token string">"menu-item-9"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"menu-item menu-item-type-post_type menu-item-object-page menu-item-9"</span><span class="token operator">></span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"//contact"</span><span class="token operator">></span>Contact<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span><br>        <span class="token operator">&lt;</span>li id<span class="token operator">=</span><span class="token string">"menu-item-50"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"menu-item menu-item-type-custom menu-item-object-custom menu-item-50"</span><span class="token operator">></span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"http://blog.sparna.fr"</span> target<span class="token operator">=</span><span class="token string">"_blank"</span><span class="token operator">></span>Blog<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span><br>        <span class="token operator">&lt;</span>li<span class="token operator">></span><br>          <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"menu-menu-principal-container"</span><span class="token operator">></span><br>            <br><br>            <br>          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>					<br>        <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span><br>      <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span><br>    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>			<br>  <span class="token operator">&lt;</span><span class="token operator">/</span>nav<span class="token operator">></span><br><span class="token operator">&lt;</span><span class="token operator">/</span>header<span class="token operator">></span></code></pre>
+<h3>In each language site directory, add all theme for display in Sparna.fr</h3>
+<p>Website Map:</p>
+<pre class="language-bash"><code class="language-bash">sparna.fr<br>│   .eleventy.js<br>└───src<br>    ├───en<br>    │   │   contact.html<br>    │   │   en.json<br>    │   │   formations.html<br>    │   │   index.html<br>    │   │   qui-suis-je.html<br>    │   │   references.html<br>    │   │   <br>    │   ├───formations<br>    │   │       Autres formations web sémantique sur-mesure.md<br>    │   │       Formation web de données avancé techniques et outils pour le développement d<span class="token punctuation">\</span><span class="token punctuation">\</span>'applications <span class="token number">2</span> jours.md<br>    │   │       Formation Web de données graphe de connaissances introduction pour une mise en oeuvre intelligente.md<br>    │   │       <br>    │   └───references<br>    │           eli-european-legislation-identifier.md<br>    │           gouvernement-du-luxembourg.md<br>    │           huma-num-nakala.md<br>    │           inra.md<br>    │           issn-profil-dapplication-rdf-et-versement-dans-wikidata.md<br>    │           ministere-de-la-culture-publication-de-thesaurus-skos-en-pdf.md<br>    │           office-des-publications-de-lunion-europeenne.md<br>    │           scolomfr-skos.md<br>    │           thesaurus-unesco.md<br>    │           unesco-iiep.md<br>    │           <br>    ├───fr<br>    │   │   contact.html<br>    │   │   formations.html<br>    │   │   fr.json<br>    │   │   index.html<br>    │   │   qui-suis-je.html<br>    │   │   references.html<br>    │   │   <br>    │   ├───formations<br>    │   │       Autres formations web sémantique sur-mesure.md<br>    │   │       Formation web de données avancé techniques et outils pour le développement d'applications <span class="token number">2</span> jours.md<br>    │   │       Formation Web de données graphe de connaissances introduction pour une mise en oeuvre intelligente.md<br>    │   │       <br>    │   └───references<br>    │           eli-european-legislation-identifier.md<br>    │           gouvernement-du-luxembourg.md<br>    │           huma-num-nakala.md<br>    │           inra.md<br>    │           issn-profil-dapplication-rdf-et-versement-dans-wikidata.md<br>    │           ministere-de-la-culture-publication-de-thesaurus-skos-en-pdf.md<br>    │           office-des-publications-de-lunion-europeenne.md<br>    │           scolomfr-skos.md<br>    │           thesaurus-unesco.md<br>    │           unesco-iiep.md<br>    │           <br>    └───_data<br>       └───i18n<br>              index.js<br>    </code></pre>
+<blockquote>
+<h2>Website Map Sparna.fr</h2>
+</blockquote>
+<p>This is website map for sparna.fr:</p>
+<pre><code>sparna.fr
+│   .eleventy.js
+│   .gitignore
+│   package-lock.json
+│   package.json
+│   serve.sh
+│   
+├───.cache
+├───.github 
+├───dist    
+├───node_modules           
+└───src
+    │   CNAME
+    │   
+    ├───11ty-notes
+    ├───assets      
+    ├───en          
+    ├───fr      
+    ├───_data
+    │   └───i18n
+    └───_layouts
+</code></pre>
+<h2><strong>Directories &amp; files</strong></h2>
+<h3>File</h3>
+<ul>
+<li><code>.eleventy.js</code> Eleventy config file.</li>
+<li><code>index.js</code> This file contains our dictionary of translations for each respective language.</li>
+</ul>
+<h3>Directories</h3>
+<ul>
+<li><code>src</code> Main Directory</li>
+<li><code>src\11ty-notes</code> Directory save all notes for how to developer Eleventy 11 for Sparna website.</li>
+<li><code>src\assets</code> Directory for save css, javascript, image files.</li>
+<li><code>src\en</code> Directory for save all document for display in Sparna.fr.</li>
+<li><code>src\fr</code> Directory for save all document for display in Sparna.fr.</li>
+<li><code>src\_data</code> Directory standard for save all file config.</li>
+<li><code>src\_data\i18n</code> Directory for save index.js file .</li>
+<li><code>src\_layout</code> Main directory for save template all.</li>
+</ul>
 
 		</main>
 	</body>

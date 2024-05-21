@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>European Legislation Identifier (ELI)</title>
+
+	<link rel="alternate" hreflang="en" href="/en/references/european-legislation-identifier-eli/"/>
+
+	<link rel='stylesheet' id='style-main-css'  href="../../../assets/css/style.css" type='text/css' media='all' />
+	<link rel='stylesheet'  href="../../../assets/css/contact-form.css" type='text/css' media='all' />
+
+	<link rel='stylesheet' id='fonts-css'  href="../../../assets/css/fonts/fonts.css" type='text/css' media='all' />
+
+	<script
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous"></script>
+
+	<script type='text/javascript' src="../../../assets/js/sparna.js"></script>
+
+	<!-- Jetpack Open Graph Tags -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Sparna" />
+	<meta property="og:description" content="Web de données | Architecture de l&#039;informations | Accès aux connaissances" />
+	<meta property="og:url" content="http://www.sparna.fr/" />
+	<meta property="og:site_name" content="Sparna" />
+	<meta property="og:image" content="../../../assets/images/logo.png" />
+	<meta property="og:locale" content="en" />
+	<meta name="twitter:card" content="summary" />
+
+</head>
+
+<body class="single single-reference">
+	<div class="interieur">
+		<header id="header">
+			<div id="logo"><a href="/fr" title = "Sparna"><img src="../../../assets/images/logo.png" alt = "" /></a></div>
+			<nav id = "menu">
+				<div class="menu-menu-principal-container">
+					<ul id="menu-menu-principal" class="nav-menu">
+						<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-46 menu-item-48"><a href="/en/">Home</a></li>
+						<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="/en/references">Use cases</a></li>
+						<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="/en/formations">Training offers</a></li>
+						<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="/en/team">The team</a></li>
+						<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="/en/contact">Contact</a></li>
+						<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://blog.sparna.fr" target="_blank">Blog</a></li>
+						<li>
+							<div class="menu-menu-principal-container">
+								
+
+								
+									<a href="/fr/references/european-legislation-identifier-eli/" lang="fr" hreflang="fr"><img src="/assets/images/FR.png" alt =""/></a>
+								
+							</div>					
+						</li>
+					</ul>
+				</div>			
+			</nav>			
+		</header>
+		
+		<section id = "contenu">
+			<h1>Use case</h1>
+
+<div class="logo"><img width="160" height="130" src="../../../assets/uploads/2021/02/Squared_ELiSeal-160x130.png" class="attachment-reference_thumb wp-post-image"></div>
+<div class="informations">
+	<h2>European Legislation Identifier (ELI)</h2>
+<p><a href="http://eur-lex.europa.eu/eli">ELI</a> (European Legislation Identifier) is an initiative of the Official Journals of several EU Member States and the Publications Office of the EU, aimed at making <strong>legislation more visible and interoperable on a European scale</strong>. This initiative is based on the <strong>technological fundamentals of the semantic web</strong>:</p>
+<ul>
+<li>
+<p>the ELI is a URI assigned to a legal text, a version or translation of a text, or part of a text, such as an article. This URI must have a number of specific characteristics:</p>
+<ul>
+<li>it must contain the /eli component to identify it as an ELI.</li>
+<li>it must use a certain number of URI components, such as <em>{jurisdiction}</em>, <em>{year}</em>, <em>{natural_identifier}</em>, etc., which each ELI implementation can arrange in its own way to create a perennial identifier similar to the way legal references are made to these texts. While remaining a technical identifier, this URI is intended to be &quot;user-friendly&quot; and relatively legible, to facilitate the establishment of links between laws on a web scale;</li>
+<li>this URI should be able to be &quot;truncated&quot; to enable simplified navigation through the legislative corpus; for example, if the URI <code>http://..../eli/2009/loi/1234</code> identifies law number 1234 of the year 2009, then the URI http://.../eli/2009/loi should list all the laws of 2009, and the URI http://.../eli/2009 should list all the legal texts of 2009.</li>
+</ul>
+</li>
+<li>
+<p>ELI defines <a href="http://publications.europa.eu/resource/dataset/eli">an ontology for describing legislative texts</a>, the result of collaboration and compromise between the various Journaux Officiels. This ontology takes the FRBR structuring for describing bibliographic records, and applies it to the characterization of laws. Typically :</p>
+<ul>
+<li>an abstract level represents the law independently of its versions;</li>
+<li>a level represents a particular version of the law;</li>
+<li>one level represents a particular linguistic variant of that version of the law;</li>
+<li>and the last level represents a specific format (authenticated PDF, paper, HTML etc.) of a particular linguistic variant of a version of a text;</li>
+<li>This ontology is also complemented by <a href="https://joinup.ec.europa.eu/collection/eli-european-legislation-identifier/solution/eli-ontology-draft-legislation-eli-dl">ELI-DL (Draft Legislation)</a>, an ontology for describing legislation currently under development. The aim of ELI-DL is to promote transparency and optimize the process of drafting legislation through a structured description of its data;</li>
+</ul>
+</li>
+<li>
+<p>ELI promotes the content annotation standards <a href="http://rdfa.info/">RDFa</a> and <a href="https://json-ld.org/">JSON-LD</a> so that the Official Journals of the various participants - as well as any regulatory or content provider - can semantize the content of existing web pages on its portal.</p>
+</li>
+</ul>
+<p>The ELI working group has also proposed an <a href="http://schema.org/Legislation">extension to the schema.org vocabulary for describing laws</a>, based on ELI. The aim of this extension is to make laws more visible on the Web.</p>
+<hr>
+<h2>Our expertise for ELI</h2>
+<p>I've been working as <strong>technical expert to the ELI Taskforce since 2014</strong>. In this capacity, I have been able to contribute to the following aspects</p>
+<h3>Training, support and documentation for organizations wishing to implement ELI.</h3>
+<p>An important part of the expertise consists of training and assistance to the participants of the ELI Taskforce, to facilitate the implementation of ELI in the websites of the Official Journals of the Member States. As such, I have been able to conduct training workshops with official newspapers in the following countries (in chronological order):</p>
+<ul>
+<li>Denmark</li>
+<li>Italy</li>
+<li>France</li>
+<li>Finland</li>
+<li>Luxemburg</li>
+<li>Austria</li>
+<li>Croatia</li>
+<li>Ireland</li>
+<li>Malta</li>
+<li>Slovakia</li>
+</ul>
+<p>These workshops are followed by periods of remote assistance and validation of each state's implementation.</p>
+<p>These workshops are complemented by the drafting of a <a href="https://op.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1/language-fr/format-PDF">technical guide for ELI implementation</a> which provides answers to the main technical questions that an information team may have when implementing ELI. This guide is based on feedback gathered during the various workshops.</p>
+<p>In some cases, this initial training work was supplemented by specific consulting for a particular implementation, for example in <a href="http://www.sparna.fr/reference/gouvernement-du-luxembourg/">Luxembourg for Legilux</a> or at <a href="http://www.sparna.fr/reference/office-des-publications-de-lunion-europeenne/">Office des Publications for Cellar</a>.</p>
+<h3>Modeling ontologies</h3>
+<p>I provide expertise on OWL and the formalization of business requirements in the various ELI ontologies:</p>
+<ul>
+<li>The <a href="http://publications.europa.eu/resource/dataset/eli">ELI ontology</a> itself, which has undergone 4 revisions since 2014 (1.0, 1.1, 1.2 and 1.3 in 2020)</li>
+<li>The <a href="https://joinup.ec.europa.eu/collection/eli-european-legislation-identifier/solution/eli-ontology-draft-legislation-eli-dl">ELI-DL ontology</a>, which is part of the <a href="http://www.cidoc-crm.org/">CIDOC-CRM</a> conceptual framework, for describing the activities of a legislative process and the associated documents</li>
+<li>The [Legislation schema.org extension] model(http://schema.or/Legislation)</li>
+</ul>
+<h3>Specifications for interoperability with ELI</h3>
+<p>I led and wrote a number of specifications to complement the original ELI standard</p>
+<ul>
+<li>The <a href="https://eur-lex.europa.eu/eli-register/resources.html">ELI/XML specification</a>;</li>
+<li>The <a href="https://eur-lex.europa.eu/eli-register/resources.html">ELI dataset description specification</a>;</li>
+</ul>
+<h3>Dissemination and involvement in other initiatives</h3>
+<p>The ELI initiative is linked to other related initiatives that need to be followed, and for which interoperability must sometimes be ensured:</p>
+<ul>
+<li>Akoma Ntoso](http://www.akomantoso.org/), XML schema for drafting legislative acts;</li>
+<li>OASIS LegalCiteM Working Group](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legalcitem) for structuring legal references;</li>
+<li>schema.org Community](https://github.com/schemaorg/schemaorg/issues/1156) for the Legislation extension.</li>
+<li>And, in emergence, <a href="http://wikidata.org/">Wikidata</a> for the dissemination of legislation data;</li>
+</ul>
+<p>In addition, I am the author of the following publication on ELI: <a href="http://ebooks.iospress.nl/volume/knowledge-of-the-law-in-the-big-data-age">The European Legislation Identifier, Thomas Francart, John Dann, Roberto Pappalardo, Carmen Malagon and Marco Pellegrino</a>, in Knowledge of the Law in the Big Data Age, IOS Press, 2019, p137-148</p>
+<h3>Application development</h3>
+<p>With the aim of assisting member states with the implementation of ELI, the ELI working group has developed <a href="https://webgate.ec.europa.eu/eli-validator/">an ELI metadata validator based on SHACL</a>. This metadata validator, developed in 2017, relied early on <a href="https://www.w3.org/TR/shacl/">SHACL</a>, before its finalization as an official W3C recommendation. This validator extracts structured metadata published in a web page and validates their semantic conformity with the ELI ontology, providing a validation report.</p>
+
+	<a href="/en/references" title ="Back to references list" class = 'retour'>Back to the list of use cases</a>
+</div>
+		</section>
+		</div>
+
+		<footer id = "footer">
+			<div class = "interieur">
+				<section class = "colonne">
+					<div class="menu-menu-principal-container">
+						<ul id="menu-menu-principal-1" class="nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-46 menu-item-48"><a href="/">Home</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="/en/references">Use cases</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="/en/formations">Training offers</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="/en/qui-suis-je">The team</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="/en/contact">Contact</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://blog.sparna.fr" target="_blank">Blog</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<section class = "colonne double"></section>
+
+				<section class = "colonne double">
+					<h5><a class="rsswidget" href="http://blog.sparna.fr/feed"><img style="border:0" width="14" height="14" src="../../../assets/images/rss.png " alt="RSS"></a> <a class="rsswidget" href="http://blog.sparna.fr/">Last articles from the blog</a></h5>
+					<ul>
+								<li><a href="https://blog.sparna.fr/2024/01/15/cordis-a-sparql-endpoint-is-born/">CORDIS : a SPARQL endpoint is born !</a></li>
+							
+						
+								<li><a href="https://blog.sparna.fr/2023/03/13/2013-2023-tis-skosplays-birthday/">2013-2023 : ‘Tis SKOSPlay!’s Birthday !</a></li>
+							
+						
+								<li><a href="https://blog.sparna.fr/2022/10/31/sparnatural-a-semweb-pro-2022-le-8-novembre/">Sparnatural à SemWeb.pro 2022 le 8 novembre</a></li>
+							
+						
+								<li><a href="https://blog.sparna.fr/2022/10/18/dashboards-from-sparql-knowledge-graphs-using-looker-studio-google-data-studio/">Dashboards from SPARQL knowledge graphs using Looker Studio (Google Data Studio)</a></li>
+							
+						
+								<li><a href="https://blog.sparna.fr/2022/07/20/clean-json-ld-from-rdf-using-framing/">Clean JSON(-LD) from RDF using Framing</a></li>
+							
+						
+						
+						
+						
+						
+						
+					</ul>
+				</section>
+			</div>
+		</footer>
+
+	</body>
+</html>
