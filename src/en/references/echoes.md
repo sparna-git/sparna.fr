@@ -22,4 +22,4 @@ The ECHOES project will foster the emergence of Digital Commons through this dig
 
 ## SPARNA for ECHOES
 
-Sparna is participating in WP7 and brings tools and expertise for the project : the [Sparnatural](https://sparnatural.eu/) query builder, based on a SHACL description of the Heritage Digital Twin modelling that can be documented with [SHACL Play](https://shacl-play.sparna.fr/play/). Sparna is also responsible for the sub-subtask 7.4.4 _"semantically enrich CH collections"_, to provide guidance on tools to assist CH institutions and individuals to add / enrich semantic descriptions to their data collections.
+Sparna is participating in WP7 and brings tools and expertise for the project : the [Sparnatural](https://sparnatural.eu/) query builder, based on a SHACL description of the Heritage Digital Twin modelling that can be documented with [SHACL Play](https://shacl-play.sparna.fr/play/). Sparna is also responsible for the sub-subtask 7.4.4 _"Semantically enrich CH collections"_, to provide guidance on tools to assist CH institutions and individuals to add / enrich semantic descriptions to their data collections.
