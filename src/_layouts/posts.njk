@@ -1,0 +1,35 @@
+---
+layout: sparna.njk
+bodyClass: page page-id-posts
+---
+{% if locale == "fr" %}
+  <h1>Posts<br>réseaux sociaux</h1>
+{% endif %}
+
+{% if locale == "en" %}
+  <h1>Social Network <br>posts</h1>
+{% endif %}
+
+{% set posts = collections.posts %}
+<ol class="postlist">
+  {%- for post in posts | reverse -%}
+  <li class="postlist__item">
+    <h2 class="postlist_title"><a href="{{post.page.url | relative(page)}}">{{post.data.title}}</a></h2>
+    <div class="postlist__meta">
+      <time class="postlist__date" datetime="{{ post.data.date | dateToISO }}">{{ post.data.date | readableDate('dd LLL yyyy', locale) }}</time>
+      {% if post.data.tags %}
+        <span aria-label="in category">&middot;</span> <span class="postlist__tags">{{ post.data.tags | join(', ') }}</span>
+      {% endif %}
+    </div>
+    <p class="postlist__excerpt">
+      {% if post.data.description %}
+          {{ post.data.description }}
+      {% else %}
+          {{ post.templateContent | excerpt | striptags }}
+      {% endif %}
+    </p>
+  </li>
+  {% endfor %}
+</ol>
+
+

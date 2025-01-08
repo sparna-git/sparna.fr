@@ -8,6 +8,7 @@
 	<link rel="alternate" hreflang="{{ page.lang }}" href="{{ meta.url }}{{ page.url }}"/>
 
 	<link rel='stylesheet' id='style-main-css'  href="{{ '/assets/css/style.css' | relative(page) }}" type='text/css' media='all' />
+	<link rel='stylesheet'  href="{{ '/assets/css/style-newwebsite.css' | relative(page) }}" type='text/css' media='all' />
 	<link rel='stylesheet'  href="{{ '/assets/css/contact-form.css' | relative(page) }}" type='text/css' media='all' />
 
 	<link rel='stylesheet' id='fonts-css'  href="{{ '/assets/css/fonts/fonts.css' | relative(page) }}" type='text/css' media='all' />
@@ -42,10 +43,11 @@
 						<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="/{{ locale }}/references">{{'Reference' | i18n }}</a></li>
 						<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="/{{ locale }}/formations">{{'Formations' | i18n }}</a></li>
 						<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="/{{ locale }}/team">{{'Qui' | i18n }}</a></li>
+						<li id="menu-item-posts" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-posts"><a href="/{{ locale }}/posts">{{'Posts' | i18n }}</a></li>
 						<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="/{{ locale }}/contact">Contact</a></li>
 						<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://blog.sparna.fr" target="_blank">Blog</a></li>
 						<li>
-							<div class="menu-menu-principal-container">
+							<div>
 								{{ languages[page.lang].availableText }}
 
 								{% for link in page.url | locale_links %} {%-if not loop.first %}/{% endif %}
