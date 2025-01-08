@@ -2,7 +2,7 @@
 layout: post.njk
 title: CLOSEuP conference
 date: 2025-01-08
-abstract: ...
+description: This is a summary that will be displayed in the posts list
 tags: EU
 permalink: en/posts/{{ title | slugify }}/
 linkedin: https://www.linkedin.com/posts/thomasfrancart_home-closeup-european-parliament-activity-7280886147508047872-r3IN?utm_source=share&utm_medium=member_desktop
