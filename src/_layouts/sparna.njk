@@ -47,7 +47,7 @@
 						<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="/{{ locale }}/contact">Contact</a></li>
 						<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="http://blog.sparna.fr" target="_blank">Blog</a></li>
 						<li>
-							<div class="menu-menu-principal-container">
+							<div>
 								{{ languages[page.lang].availableText }}
 
 								{% for link in page.url | locale_links %} {%-if not loop.first %}/{% endif %}

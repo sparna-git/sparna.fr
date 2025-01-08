@@ -14,9 +14,9 @@ bodyClass: page page-id-posts
 <ol class="postlist">
   {%- for post in posts | reverse -%}
   <li class="postlist__item">
-    <h2 class="postlist_title"><a href="">{{post.data.title}}</a></h2>
+    <h2 class="postlist_title"><a href="{{post.page.url | relative(page)}}">{{post.data.title}}</a></h2>
     <div class="postlist__meta">
-      <time class="postlist__date" datetime="{{ post.data.date | dateToISO }}">{{ post.data.date | readableDate('dd LLL yyyy') }}</time>
+      <time class="postlist__date" datetime="{{ post.data.date | dateToISO }}">{{ post.data.date | readableDate('dd LLL yyyy', locale) }}</time>
       {% if post.data.tags %}
         <span aria-label="in category">&middot;</span> <span class="postlist__tags">{{ post.data.tags | join(', ') }}</span>
       {% endif %}
@@ -31,4 +31,5 @@ bodyClass: page page-id-posts
   </li>
   {% endfor %}
 </ol>
+
 
