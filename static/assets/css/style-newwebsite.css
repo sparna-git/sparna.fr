@@ -1,3 +1,23 @@
+
+/* larger font in team page, references, trainings */
+body.page-id-6 #contenu, body.page-id-24 #contenu, body.single-reference #contenu, body.page-id-20 #contenu, body.page-id-2 #contenu {
+  font-size: 18px;
+}
+body.page-id-6 p, body.page-id-24 p, body.single-reference p, body.page-id-20 p, body.page-id-2 p,
+body.page-id-6 li, body.page-id-24 li, body.single-reference li, body.page-id-20 li, body.page-id-2 li
+{
+  line-height: 22px !important;
+}
+
+/* larger font in team page */
+body.page-id-6 #contenu {
+  font-size: 18px;
+}
+body.page-id-6 p {
+  line-height: 22px;
+}
+
+/* Social network menu */
 body.page-id-posts #header #menu li.current-menu-item a, body #header #menu li#menu-item-posts a:hover {
   color: #aa1223;
   border-bottom-color: #aa1223;
