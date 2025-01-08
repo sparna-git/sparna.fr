@@ -8,6 +8,8 @@ const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const i18n = require('eleventy-plugin-i18n');
 const translations = require('./src/_data/i18n');
 
+const filters = require('./utils/filters.js')
+
 /*
 Thomas : this is to work with N3 triplestore when parsing schema.org metadata
 const HTMLParser = require('node-html-parser');
@@ -70,6 +72,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("iso8601", (dateObj) => {
     return dateObj.toISOString();
   });
+
+  Object.keys(filters).forEach((filterName) => {
+      eleventyConfig.addFilter(filterName, filters[filterName])
+  })
 
   // transforms
   /*

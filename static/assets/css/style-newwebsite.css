@@ -1,0 +1,84 @@
+body.single-post #contenu {
+  margin-top: 80px;
+  padding-bottom: 80px;
+
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+
+  
+  
+}
+
+body.single-post .post__meta {
+  font-size: 18px;
+}
+
+body.single-post .post__content {
+  font-size: 22px;
+}
+
+body.single-post p {
+  margin-bottom:22px;
+}
+body.single-post ul {
+  margin-bottom:22px;
+  list-style:initial;
+  padding:revert;
+}
+body.single-post li {
+  margin-bottom:12px;
+}
+
+
+body.single-post .post__title {
+  font-size: 4rem !important;
+  letter-spacing: -2px;
+}
+
+body.single-post .post__meta {
+  margin-top: 15px;
+  font-style: italic;
+}
+
+body.single-post .post__footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+body.single-post .post__footer-info {
+  margin: 1rem 0;
+  color: var(--color-text-offset);
+  font-style: italic;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: all .2s ease-in-out;
+  font-size: .875rem;
+  padding: .50rem 1rem;
+  border: 2px solid rgba(0,0,0,.2);
+    border-top-color: rgba(0, 0, 0, 0.2);
+    border-right-color: rgba(0, 0, 0, 0.2);
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    border-left-color: rgba(0, 0, 0, 0.2);
+  border-radius: .25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+}
+
+.btn--linkedin {
+  background-color: #E9FFD4;
+  text-decoration: none;
+  color: #000;
+}
