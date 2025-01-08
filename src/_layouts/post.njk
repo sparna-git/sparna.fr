@@ -11,17 +11,17 @@ bodyClass: single single-post
     itemtype="http://schema.org/BlogPosting"
     aria-labelledby="{{ title | slug }}-title" 
 >
-    <header class="post__header">
+    <div class="post__header">
         <h1 id="{{ title | slug }}-title" class="post__title p-name title" itemprop="headline">{{ title }}</h1>
         <div class="post__meta">
             <p>
-                <time class="post__date dt-published" itemprop="datePublished" datetime="{{ page.date | dateToISO }}">{{ page.date | readableDate('dd LLL yyyy') }}</time>
+                <time class="post__date dt-published" itemprop="datePublished" datetime="{{ page.date | dateToISO }}">{{ page.date | readableDate('dd MMM yyyy', locale) }}</time>
                 {% if tags %}
                 <span aria-label="in category">&middot;</span> <span class="post__tags p-category">{{ tags | join(', ') }}</span>
                 {% endif %}
             </p>
         </div>
-    </header>
+    </div>
 
     <div class="post__content e-content markdown" itemprop="articleBody">
         {{ content | safe }}
@@ -34,7 +34,7 @@ bodyClass: single single-post
         </div>
 
         <p class="post__footer-info">
-            Published in [{{ tags | join(', ') }}] &middot; {{ page.date | readableDate('dd LLL yyyy') }} <br/>
+            Published in [{{ tags | join(', ') }}] &middot; {{ page.date | readableDate('dd LLL yyyy', locale) }} <br/>
             <a href="{{ metadata.repo }}/tree/master/{{ page.inputPath }}" title="suggest a change to this post by submitting a PR">Edit this Post</a>
         </p>
 
@@ -45,8 +45,26 @@ bodyClass: single single-post
             title="This post on LinkedIn"
             class="btn btn--linkedin"
         >
-            <img src="{{ '/assets/images/linkedin.png' | relative(page) }}" style="width:28px; margin-right:5px;" /> This post on LinkedIn
+            <img src="{{ '/assets/images/linkedin.png' | relative(page) }}" style="width:28px; margin-right:5px;" /> {{ 'Comment this post' | i18n }}
         </a>
     </div>
     
 </article>
+
+{% set otherposts = collections.posts | excludePost(page) %}
+
+<div class="postsection">
+    <h3 class="postsection__title">{{ 'Other posts' | i18n }}</h3>
+    <ol class="otherposts">
+        {% for post in otherposts | reverse %}
+            <li class="otherposts__item">
+                <a href="{{post.page.url | relative(page)}}" class="otherposts__link">
+                    <time class="otherposts__date" datetime="{{ post.date | dateToISO }}" aria-label=", written {{ post.date | readableDate('dd LLL yyyy', locale) }}">
+                        {{ post.date | readableDate('dd LLL yyyy', locale) }}
+                    </time>
+                    <span class="otherposts__title">{{ post.data.title }}</span>
+                </a>
+            </li>
+        {% endfor %}
+    </ol>
+</div>
