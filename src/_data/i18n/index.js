@@ -1,60 +1,72 @@
 module.exports = {
     // General
     Accueil: {
-      'fr': 'Accueil',
-      'en': 'Home'
+      "fr": "Accueil",
+      "en": "Home"
     },
     Reference: {
-      'fr': 'Nos références',
-      'en': 'Use cases'
+      "fr": "Nos références",
+      "en": "Use cases"
     },
     Formations: {
-      'fr': 'Nos formations',
-      'en': 'Training offers'
+      "fr": "Nos formations",
+      "en": "Training offers"
     },
     Qui: {
-      'fr': 'Notre équipe',
-      'en': 'The team'
+      "fr": "Notre équipe",
+      "en": "Team"
+    },
+    Posts: {
+      "fr": "Nos Posts",
+      "en": "Social network Posts"
     },
     Contact: {
-      'fr': 'Contact',
-      'en': 'Contact'
+      "fr": "Contact",
+      "en": "Contact"
     },
     Savoir: {
-      'fr' : 'En savoir +',
-      'en' : 'Learn more'
+      "fr" : "En savoir +",
+      "en" : "Learn more"
     },
     EtudeCas: {
-      'fr' : 'Etude de cas',
-      'en' : 'Use case'
+      "fr" : "Etude de cas",
+      "en" : "Use case"
     },
     RevenirALaListeDesReferences: {
-      'fr' : 'Revenir à la liste des références',
-      'en' : 'Back to the list of use cases'
+      "fr" : "Revenir à la liste des références",
+      "en" : "Back to the list of use cases"
     },
-	ArticlesBlog: {
-      'fr' : 'Les derniers articles du blog',
-      'en' : 'Last articles from the blog'
-	},
-	NomPrenom: {
-      'fr' : 'Nom / Prénom',
-      'en' : 'Last name / First name'
+    ArticlesBlog: {
+      "fr" : "Les derniers articles du blog",
+      "en" : "Last articles from the blog"
     },
-	Email: {
-      'fr' : 'Adresse e-mail',
-      'en' : 'Email'
+    NomPrenom: {
+      "fr" : "Nom / Prénom",
+      "en" : "Last name / First name"
     },
-	Objet: {
-      'fr' : 'Objet',
-      'en' : 'Subject'
+    Email: {
+      "fr" : "Adresse e-mail",
+      "en" : "Email"
     },
-	Message: {
-      'fr' : 'Message',
-      'en' : 'Message'
+	  Objet: {
+      "fr" : "Objet",
+      "en" : "Subject"
     },
-	ChampObligatoire: {
-      'fr' : 'champ obligatoire',
-      'en' : 'required'
+	  Message: {
+      "fr" : "Message",
+      "en" : "Message"
     },
+    ChampObligatoire: {
+      "fr" : "champ obligatoire",
+      "en" : "required"
+    },
+    "Comment this post": {
+      "fr" : "Commenter ce post",
+      "en" : "Comment this post"
+    },
+    "Other posts": {
+      "fr" : "D'autres posts",
+      "en" : "Other posts"
+    }
 	
   };
