@@ -14,7 +14,11 @@ module.exports = {
     },
     Qui: {
       'fr': 'Notre équipe',
-      'en': 'The team'
+      'en': 'Team'
+    },
+    Posts: {
+      'fr': 'Nos Posts',
+      'en': 'Social network'
     },
     Contact: {
       'fr': 'Contact',

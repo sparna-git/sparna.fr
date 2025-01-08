@@ -1,3 +1,48 @@
+body.page-id-posts #header #menu li.current-menu-item a, body #header #menu li#menu-item-posts a:hover {
+  color: #aa1223;
+  border-bottom-color: #aa1223;
+}
+body.page-id-posts h1 {
+  color: #aa1223;
+  margin-bottom: 50px;
+  
+}
+
+body.page-id-posts #contenu {
+  margin-top: 80px;
+  padding-bottom: 80px;
+  
+
+  width: 90%;
+  margin-left: 129px;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* Item in a list of posts */
+.postlist__item {
+  margin-bottom: 5rem;
+}
+/* Item title */
+.postlist__item h2 {  
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  margin-bottom:0.3rem;
+}
+/* Item title link */
+.postlist__item h2 a {
+  color: #e33f51;
+  text-decoration: none;
+}
+.postlist__meta {
+  font-style: italic;
+  margin-bottom:1rem;
+}
+.postlist__excerpt {
+  font-size: 1.375rem;
+}
+
 body.single-post #contenu {
   margin-top: 80px;
   padding-bottom: 80px;
@@ -5,10 +50,7 @@ body.single-post #contenu {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
-
-  
-  
+  max-width: 1200px;  
 }
 
 body.single-post .post__meta {

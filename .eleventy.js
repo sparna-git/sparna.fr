@@ -178,6 +178,12 @@ module.exports = function(eleventyConfig) {
       return filtered;
   });
 
+  // Collections: Posts
+  eleventyConfig.addCollection('posts', function (collection) {
+      return collection
+          .getFilteredByGlob(["src/en/posts/**/*.md", "src/fr/posts/**/*.md"])
+  })
+
   // pass-through
   eleventyConfig.addPassthroughCopy({ "static": "/" });
 
