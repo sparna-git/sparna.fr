@@ -12,10 +12,21 @@ jobs:
       - uses: actions/checkout@master
         with:
           ref: main
-      - name: Build
-        uses: TartanLlama/actions-eleventy@master
+
+      - name: Setud Node
+        uses: actions/setup-node@v3;
         with:
-          install_dependencies: true
+          node-version: "18"
+
+      - name: Install dependecies & build
+        run:
+          npm ci
+
+      - run: npm run build
+      #- name: Build
+      #  uses: TartanLlama/actions-eleventy@master
+      #  with:
+      #    install_dependencies: true
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
