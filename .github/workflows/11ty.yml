@@ -19,7 +19,6 @@ jobs:
           node-version: 18
       - name: Install dependencies & build
         run: |
-          npm install --package-lock-only
           npm ci
 
       - name: Persist npm cache
