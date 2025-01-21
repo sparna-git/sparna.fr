@@ -33,7 +33,7 @@ jobs:
           path: ./.cache
           key: ${{ runner.os }}-eleventy-fetch-cache
   
-      - run: npm run build
+      #- run: npm run build
       #- name: Build
       #  uses: TartanLlama/actions-eleventy@master
       #  with:
