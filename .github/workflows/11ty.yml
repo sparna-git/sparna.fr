@@ -16,10 +16,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: 18
       - name: Install dependencies & build
         run: |
-          npm ci
+          - npm install --package-lock-only
+          - npm ci
 
       - name: Persist npm cache
         uses: actions/cache@v3
