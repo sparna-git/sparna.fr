@@ -17,14 +17,6 @@ jobs:
       - name: Install dependencies & build
         run: |
           npm ci
-
-      #- run: npm run build
-      #- name: Build
-      #  uses: TartanLlama/actions-eleventy@master
-      #  with:
-      #    install_dependencies: true
-      #- run: npm run build
-
       - run: npx @11ty/eleventy
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
