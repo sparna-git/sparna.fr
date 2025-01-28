@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>UNESCO Thesaurus</title>
+	<title>Sparnatural configuration with SHACL</title>
 
-	<link rel="alternate" hreflang="en" href="/en/references/unesco-thesaurus/"/>
+	<link rel="alternate" hreflang="en" href="/en/posts/sparnatural-configuration-with-shacl"/>
 
 	<link rel='stylesheet' id='style-main-css'  href="../../../assets/css/style.css" type='text/css' media='all' />
 	<link rel='stylesheet'  href="../../../assets/css/style-newwebsite.css" type='text/css' media='all' />
@@ -32,7 +32,7 @@
 
 </head>
 
-<body class="single single-reference">
+<body class="single single-post">
 	<div class="interieur">
 		<header id="header">
 			<div id="logo"><a href="/fr" title = "Sparna"><img src="../../../assets/images/logo.png" alt = "" /></a></div>
@@ -51,8 +51,6 @@
 								
 
 								
-									<a href="/fr/references/thesaurus-de-l-unesco/" lang="fr" hreflang="fr"><img src="/assets/images/FR.png" alt =""/></a>
-								
 							</div>					
 						</li>
 					</ul>
@@ -61,19 +59,83 @@
 		</header>
 		
 		<section id = "contenu">
-			<h1>Use case</h1>
+			
+<article 
+    id="sparnatural-configuration-with-shacl" 
+    class="post h-entry" 
+    role="article" 
+    itemscope 
+    itemtype="http://schema.org/BlogPosting"
+    aria-labelledby="sparnatural-configuration-with-shacl-title" 
+>
+    <div class="post__header">
+        <h1 id="sparnatural-configuration-with-shacl-title" class="post__title p-name title" itemprop="headline">Sparnatural configuration with SHACL</h1>
+        <div class="post__meta">
+            <p>
+                <time class="post__date dt-published" itemprop="datePublished" datetime="2025-01-25T00:00:00">25 Jan 2025</time>
+                
+                <span aria-label="in category">&middot;</span> <span class="post__tags p-category">SHACL, Sparnatural</span>
+                
+            </p>
+        </div>
+    </div>
 
-<div class="logo"><img width="160" height="130" src="../../../assets/uploads/2017/02/unesco_logo_en-160x130.jpg" class="attachment-reference_thumb wp-post-image"></div>
-<div class="informations">
-	<h2>UNESCO Thesaurus</h2>
-<h3>Management and distribution of a SKOS Thesaurus based on open-source components</h3>
-<p>Sparna successfully completed the <strong>replacement of UNESCO's thesaurus management and publishing tools</strong> in 2016, after winning the corresponding tender. Sparna's proposal combined the use of open-source components: <a href="http://skosmos.org/">SKOSMOS</a> for the thesaurus navigation/search portal, <a href="http://labs.sparna.fr/skos-play/">SKOS Play</a> for PDF document generation, <a href="https://jena.apache.org/documentation/fuseki2/">Fuseki</a> for the SPARQL public query service and <a href="http://vocbench.uniroma2.it/">VocBench</a> for thesaurus management. The new thesaurus portal can be accessed at http://vocabularies.unesco.org.</p>
-<p>In the first phase, the thesaurus, comprising 4,400 concepts, 32,000 terms and 4 languages, was converted to <a href="http://www.sparna.fr/skos/SKOS-traduction-francais.html">SKOS</a> and then published in SKOSMOS. The result was quickly visible. Thesaurus managers testify: &quot;The immediate benefit was a pleasant user interface, which improved user feedback and enhanced the value of the thesaurus. The ability to produce exports in different formats thanks to SKOS Play and the SPARQL service enables us to extract parts of the thesaurus to meet the needs of our users&quot;.</p>
-<p>The second phase was the replacement of the current thesaurus management tool by VocBench: an open-source platform based on the SKOS standard, it now enables UNESCO to work collaboratively on the thesaurus (and in particular on the forthcoming Arabic and Chinese translations), thanks to detailed management of user rights and a validation workflow mechanism for validating contributions.</p>
-<p>The result? <strong>An enhanced thesaurus, supporting interoperability, conforming to Web of Data standards, and with no licensing costs</strong>. More details on the project can be found in the blog announcement (http://blog.sparna.fr/2017/02/06/unesco-thesaurus-published-with-semantic-web-standards-and-open-source-software/).</p>
-<p><img src="/assets/uploads/2017/02/screenshot-skosmos-small1.png" alt="screenshot Unesco"></p>
+    <div class="post__content e-content markdown" itemprop="articleBody">
+        <p>This week I wrote a <a href="https://blog.sparna.fr/2025/01/21/sparnatural-shacl-configuration-manual-automated-off-the-shelf/">blog post on the different techniques we use to configure the Sparnatural SPARQL query builder</a>.</p>
+<p>The configuration is written in SHACL. It can be defined manually in Excel files. Or it can be computed automatically from the analysis of the RDF dataset to be queried. Or we can take off-the-shelf SHACL specifications and complement them with manual annotations.</p>
+<p>Sparnatural is an excellent way to showcase a knowledge graph (don't hide your graph behind an AI, show it !).</p>
 
-	<a href="/en/references" title ="Back to references list" class = 'retour'>Back to the list of use cases</a>
+    </div>
+
+    
+    <div class="post__footer">
+        <div hidden>
+            <a class="u-url" href="/en/posts/sparnatural-configuration-with-shacl">Sparnatural configuration with SHACL</a>
+        </div>
+
+        <p class="post__footer-info">
+            Published in [SHACL, Sparnatural] &middot; 25 Jan 2025 <br/>
+            <a href="https://github.com/sparna-git/sparna.fr/tree/master/./src/en/posts/20250125-sparnatural-config-shacl.md" title="suggest a change to this post by submitting a PR">Edit this Post</a>
+        </p>
+
+        <a
+            href="https://www.linkedin.com/posts/thomasfrancart_this-week-i-wrote-a-blog-post-on-the-different-activity-7288577214009204737-Huus?utm_source=share&amp;utm_medium=member_desktop"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="This post on LinkedIn"
+            class="btn btn--linkedin"
+        >
+            <img src="../../../assets/images/linkedin.png" style="width:28px; margin-right:5px;" /> Comment this post
+        </a>
+    </div>
+    
+</article>
+
+
+
+<div class="postsection">
+    <h3 class="postsection__title">Other posts</h3>
+    <ol class="otherposts">
+        
+            <li class="otherposts__item">
+                <a href="../awesome-semantic-shapes" class="otherposts__link">
+                    <time class="otherposts__date" datetime="2025-01-08T00:00:00" aria-label=", written 08 Jan 2025">
+                        08 Jan 2025
+                    </time>
+                    <span class="otherposts__title">Awesome semantic shapes</span>
+                </a>
+            </li>
+        
+            <li class="otherposts__item">
+                <a href="../closeup-conference" class="otherposts__link">
+                    <time class="otherposts__date" datetime="2025-01-08T00:00:00" aria-label=", written 08 Jan 2025">
+                        08 Jan 2025
+                    </time>
+                    <span class="otherposts__title">CLOSEuP conference</span>
+                </a>
+            </li>
+        
+    </ol>
 </div>
 		</section>
 		</div>
