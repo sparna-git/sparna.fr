@@ -19,14 +19,16 @@ jobs:
           node-version: 18
       - name: Install dependencies & build
         run: |
-          npm ci
+          npm install
+          npm run build
+        #npm ci
 
       #- run: npm run build
       #- name: Build
       #  uses: TartanLlama/actions-eleventy@master
       #  with:
       #    install_dependencies: true
-      - run: npm run build
+      #- run: npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
