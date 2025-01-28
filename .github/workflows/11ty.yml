@@ -21,23 +21,12 @@ jobs:
         run: |
           npm ci
 
-      - name: Persist npm cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
-
-      - name: Persist Eleventy .cache
-        uses: actions/cache@v3
-        with:
-          path: ./.cache
-          key: ${{ runner.os }}-eleventy-fetch-cache
-  
       #- run: npm run build
       #- name: Build
       #  uses: TartanLlama/actions-eleventy@master
       #  with:
       #    install_dependencies: true
+      - run: npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
