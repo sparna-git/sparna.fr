@@ -2,7 +2,7 @@
   "name": "sparna.fr",
   "version": "2.0.0",
   "description": "sparna.fr website",
-  "script": {
+  "scripts": {    
     "build": "eleventy"
   },
   "devDependencies": {
