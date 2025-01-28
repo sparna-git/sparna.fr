@@ -9,9 +9,6 @@ jobs:
   build_deploy:
     runs-on: ubuntu-latest
     steps:
-     # - uses: actions/checkout@master
-      #  with:
-      #    ref: main
       - uses: actions/checkout@v3
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -19,9 +16,7 @@ jobs:
           node-version: 18
       - name: Install dependencies & build
         run: |
-          npm install
-          npm run build
-        #npm ci
+          npm ci
 
       #- run: npm run build
       #- name: Build
@@ -29,6 +24,8 @@ jobs:
       #  with:
       #    install_dependencies: true
       #- run: npm run build
+
+      - run: npx @11ty/eleventy
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
