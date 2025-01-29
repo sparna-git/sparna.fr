@@ -21,7 +21,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          publish_dir: dist
+          publish_dir: ./dist
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
       # Send Github page to sparna.fr
@@ -37,6 +37,6 @@ jobs:
           # Port
           port: 22
           # Local Path
-          local-path: "dist"
+          local-path: ./dist
           # Remote Path
           remote-path: ${{ secrets.REMOTE_PATH }}
