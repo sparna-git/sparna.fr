@@ -17,9 +17,26 @@ jobs:
       - name: Install dependencies & build
         run: |
           npm ci
-      - run: npm run build
+      - run: npx @11ty/eleventy
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: dist
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          
+      # Send Github page to sparna.fr
+      - name: SFTP Transfer
+        uses: danhendrickson/sftp-transfer-action@v2023.51.2
+        with:
+          # Server name secret
+          server: ${{ secrets.SERVER }}
+          # Username secret
+          user: ${{ secrets.USER }}
+          # Password secret
+          pass: ${{ secrets.PASSWORD }}
+          # Port
+          port: 22
+          # Local Path
+          local-path: "dist"
+          # Remote Path
+          remote-path: ${{ secrets.REMOTE_PATH }}
