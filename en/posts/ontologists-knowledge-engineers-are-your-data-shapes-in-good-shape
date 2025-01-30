@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>UNESCO IIEP</title>
+	<title>Ontologists, knowledge engineers : are your data shapes in good shape ?</title>
 
-	<link rel="alternate" hreflang="en" href="/en/references/unesco-iiep/"/>
+	<link rel="alternate" hreflang="en" href="/en/posts/ontologists-knowledge-engineers-are-your-data-shapes-in-good-shape"/>
 
 	<link rel='stylesheet' id='style-main-css'  href="../../../assets/css/style.css" type='text/css' media='all' />
 	<link rel='stylesheet'  href="../../../assets/css/style-newwebsite.css" type='text/css' media='all' />
@@ -32,7 +32,7 @@
 
 </head>
 
-<body class="single single-reference">
+<body class="single single-post">
 	<div class="interieur">
 		<header id="header">
 			<div id="logo"><a href="/fr" title = "Sparna"><img src="../../../assets/images/logo.png" alt = "" /></a></div>
@@ -51,8 +51,6 @@
 								
 
 								
-									<a href="/fr/references/unesco-iiep/" lang="fr" hreflang="fr"><img src="/assets/images/FR.png" alt =""/></a>
-								
 							</div>					
 						</li>
 					</ul>
@@ -61,24 +59,93 @@
 		</header>
 		
 		<section id = "contenu">
-			<h1>Use case</h1>
+			
+<article 
+    id="ontologists-knowledge-engineers-:-are-your-data-shapes-in-good-shape" 
+    class="post h-entry" 
+    role="article" 
+    itemscope 
+    itemtype="http://schema.org/BlogPosting"
+    aria-labelledby="ontologists-knowledge-engineers-:-are-your-data-shapes-in-good-shape-title" 
+>
+    <div class="post__header">
+        <h1 id="ontologists-knowledge-engineers-:-are-your-data-shapes-in-good-shape-title" class="post__title p-name title" itemprop="headline">Ontologists, knowledge engineers : are your data shapes in good shape ?</h1>
+        <div class="post__meta">
+            <p>
+                <time class="post__date dt-published" itemprop="datePublished" datetime="2025-01-30T00:00:00">30 Jan 2025</time>
+                
+                <span aria-label="in category">&middot;</span> <span class="post__tags p-category">SHACL Play, SHACL</span>
+                
+            </p>
+        </div>
+    </div>
 
-<div class="logo"><img width="160" height="130" src="../../../assets/uploads/2014/09/logo-iiep-170-140-160x130.png" class="attachment-reference_thumb wp-post-image"></div>
-<div class="informations">
-	<h2>UNESCO IIEP</h2>
-<h3>Plan4Learning: multilingual documentary portal on educational planning</h3>
-<p>The <a href="http://www.iiep.unesco.org/">International Institute for Educational Planning</a> is a UNESCO training and research center, founded in Paris in 1963, whose mission is to train and assist managers and planners of educational systems. Recognized for the quality of its documentary resource center, IIEP wanted to enhance it through a documentary search portal, providing easy access to resource records, highlighting the institute's monitoring work and current debates on the subject, and creating a unifying tool for the community of education specialists. This is what we have achieved with the [Plan4learning] portal (http://plan4learning.iiep.unesco.org/).</p>
-<p>This project was carried out in collaboration with <a href="http://www.iri.centrepompidou.fr/">IRI</a> (Institut de Recherche et d'Innovation du Centre Pompidou), which produced a tool for entering documentary records based on an RDF triplestore, and <a href="http://www.mondeca.com/">Mondeca</a>, which contributed its <a href="http://www.mondeca.com/Products/Intelligent-Topic-Manager">ITM pour la gestion des référentiels</a> solution, and a chain for indexing RDF data in SolR.</p>
-<p><img src="/assets/uploads/2014/09/plan4learning-screenshot-1.png" alt="screenshot IIEP"></p>
-<p>Based on the <a href="http://lucene.apache.org/solr">SolR</a> search engine, the final portal features a number of distinctive aspects:</p>
-<ul>
-<li>a multi-faceted (cartographic, temporal, thematic, event-based) and multilingual search mode ;</li>
-<li>the use and development during the project of authority repositories to facilitate searches (UNESCO thesaurus, thematic thesaurus, list of institutional authorities, terminological glossary);</li>
-<li>use of web data technologies (RDF, SKOS, SPARQL) throughout the architecture, from the record entry back-office to the repository management tool (Mondeca's ITM (http://www.mondeca.com/Products/Intelligent-Topic-Manager)), including the SolR indexing chain;</li>
-</ul>
-<p>The next stage of this project, taken over by the <a href="http://www.lehub-agence.com/">LeHub agency</a>, consists of integrating the search engine into an ergonomic portal incorporating collaborative functionalities.</p>
+    <div class="post__content e-content markdown" itemprop="articleBody">
+        <p class="lead">Now you can see it with the <a href="https://github.com/sparna-git/shacl-play/releases/tag/0.9.0">latest version of SHACL Play</a> :
+</p>
+<p>the documentation generated from your data specification features one entity diagram for each node shape. As it suports color annotation you can immediadly see what is what in the modal. The diagram is clickable so you can navigate inside your spec. The generation of a single diagram for the full model is still possible, however for large models this is not readable.</p>
+<p>SHACL Play is the tool used on the <a href="https://data.europarl.europa.eu/en/developer-corner">European Parliament Open Data Portal</a> to publish the data models documentation.</p>
 
-	<a href="/en/references" title ="Back to references list" class = 'retour'>Back to the list of use cases</a>
+    </div>
+
+    
+    <div class="post__footer">
+        <div hidden>
+            <a class="u-url" href="/en/posts/ontologists-knowledge-engineers-are-your-data-shapes-in-good-shape">Ontologists, knowledge engineers : are your data shapes in good shape ?</a>
+        </div>
+
+        <p class="post__footer-info">
+            Published in [SHACL Play, SHACL] &middot; 30 Jan 2025 <br/>
+            <a href="https://github.com/sparna-git/sparna.fr/tree/master/./src/en/posts/20250130-are-your-data-shapes-in-good-shape.md" title="suggest a change to this post by submitting a PR">Edit this Post</a>
+        </p>
+
+        <a
+            href="https://www.linkedin.com/posts/thomasfrancart_ontologists-knowledge-engineers-are-your-activity-7290353057651961859-pFd-?utm_source=share&amp;utm_medium=member_desktop"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="This post on LinkedIn"
+            class="btn btn--linkedin"
+        >
+            <img src="../../../assets/images/linkedin.png" style="width:28px; margin-right:5px;" /> Comment this post
+        </a>
+    </div>
+    
+</article>
+
+
+
+<div class="postsection">
+    <h3 class="postsection__title">Other posts</h3>
+    <ol class="otherposts">
+        
+            <li class="otherposts__item">
+                <a href="../sparnatural-configuration-with-shacl" class="otherposts__link">
+                    <time class="otherposts__date" datetime="2025-01-25T00:00:00" aria-label=", written 25 Jan 2025">
+                        25 Jan 2025
+                    </time>
+                    <span class="otherposts__title">Sparnatural configuration with SHACL</span>
+                </a>
+            </li>
+        
+            <li class="otherposts__item">
+                <a href="../awesome-semantic-shapes" class="otherposts__link">
+                    <time class="otherposts__date" datetime="2025-01-08T00:00:00" aria-label=", written 08 Jan 2025">
+                        08 Jan 2025
+                    </time>
+                    <span class="otherposts__title">Awesome semantic shapes</span>
+                </a>
+            </li>
+        
+            <li class="otherposts__item">
+                <a href="../closeup-conference" class="otherposts__link">
+                    <time class="otherposts__date" datetime="2025-01-08T00:00:00" aria-label=", written 08 Jan 2025">
+                        08 Jan 2025
+                    </time>
+                    <span class="otherposts__title">CLOSEuP conference</span>
+                </a>
+            </li>
+        
+    </ol>
 </div>
 		</section>
 		</div>
