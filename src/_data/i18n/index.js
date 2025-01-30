@@ -18,7 +18,7 @@ module.exports = {
     },
     Posts: {
       "fr": "Nos Posts",
-      "en": "Social network Posts"
+      "en": "Social media Posts"
     },
     Contact: {
       "fr": "Contact",
