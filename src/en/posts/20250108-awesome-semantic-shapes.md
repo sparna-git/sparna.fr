@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: Awesome semantic shapes
+author: Thomas Francart
 date: 2025-01-08
 description: A curated Github repository of RDF shape resources
 tags: SHACL

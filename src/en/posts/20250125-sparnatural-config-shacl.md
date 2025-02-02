@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: Sparnatural configuration with SHACL
+author: Thomas Francart
 date: 2025-01-25
 description: 3 ways to create SHACL Sparnatural configuration, manual, automated, off-the-felf.
 tags: SHACL, Sparnatural
