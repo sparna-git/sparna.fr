@@ -52,7 +52,11 @@ body.page-id-posts #contenu {
 }
 /* Item title link */
 .postlist__item h2 a {
-  color: black;
+  color: rgb(78, 78, 78);
+  text-decoration: none;
+}
+.postlist__item h2 a:hover {
+  color: #aa1223;
   text-decoration: none;
 }
 .postlist__meta {
@@ -114,8 +118,10 @@ body.single-post .post__content ul {
 body.single-post .post__content li {
   margin-bottom:12px;
 }
-
-
+/* Make em italic again, and strong bold again */
+body.single-post .post__content em, strong {
+  font: revert;
+}
 
 
 body.single-post .post__meta {
@@ -172,6 +178,25 @@ body.single-post .post__footer-info {
   background-color: #DEF0FD ;
   text-decoration: none;
   color: #000;
+}
+
+.btn--mastodon {
+  background-color: rgb(99 100 255) ;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn--bluesky {
+  background-color: #14191f ;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* This is for Fontawesome SVG, see https://docs.fontawesome.com/web/add-icons/svg-bare */
+.icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.125em;
 }
 
 /* After post */

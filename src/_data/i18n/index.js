@@ -17,8 +17,8 @@ module.exports = {
       "en": "Team"
     },
     Posts: {
-      "fr": "Nos Posts",
-      "en": "Social media Posts"
+      "fr": "Médias Sociaux",
+      "en": "Social Medias"
     },
     Contact: {
       "fr": "Contact",
