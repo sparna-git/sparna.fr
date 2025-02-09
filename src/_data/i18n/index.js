@@ -5,16 +5,16 @@ module.exports = {
       "en": "Home"
     },
     Reference: {
-      "fr": "Nos références",
+      "fr": "Références",
       "en": "Use cases"
     },
     Formations: {
-      "fr": "Nos formations",
+      "fr": "Formations",
       "en": "Training offers"
     },
     Qui: {
-      "fr": "Notre équipe",
-      "en": "Team"
+      "fr": "L'équipe",
+      "en": "The Team"
     },
     Posts: {
       "fr": "Médias Sociaux",
