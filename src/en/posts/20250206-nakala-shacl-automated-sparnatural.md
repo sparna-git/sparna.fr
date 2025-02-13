@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Nakala : from an RDF dataset to a query UI in minutes – SHACL automated generation and Sparnatural"
-author: Thomas Francart
+author: Marie Muller
 date: 2025-02-06
 description: A usecase of an automated version of Sparnatural submitted as an example for Veronika Heimsbakk’s "SHACL for the Practitioner" upcoming book
 tags: Sparnatural, SHACL

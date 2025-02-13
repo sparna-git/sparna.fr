@@ -119,7 +119,7 @@ body.single-post .post__content li {
   margin-bottom:12px;
 }
 /* Make em italic again, and strong bold again */
-body.single-post .post__content em, strong {
+body.single-post .post__content em, strong, code {
   font: revert;
 }
 
