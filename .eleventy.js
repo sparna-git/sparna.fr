@@ -9,6 +9,7 @@ const i18n = require('eleventy-plugin-i18n');
 const translations = require('./src/_data/i18n');
 
 const filters = require('./utils/filters.js')
+const shortcodes = require('./utils/shortcodes.js')
 
 /*
 Thomas : this is to work with N3 triplestore when parsing schema.org metadata
@@ -23,19 +24,19 @@ const { namedNode, literal, defaultGraph, quad } = DataFactory;
 const store = new N3.Store();
 */
 
-module.exports = function(eleventyConfig) {
+module.exports = function(config) {
   
   // plugins
-  eleventyConfig.addPlugin(plugin_syntaxhighlight);
-  eleventyConfig.addPlugin(plugin_schema);
+  config.addPlugin(plugin_syntaxhighlight);
+  config.addPlugin(plugin_schema);
   // this is to be able to render markdown templates inside Nunjuck templates
   // see https://www.11ty.dev/docs/plugins/render/
-  eleventyConfig.addPlugin(EleventyRenderPlugin);
+  config.addPlugin(EleventyRenderPlugin);
 
   // config plugins
   /*
   Thomas : this is to serialize all triples from header in a single output file
-  eleventyConfig.on('eleventy.after', async ({ dir, results, runMode, outputMode }) => {
+  config.on('eleventy.after', async ({ dir, results, runMode, outputMode }) => {
     const writer = new N3.Writer(
       { format: 'N-Quads' },
       { prefixes: { 
@@ -56,31 +57,15 @@ module.exports = function(eleventyConfig) {
   */
 
   // filters
-  // allows to make an absolute URL relative. Use it like this :
-  // {{ '/assets/old-website/uploads/2014/09/illustration.jpg' | relative(page) }}
-  eleventyConfig.addFilter(
-    "relative",
-    (absoluteUrl, page) => {
-      if (!absoluteUrl.startsWith('/')) {
-        throw new Error('URL is already relative')
-      }
-      const relativeUrl = require("path").relative(page.url, absoluteUrl);
-      return relativeUrl;
-    }
-  );
-
-  eleventyConfig.addFilter("iso8601", (dateObj) => {
-    return dateObj.toISOString();
-  });
-
+  // all imported filters
   Object.keys(filters).forEach((filterName) => {
-      eleventyConfig.addFilter(filterName, filters[filterName])
+      config.addFilter(filterName, filters[filterName])
   })
 
   // transforms
   /*
   Thomas : this is to extract JSON-LD header in a separate file
-  eleventyConfig.addTransform("jsonld-extract", function(content) {
+  config.addTransform("jsonld-extract", function(content) {
 
     // define a mapping of context URL => context doc
     let fileContent = fs.readFileSync("src/_data/schemaorg_jsonldcontext.json");
@@ -158,34 +143,30 @@ module.exports = function(eleventyConfig) {
   */
 
   // internationalization 
-  eleventyConfig.addPlugin(EleventyI18nPlugin, {
+  config.addPlugin(EleventyI18nPlugin, {
     defaultLanguage: 'fr', // Required
     errorMode: 'allow-fallback' // Opting out of "strict"
   });
 
 
-  eleventyConfig.addPlugin(i18n, {
+  config.addPlugin(i18n, {
     translations,
     fallbackLocales: {
       '*': 'fr'
     },
   });
 
-  // filter for collections
-  eleventyConfig.addFilter('localeFilter', function(collection, locale) {
-    if (!locale) return collection;
-      const filtered = collection.filter(item => item.data.locale == locale)
-      return filtered;
-  });
+  // shortcodes
+  config.addShortcode('analytics', shortcodes.analytics)
 
   // Collections: Posts
-  eleventyConfig.addCollection('posts', function (collection) {
+  config.addCollection('posts', function (collection) {
       return collection
           .getFilteredByGlob(["src/en/posts/**/*.md", "src/fr/posts/**/*.md"])
   })
 
   // pass-through
-  eleventyConfig.addPassthroughCopy({ "static": "/" });
+  config.addPassthroughCopy({ "static": "/" });
 
   // settings
   return {

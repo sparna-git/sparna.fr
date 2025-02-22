@@ -32,6 +32,26 @@ module.exports = {
         return allPosts.filter(
             (post) => post.inputPath !== currentPost.inputPath
         )
+    },
+
+    iso8601: function (dateObj) {
+        return dateObj.toISOString();
+    },
+
+    // allows to make an absolute URL relative. Use it like this :
+    // {{ '/assets/old-website/uploads/2014/09/illustration.jpg' | relative(page) }}
+    relative: function(absoluteUrl, page) {
+      if (!absoluteUrl.startsWith('/')) {
+        throw new Error('URL is already relative '+absoluteUrl)
+      }
+      const relativeUrl = require("path").relative(page.url, absoluteUrl);
+      return relativeUrl;
+    },
+
+    localeFilter: function(collection, locale) {
+    if (!locale) return collection;
+      const filtered = collection.filter(item => item.data.locale == locale)
+      return filtered;
     }
 
 }

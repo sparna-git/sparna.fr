@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "description": "sparna.fr website",
   "scripts": {    
-    "build": "eleventy"
+    "build": "ENVIRONMENT=prod eleventy",
+    "start": "ENVIRONMENT=dev eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
