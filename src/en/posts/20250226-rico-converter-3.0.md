@@ -6,7 +6,7 @@ date: 2025-02-26
 description: A new version of the RiC-O converter tool has been released (v3.0). This tool enables archival institutions to transition from XML-oriented archival descriptions to graph-based descriptions based on the new archival conceptual model Records-in-Contexts.
 tags: RiC-O
 permalink: en/posts/{{ title | slugify }}
-linkedin:
+linkedin: https://www.linkedin.com/posts/thomasfrancart_the-ric-o-converter-tool-has-been-released-activity-7300474920117956608-KL7L?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAiD3YwBJvGpu4Ak2jXNNvmSX7ws2MZ_uLE
 bluesky: 
 mastodon: 
 ---
@@ -23,6 +23,3 @@ Two things make this transition to graph-based + conceptual-model-backed descrip
 2. they provide a tool to convert existing data ! and that is RiC-O converter. So archival institutions can adpat it to their own need.
 
 Check out the [online documentation of RiC-O converter](https://archivesnationalesfr.github.io/rico-converter/) if you want to try it out on your own EAD or EAC files, and let us know what you think of it.
-
-
-
