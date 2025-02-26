@@ -110,7 +110,7 @@ body.single-post .post__content p, li {
 body.single-post .post__content p.lead {
   font-size: 28px;
 }
-body.single-post .post__content ul {
+body.single-post .post__content ul, body.single-post .post__content ol {
   margin-bottom:22px;
   list-style:initial;
   padding:revert;
