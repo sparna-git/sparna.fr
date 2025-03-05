@@ -15,4 +15,4 @@ Sparnatural offers [different widgets for value selection](https://docs.sparnatu
 Read on [Bluesky](https://bsky.app/profile/chutjeveille.bsky.social/post/3lfs6zh7ub22k) & [Mastodon](https://mastodon.social/@MarieMuller/113833367867395813) a full thread showing most interesting ones.
 
 Which one is your fav feature ?
-Do you have a knowledgegraph you could query this way ?
+Do you have a knowledge graph you could query this way ?
