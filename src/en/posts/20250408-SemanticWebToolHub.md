@@ -3,7 +3,7 @@ layout: post.njk
 title: "Sparna's tools in Semantic Web Tool Hub"
 author: Marie Muller
 date: 2025-04-08
-description: We added Sparna’s tools to the Semantic Web Tool Hub (and therefore to Wikidata) !
+description: "We added Sparna’s tools to the Semantic Web Tool Hub (and therefore to Wikidata) !"
 permalink: en/posts/{{ title | slugify }}
 linkedin: 
 bluesky:https://bsky.app/profile/chutjeveille.bsky.social/post/3lltd2jydkk2x
