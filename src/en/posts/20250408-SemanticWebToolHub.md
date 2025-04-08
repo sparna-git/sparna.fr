@@ -13,7 +13,7 @@ mastodon: https://mastodon.social/@MarieMuller/114268206948712855
 
 <p class="lead">We added Sparna's tools to the Semantic Web Tool Hub !</p>
 
-... and therefore to [Wikidata](https://www.wikidata.org/wiki/Q132649560)) :)
+... and therefore to [Wikidata](https://www.wikidata.org/wiki/Q132649560) :)
 
 [Semantic Web Tool Hub's](https://semantic-tool-hub.github.io/) project aims to find the right semantic web tools for the right usage scenario.
 
