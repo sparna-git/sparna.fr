@@ -1,13 +1,13 @@
 ---
 layout: post.njk
-title: "Sparna tools in Semantic Web Tool Hub"
+title: "Sparna's tools in Semantic Web Tool Hub"
 author: Marie Muller
 date: 2025-04-08
-description: "We added Sparna tools to the Semantic Web Tool Hub (and therefore to Wikidata) !"
+description: "We added Sparna's tools to the Semantic Web Tool Hub (and therefore to Wikidata) !"
 permalink: en/posts/{{ title | slugify }}
 linkedin: 
-bluesky:https://bsky.app/profile/chutjeveille.bsky.social/post/3lltd2jydkk2x
-mastodon:https://mastodon.social/@MarieMuller/114268206948712855
+bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3lltd2jydkk2x
+mastodon: https://mastodon.social/@MarieMuller/114268206948712855
 ---
 
 <p class="lead">We added Sparna's tools to the Semantic Web Tool Hub [https://semantic-tool-hub.github.io/](https://semantic-tool-hub.github.io/ "https://semantic-tool-hub.github.io/") (and therefore to [Wikidata](https://www.wikidata.org/wiki/Q132649560)) !</p>
