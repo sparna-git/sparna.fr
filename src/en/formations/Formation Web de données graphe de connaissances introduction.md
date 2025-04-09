@@ -2,6 +2,7 @@
 title: "Web of data and knowledge graphs : an introduction to kickstart your project"
 date: 2024-01-01
 permalink: "en/training/{{ title | slugify }}/"
+excludeFromSitemap: true
 tags:
   - formation
 ---

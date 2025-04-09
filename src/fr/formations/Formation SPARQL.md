@@ -2,6 +2,7 @@
 title: "Formation SPARQL : interroger le Web de données"
 date: 2022-04-01
 permalink: "fr/formation/{{ title | slugify }}/"
+excludeFromSitemap: true
 tags:
   - formation
 ---

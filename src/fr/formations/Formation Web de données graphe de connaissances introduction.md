@@ -2,6 +2,7 @@
 title: "Web de données, graphes de connaissances : introduction pour une mise en oeuvre intelligente"
 date: 2024-01-01
 permalink: "fr/formation/{{ title | slugify }}/"
+excludeFromSitemap: true
 tags:
   - formation
 ---

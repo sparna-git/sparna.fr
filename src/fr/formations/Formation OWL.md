@@ -2,6 +2,7 @@
 title: "Formation OWL : ontologies et modèles conceptuels pour les graphes de connaissances"
 date: 2022-01-01
 permalink: "fr/formation/{{ title | slugify }}/"
+excludeFromSitemap: true
 tags:
   - formation
 ---

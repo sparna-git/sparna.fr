@@ -2,6 +2,7 @@
 title: "Formation SKOS, vocabulaires contrôlés et alignements"
 date: 2022-03-01
 permalink: "fr/formation/{{ title | slugify }}/"
+excludeFromSitemap: true
 tags:
   - formation
 ---

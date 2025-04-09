@@ -2,6 +2,7 @@
 title: "SPARQL training : query knowledge graphs and the web of data"
 date: 2022-04-01
 permalink: "en/training/{{ title | slugify }}/"
+excludeFromSitemap: true
 tags:
   - formation
 ---

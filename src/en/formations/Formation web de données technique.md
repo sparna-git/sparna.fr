@@ -2,6 +2,7 @@
 title: "Web of data technical training : develop your knowledge graph based system"
 date: 2023-01-01
 permalink: "en/training/{{ title | slugify }}/"
+excludeFromSitemap: true
 tags:
   - formation
 ---

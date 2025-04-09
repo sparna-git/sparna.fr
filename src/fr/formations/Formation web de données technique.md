@@ -2,6 +2,7 @@
 title: "Formation Web de données technique : développer un système de graphe de connaissances"
 date: 2023-01-01
 permalink: "fr/formation/{{ title | slugify }}/"
+excludeFromSitemap: true
 tags:
   - formation
 ---

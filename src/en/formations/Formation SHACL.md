@@ -2,6 +2,7 @@
 title: "SHACL training : specify the structure of your knowledge graph"
 date: 2022-02-01
 permalink: "en/training/{{ title | slugify }}/"
+excludeFromSitemap: true
 tags:
   - formation
 ---

@@ -1,0 +1,4 @@
+Sitemap: https://sparna.fr/sitemap.xml
+
+User-agent: *
+Disallow:

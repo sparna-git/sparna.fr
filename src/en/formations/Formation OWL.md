@@ -2,6 +2,7 @@
 title: "OWL Training : ontologies and conceptual models for knowledge graphs"
 date: 2022-01-01
 permalink: "en/training/{{ title | slugify }}/"
+excludeFromSitemap: true
 tags:
   - formation
 ---

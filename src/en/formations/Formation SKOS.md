@@ -2,6 +2,7 @@
 title: "SKOS training : thesaurus, controlled vocabularies and alignments"
 date: 2022-03-01
 permalink: "en/training/{{ title | slugify }}/"
+excludeFromSitemap: true
 tags:
   - formation
 ---
