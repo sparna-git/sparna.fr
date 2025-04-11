@@ -11,7 +11,7 @@ bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3lmjua3eh722e
 mastodon: https://mastodon.social/@MarieMuller/114319008733603790
 ---
 
-<p class="lead">La conférence [https://semweb.pro](https://semweb.pro) est LA journée annuelle de présentations et de rencontres dédiées au web sémantique dans le monde professionnel qui a lieu chaque année à Paris depuis 2011.</p>
+La conférence [https://semweb.pro](https://semweb.pro) est LA journée annuelle de présentations et de rencontres dédiées au web sémantique dans le monde professionnel qui a lieu chaque année à Paris depuis 2011.
 
 Dans un but d'ouverture et de renouvellement, le comité de programme souhaite intégrer de nouveaux membres (la contribution est bénévole).
 
