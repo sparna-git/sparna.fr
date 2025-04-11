@@ -245,6 +245,6 @@ body.single-post .post__footer-info {
   white-space: nowrap;
 }
 
-img {
+body.single-post .post img {
   width:100%;
 }
