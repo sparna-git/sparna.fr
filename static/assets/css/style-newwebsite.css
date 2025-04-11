@@ -244,3 +244,7 @@ body.single-post .post__footer-info {
   font-size: .75em;
   white-space: nowrap;
 }
+
+img {
+  width:100%;
+}

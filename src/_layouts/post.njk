@@ -11,6 +11,16 @@ bodyClass: single single-post
     itemtype="http://schema.org/BlogPosting"
     aria-labelledby="{{ title | slug }}-title" 
 >
+
+
+    {% if image %}
+    <!--
+    <figure  style="text-align:center;">
+        <img src="{{ image | relative(page) }}" style="width:80%" />
+    </figure>
+    -->
+    {% endif %}
+
     <div class="post__header">
         <h1 id="{{ title | slug }}-title" class="post__title p-name title" itemprop="headline">{{ title }}</h1>
         <div class="post__meta">
@@ -23,6 +33,7 @@ bodyClass: single single-post
         </div>
     </div>
 
+
     <div class="post__content e-content markdown" itemprop="articleBody">
         {{ content | safe }}
     </div>
@@ -34,7 +45,7 @@ bodyClass: single single-post
         </div>
 
         <p class="post__footer-info">
-            Published in [{{ tags | join(', ') }}] &middot; {{ page.date | readableDate('dd LLL yyyy', locale) }} <br/>
+            {% if tags %}Published in [{{ tags | join(', ') }}] &middot; {% endif %}{{ page.date | readableDate('dd LLL yyyy', locale) }} <br/>
             <a href="{{ metadata.repo }}/tree/master/{{ page.inputPath }}" title="suggest a change to this post by submitting a PR">edit this post</a>
         </p>
 
