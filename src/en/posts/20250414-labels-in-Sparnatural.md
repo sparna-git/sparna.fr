@@ -1,21 +1,21 @@
 ---
 layout: post.njk
-title: "Multilinguism, multi-labels : how to play and display the literals of a graph in Sparnatural"
+title: "Multilingualism, multi-labels : how to play and display the literals of a graph in Sparnatural"
 author: Marie Muller, Thomas Francart
 date: 2025-05-07
 description: "Making your data accessible to users that don’t necessarily speak the same language as the one used in your dataset"
 tags: multilingualism, Sparnatural, labels
 permalink: en/posts/{{ title | slugify }}
 linkedin:
-bluesky:
-mastodon:
+bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3lolt6js4zk2m
+mastodon: https://mastodon.social/deck/@MarieMuller/114467510850318899
 ---
 
 <p class="lead">As a knowledge graph data provider, you would like to maximize the potential of reuse of your data, hence making it accessible to users that don’t necessarily speak the same language as the one used in your dataset.
 
 Typically, cultural heritage data providers want their data to be accessible across Europe and across language barriers. The use-case we encountered was the sharing of cultural heritage data across the Europeana network (in the context of the [Europeana Linked Data Taskforce](https://pro.europeana.eu/project/linked-data-task-force)).
 
-Sparnatural, as a tool to promote the content of a knowlede graph, can adress this multilingualism concern in order to make the data accessible at large. It does so by combining 2 notions : the user preferred language, and the dataset default language.
+Sparnatural, as a tool to promote the content of a knowledge graph, can address this multilingualism concern in order to make the data accessible at large. It does so by combining 2 notions : the user preferred language, and the dataset default language.
 
 **Multilingual Sparnatural configuration**
 
@@ -27,7 +27,7 @@ To deal with this question of providing a knowledge graph exploration UI in mult
 
 From a multilingual configuration, the labels and tooltips that Sparnatural will pick up depends on the “lang” attribute of the <spar-natural> element in the HTML page. **The « lang » attribute represents the user preferred language**.
 
-That attribute is dynamic, meaning that it can changed from the HTML page, typically from a language selection dropdown : in this case Sparnatural will reload itself with the new language value.
+That attribute is dynamic, meaning that it can be changed from the HTML page, typically from a language selection dropdown : in this case Sparnatural will reload itself with the new language value.
 
 [![](/assets/posts-images/multilingualism.jpg)](/assets/posts-images/multilingualism.jpg)
 
@@ -43,7 +43,7 @@ The « lang » attribute, being the user preferred language, will drive :
 
 Sparnatural also provides a way to specify the default language of the dataset : this is the language in which the knowledge graph is supposed to always have a label for all Entities. This is meant to deal with situations where some Entities do have a label in the user preferred language, and others don’t, but will have a label in a default language. Think of a multilingual taxonomy that would not be 100% translated in every language, but for which the concepts always have a label in this language.
 
-That dataset default language is driven by the « defaultLang » attribute of the <spar-natural> element. Contrary to the « lang » parameter, it is not dynamic : the default language of the dataset does not change[[1]](#_ftn1) ! .
+That dataset default language is driven by the « defaultLang » attribute of the <spar-natural> element. Contrary to the « lang » parameter, it is not dynamic : the default language of the dataset does not change [[1]](#_ftn1) ! .
 
 **The** **multilingual default labels** **in Sparnatural : « dash:LabelRole »**
 
@@ -53,7 +53,7 @@ The behavior with respect to multilingualism is the following : if the human-rea
 
 What is this « most appropriate language » ? it is the user language (the one indicated in the « lang » attribute) but if not found, the default language of the dataset (the one indicated in the « defaultLang » attribute).
 
-SPARQL queries thus look like the following one, where a user reading French tries to query a dataset with default english labels :
+SPARQL queries thus look like the following one, where a user reading French tries to query a dataset with default English labels :
 
 [![](/assets/posts-images/default-English-labels.jpg)](/assets/posts-images/default-English-labels.jpg)
 
