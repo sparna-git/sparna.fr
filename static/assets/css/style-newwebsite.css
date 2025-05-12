@@ -30,8 +30,6 @@ body.page-id-posts h1 {
 body.page-id-posts #contenu {
   margin-top: 80px;
   padding-bottom: 80px;
-  
-
   width: 90%;
   margin-left: 129px;
   margin-right: auto;
@@ -121,6 +119,12 @@ body.single-post .post__content li {
 /* Make em italic again, and strong bold again */
 body.single-post .post__content em, strong, code {
   font: revert;
+}
+
+body.single-post .post__content h2, h3, h4 {
+  margin: revert;  
+  padding: revert;
+  font-size: revert;
 }
 
 
