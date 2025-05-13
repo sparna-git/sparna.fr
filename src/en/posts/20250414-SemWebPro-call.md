@@ -24,6 +24,7 @@ Date limite de soumission : 30 juin 2025
 Préparez vos sujets !
 
 Date de la conférence : 27 Novembre 2025
+
 Lieu : FIAP Paris (30 rue Cabanis, 75014 PARIS)
 
 [![](/assets/posts-images/call-swep-2025.jpg)](/assets/posts-images/call-swep-2025.jpg)
