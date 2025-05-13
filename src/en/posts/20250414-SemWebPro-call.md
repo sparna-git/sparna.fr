@@ -8,7 +8,7 @@ tags: semwebpro, semweb, websem, opendata, linkeddata, linkedopendata, knowledge
 permalink: en/posts/{{ title | slugify }}
 linkedin: https://fr.linkedin.com/posts/logilab_semwebpro-2024-activity-7322537842335772672-z8cw
 bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3loxjtbflz22e
-mastodon: https://mastodon.social/deck/@logilab@logilab.fr/114414639811641994
+mastodon: https://mastodon.logilab.fr/@logilab/114414639668131818
 ---
 
 <p class="lead">Organisée par Logilab, SemWeb.Pro est LA conférence francophone dédiée au Web sémantique et aux graphes de connaissances qui réunit chaque année une cinquantaine de personnes depuis sa première édition en 2011.</p>
