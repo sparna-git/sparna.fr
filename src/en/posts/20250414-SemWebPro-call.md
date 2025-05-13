@@ -11,7 +11,7 @@ bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3loxjtbflz22e
 mastodon: https://mastodon.social/deck/@logilab@logilab.fr/114414639811641994
 ---
 
-<p class="lead">Organisée par Logilab, SemWeb.Pro est LA conférence francophone dédiée au Web Sémantique et aux graphes de connaissances qui réunit chaque année une cinquantaine de personnes depuis sa première édition en 2011.</p>
+<p class="lead">Organisée par Logilab, SemWeb.Pro est LA conférence francophone dédiée au Web sémantique et aux graphes de connaissances qui réunit chaque année une cinquantaine de personnes depuis sa première édition en 2011.</p>
 
 It's happening again.
 
