@@ -11,6 +11,8 @@
     <link rel="alternate" hreflang="{{ link.lang }}" href="{{ metadata.url }}{{link.url}}">
   	{% endfor %}
 
+  	<link rel="icon" href="{{ '/assets/icons/favicon.ico' | relative(page) }}">
+
 	<link rel='stylesheet' id='style-main-css'  href="{{ '/assets/css/style.css' | relative(page) }}" type='text/css' media='all' />
 	<link rel='stylesheet'  href="{{ '/assets/css/style-newwebsite.css' | relative(page) }}" type='text/css' media='all' />
 	<link rel='stylesheet'  href="{{ '/assets/css/contact-form.css' | relative(page) }}" type='text/css' media='all' />
