@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ locale }}" dir="{{ dir }}">
+<html lang="{{ locale }}">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title>{{ title }}</title>
+	<link rel="canonical" href="{{ metadata.url }}{{ page.url }}" />
 
-	<link rel="alternate" hreflang="{{ page.lang }}" href="{{ meta.url }}{{ page.url }}"/>
+	<link rel="alternate" hreflang="{{ page.lang }}" href="{{ metadata.url }}{{ page.url }}"/>
+	{% for link in page.url | locale_links %}
+    <link rel="alternate" hreflang="{{ link.lang }}" href="{{ metadata.url }}{{link.url}}">
+  	{% endfor %}
+
+  	<link rel="icon" href="{{ '/assets/icons/favicon.ico' | relative(page) }}">
 
 	<link rel='stylesheet' id='style-main-css'  href="{{ '/assets/css/style.css' | relative(page) }}" type='text/css' media='all' />
 	<link rel='stylesheet'  href="{{ '/assets/css/style-newwebsite.css' | relative(page) }}" type='text/css' media='all' />
