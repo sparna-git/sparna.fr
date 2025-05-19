@@ -1,4 +1,4 @@
 Sitemap: https://www.sparna.fr/sitemap.xml
 
 User-agent: *
-Disallow:
+Disallow: /*/feed/
