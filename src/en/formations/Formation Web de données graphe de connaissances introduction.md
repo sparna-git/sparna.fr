@@ -82,4 +82,4 @@ Knowledge of HTML and XML essential. Modeling skills (UML or other). Knowledge o
 
 ### Adapt this training
 
-This training course, given by a specialist with 20 years' experience, can be run **on your premises** and **can be adapted** to suit your needs: the format can be adapted (2 days instead of 3), the content can be adapted to suit the trainees, or specific data can be used as support. Please [contact us](https://sparna.fr/contact/).
+This training course, given by a specialist with 20 years' experience, can be run **on your premises** and **can be adapted** to suit your needs: the format can be adapted (2 days instead of 3), the content can be adapted to suit the trainees, or specific data can be used as support. Please [contact us](https://www.sparna.fr/en/contact/).

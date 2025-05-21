@@ -80,4 +80,4 @@ This advanced Web of data training course is aimed at **developers**, **data sci
 
 ### Adapt this course
 
-By its very nature, this Web of Data training course for developers requires special adaptation to suit your project and data. If your problem requires the use of particular tools (inference engines, RDF bases, semantic ETLs), or particular data models, the basic training content will be adapted to take them into account. Please [contact us](https://sparna.fr/contact/).
+By its very nature, this Web of Data training course for developers requires special adaptation to suit your project and data. If your problem requires the use of particular tools (inference engines, RDF bases, semantic ETLs), or particular data models, the basic training content will be adapted to take them into account. Please [contact us](https://www.sparna.fr/en/contact/).

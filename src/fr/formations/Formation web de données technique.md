@@ -80,4 +80,4 @@ Cette formation Web de données avancée s'adresse à des **développeurs**, **d
 
 ### Adapter cette formation
 
-Par nature, cette formation Web de données pour les développeurs nécessite une adaptation particulière en fonction du projet, des données. Si votre problématique nécessite l'emploi d'outils particuliers (moteurs d'inférences, bases RDF, ETL sémantiques), ou de modèles de données particuliers, le contenu de base de la formation sera adapté pour les prendre en compte. Pour cela, [contactez-nous](https://sparna.fr/contact/).
+Par nature, cette formation Web de données pour les développeurs nécessite une adaptation particulière en fonction du projet, des données. Si votre problématique nécessite l'emploi d'outils particuliers (moteurs d'inférences, bases RDF, ETL sémantiques), ou de modèles de données particuliers, le contenu de base de la formation sera adapté pour les prendre en compte. Pour cela, [contactez-nous](https://www.sparna.fr/fr/contact/).

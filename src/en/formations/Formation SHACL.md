@@ -88,6 +88,6 @@ Trainees attending this course should :
 
 ### Adapt this training
 
-[Contact us](https://sparna.fr/contact/) to adapt this course to your project. In particular, this course can be adapted to your project's existing data.
+[Contact us](https://www.sparna.fr/en/contact/) to adapt this course to your project. In particular, this course can be adapted to your project's existing data.
 
 

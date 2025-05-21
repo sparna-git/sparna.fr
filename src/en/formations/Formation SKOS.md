@@ -74,7 +74,7 @@ Training to become familiar with the structuring of thesauri, taxonomies, contro
 
 ### Adapt this training
 
-[Contact us](https://sparna.fr/contact/) to adapt this training to your project. This training can be adapted to a shorter one-day format, and adapted to the repositories already used in the information system.
+[Contact us](https://www.sparna.fr/en/contact/) to adapt this training to your project. This training can be adapted to a shorter one-day format, and adapted to the repositories already used in the information system.
 
 ### How to adapt training courses?
 

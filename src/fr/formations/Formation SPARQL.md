@@ -76,5 +76,5 @@ Une formation entièrement dédiée au langage SPARQL. Pour des équipes désire
 
 ### Adapter cette formation
 
-[Contactez-nous](https://sparna.fr/contact/) pour adapter cette formation à votre projet. En particulier cette formation peut être adaptée sur la base des données existantes dans votre projet.
+[Contactez-nous](https://www.sparna.fr/fr/contact/) pour adapter cette formation à votre projet. En particulier cette formation peut être adaptée sur la base des données existantes dans votre projet.
 

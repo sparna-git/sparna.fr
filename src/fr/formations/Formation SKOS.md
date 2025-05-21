@@ -74,7 +74,7 @@ Une formation pour se familiariser avec la structuration des thésaurus, taxonom
 
 ### Adapter cette formation
 
-[Contactez-nous](https://sparna.fr/contact/) pour adapter cette formation à votre projet. Cette formation peut être adaptée sur un format plus court d'une journée, et adaptée sur les référentiels déjà utilisés dans le système d'information.
+[Contactez-nous](https://www.sparna.fr/fr/contact/) pour adapter cette formation à votre projet. Cette formation peut être adaptée sur un format plus court d'une journée, et adaptée sur les référentiels déjà utilisés dans le système d'information.
 
 ### Comment adapter les formations ?
 

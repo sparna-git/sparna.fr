@@ -82,4 +82,4 @@ Connaissance de HTML et XML indispensables. Notions de modélisation (UML ou aut
 
 ### Adapter cette formation
 
-Cette formation, dispensée par un spécialiste de 20 ans d'expérience, est réalisable **dans vos locaux** et **modulable** en fonction de vos problématiques : le format peut être adapté (2 jours au lieu de 3), le contenu modulé en fonction des stagiaires, ou des données spécifiques peuvent être utilisées comme support. Pour cela, [contactez-nous](https://sparna.fr/contact/).
+Cette formation, dispensée par un spécialiste de 20 ans d'expérience, est réalisable **dans vos locaux** et **modulable** en fonction de vos problématiques : le format peut être adapté (2 jours au lieu de 3), le contenu modulé en fonction des stagiaires, ou des données spécifiques peuvent être utilisées comme support. Pour cela, [contactez-nous](https://www.sparna.fr/fr/contact/).
