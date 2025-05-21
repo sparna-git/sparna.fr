@@ -13,7 +13,7 @@ permalink: en/references/{{ title | slugify }}/
 
 ### legilux.public.lu / Casemates
 
-Luxembourg launched the new version of its legislative portal http://legilux.public.lu on January 1, 2017. In the combined movement of the [ELI](http://blog.sparna.fr/2015/05/31/eli-european-legislation-identifier-web-de-donnees-legislatif-europeen/) (European Legislation Idenfier) initiative, open data and the web of data, this is based on an open, searchable **legislative knowledge graph**: the "Casemates" database, accessible at http://data.legilux.public.lu/.
+Luxembourg launched the new version of its legislative portal http://legilux.public.lu on January 1, 2017. In the combined movement of the [ELI](https://blog.sparna.fr/2015/05/31/eli-european-legislation-identifier-web-de-donnees-legislatif-europeen/) (European Legislation Idenfier) initiative, open data and the web of data, this is based on an open, searchable **legislative knowledge graph**: the "Casemates" database, accessible at http://data.legilux.public.lu/.
 
 This knowledge graph is based on a modeling of legislative texts in FRBR-OO (the latest evolution in terms of bibliographic description), which precisely distinguishes a law in general, a particular version of the law (published in the Journal Officiel, consolidated on such and such a date, etc.), and a specific format (HTML, XML, PDF) from a particular version. The graph then captures all the relationships between legal texts: citation links, amendment links, repeal links, transposition links, bill links, etc. Controlled vocabularies also form part of the knowledge graph: list of Luxembourg communes, themes, text types, ministries, etc.
 

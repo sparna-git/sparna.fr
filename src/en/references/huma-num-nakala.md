@@ -15,7 +15,7 @@ permalink: en/references/{{ title | slugify }}/
 
 The mission of the CNRS Très grande Infrasctructure de Recherche [Huma-Num](http://www.huma-num.fr/) is to offer digital services to researchers in the humanities and social sciences. As part of this mission, it wishes to provide researchers with a data hosting and distribution platform: [Nakala](https://www.nakala.fr/).
 
-Nakala enables data to be stored and archived perennially, described (using [dcterms](http://www.sparna.fr/reference/huma-num-nakala/dublincore.org/documents/dcmi-terms/) metadata), and redistributed in the form of [OAI](http://www.openarchives.org/OAI/openarchivesprotocol.html) streams, dereferenceable URIs, and [SPARQL service](http://www.nakala.fr/sparql). Nakala demonstrates the flexibility of Web of Data technologies compared with other dissemination technologies such as OAI. More information on the solution implemented is available on the [Nakala service description page](http://www.huma-num.fr/service/nakala).
+Nakala enables data to be stored and archived perennially, described (using [dcterms](https://www.sparna.fr/reference/huma-num-nakala/dublincore.org/documents/dcmi-terms/) metadata), and redistributed in the form of [OAI](http://www.openarchives.org/OAI/openarchivesprotocol.html) streams, dereferenceable URIs, and [SPARQL service](http://www.nakala.fr/sparql). Nakala demonstrates the flexibility of Web of Data technologies compared with other dissemination technologies such as OAI. More information on the solution implemented is available on the [Nakala service description page](http://www.huma-num.fr/service/nakala).
 
 ![screenshot HumaNum](/assets/uploads/2014/09/nakala-services-proposes.jpg)
 

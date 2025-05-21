@@ -31,7 +31,7 @@ Nous accompagnons Réseau Canopé depuis 2016 pour la diffusion du ScoLOMFR. La 
 
 Nous continuons l'accompagnement de Réseau Canopé en 2021, pour pousser la logique de modification de ce thésaurus vers une ontologie, en enrichissant les relations entre concepts.
 
-(en savoir plus sur le [billet de blog à propos de la diffusion du ScoLOMFR](http://blog.sparna.fr/2018/09/25/thesaurus-versions-of-scolomfr-skos/)).
+(en savoir plus sur le [billet de blog à propos de la diffusion du ScoLOMFR](https://blog.sparna.fr/2018/09/25/thesaurus-versions-of-scolomfr-skos/)).
 
 
 ![screenshot scoLOMFR](/assets/uploads/2020/12/scolomfr-screenshot.png)

@@ -53,7 +53,7 @@ These workshops are followed by periods of remote assistance and validation of e
 
 These workshops are complemented by the drafting of a [technical guide for ELI implementation](https://op.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1/language-fr/format-PDF) which provides answers to the main technical questions that an information team may have when implementing ELI. This guide is based on feedback gathered during the various workshops.
 
-In some cases, this initial training work was supplemented by specific consulting for a particular implementation, for example in [Luxembourg for Legilux](http://www.sparna.fr/reference/gouvernement-du-luxembourg/) or at [Office des Publications for Cellar](http://www.sparna.fr/reference/office-des-publications-de-lunion-europeenne/).
+In some cases, this initial training work was supplemented by specific consulting for a particular implementation, for example in [Luxembourg for Legilux](https://www.sparna.fr/reference/gouvernement-du-luxembourg/) or at [Office des Publications for Cellar](https://www.sparna.fr/reference/office-des-publications-de-lunion-europeenne/).
 
 ### Modeling ontologies
 

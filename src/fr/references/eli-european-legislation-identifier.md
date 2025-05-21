@@ -53,7 +53,7 @@ Ces ateliers sont suivis par des périodes d'assistance à distance et de valida
 
 Par ailleurs ces ateliers sont complémentés par la rédaction d'un [guide technique pour l'implémentation de ELI](https://op.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1/language-fr/format-PDF) qui donne les réponses aux questions techniques principales qu'une équipe information peut se poser lors de l'implémentation de ELI. Ce guide s'appuie sur les retours collectés lors des différents ateliers.
 
-Ces travaux de formation initiale ont été complémentés, pour certains cas, par du consulting spécifique pour une implémentation particulière, au [Luxembourg pour Legilux](http://www.sparna.fr/reference/gouvernement-du-luxembourg/) ou à l'[Office des Publications pour le Cellar](http://www.sparna.fr/reference/office-des-publications-de-lunion-europeenne/) par exemple.
+Ces travaux de formation initiale ont été complémentés, pour certains cas, par du consulting spécifique pour une implémentation particulière, au [Luxembourg pour Legilux](https://www.sparna.fr/reference/gouvernement-du-luxembourg/) ou à l'[Office des Publications pour le Cellar](https://www.sparna.fr/reference/office-des-publications-de-lunion-europeenne/) par exemple.
 
 ### Modélisation d'ontologies
 
