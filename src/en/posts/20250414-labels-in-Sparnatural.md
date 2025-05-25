@@ -5,7 +5,7 @@ author: Marie Muller, Thomas Francart
 date: 2025-05-07
 description: "Making your data accessible to users that don’t necessarily speak the same language as the one used in your dataset"
 tags: multilingualism, Sparnatural, labels
-permalink: en/posts/{{ title | slugify }}
+permalink: en/posts/{{ title | slugify }}/
 linkedin:
 bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3lolt6js4zk2m
 mastodon: https://mastodon.social/deck/@MarieMuller/114467510850318899

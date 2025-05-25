@@ -5,7 +5,7 @@ author: Thomas Francart
 date: 2025-01-30
 description: Now you can see it with the latest version of SHACL Play
 tags: SHACL Play, SHACL
-permalink: en/posts/{{ title | slugify }}
+permalink: en/posts/{{ title | slugify }}/
 linkedin: https://www.linkedin.com/posts/thomasfrancart_ontologists-knowledge-engineers-are-your-activity-7290353057651961859-pFd-?utm_source=share&utm_medium=member_desktop
 ---
 

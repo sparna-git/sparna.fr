@@ -1,10 +1,6 @@
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const plugin_syntaxhighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const plugin_schema = require("@quasibit/eleventy-plugin-schema");
 
-
-/* Internationalization i18n : Jorge */
-const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const i18n = require('eleventy-plugin-i18n');
 const translations = require('./src/_data/i18n');
 
@@ -24,7 +20,8 @@ const { namedNode, literal, defaultGraph, quad } = DataFactory;
 const store = new N3.Store();
 */
 
-module.exports = function(config) {
+module.exports = async function(config) {
+  const { EleventyRenderPlugin, EleventyI18nPlugin } = await import("@11ty/eleventy");
   
   // plugins
   config.addPlugin(plugin_syntaxhighlight);

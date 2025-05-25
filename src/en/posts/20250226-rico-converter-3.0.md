@@ -5,7 +5,7 @@ author: Thomas Francart
 date: 2025-02-26
 description: A new version of the RiC-O converter tool has been released (v3.0). This tool enables archival institutions to transition from XML-oriented archival descriptions to graph-based descriptions based on the new archival conceptual model Records-in-Contexts.
 tags: RiC-O
-permalink: en/posts/{{ title | slugify }}
+permalink: en/posts/{{ title | slugify }}/
 linkedin: https://www.linkedin.com/posts/thomasfrancart_the-ric-o-converter-tool-has-been-released-activity-7300474920117956608-KL7L?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAiD3YwBJvGpu4Ak2jXNNvmSX7ws2MZ_uLE
 bluesky: 
 mastodon: 

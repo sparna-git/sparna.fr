@@ -52,6 +52,13 @@ module.exports = {
     if (!locale) return collection;
       const filtered = collection.filter(item => item.data.locale == locale)
       return filtered;
-    }
+    },
 
+    extractFirstImage: function(content) {
+      const match = content.match(/!\[.*?\]\((.*?)\)/);
+      if (match && match[1]) {
+        return match[1];
+      }
+      return null;
+    }
 }

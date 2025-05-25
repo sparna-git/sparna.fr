@@ -5,7 +5,7 @@ author: Marie Muller
 date: 2025-04-08
 description: "We added Sparna's tools to the Semantic Web Tool Hub (and therefore to Wikidata) !"
 tags: tool, SPARQL, SHACL, Wikidata, taxonomy
-permalink: en/posts/{{ title | slugify }}
+permalink: en/posts/{{ title | slugify }}/
 linkedin: 
 bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3lltd2jydkk2x
 mastodon: https://mastodon.social/@MarieMuller/114268206948712855

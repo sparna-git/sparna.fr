@@ -5,7 +5,7 @@ author: Marie Muller
 date: 2025-04-11
 description: "La conférence SemWeb.Pro est LA journée annuelle de présentations et de rencontres dédiées au web sémantique dans le monde professionnel"
 tags: semwebpro, linkeddata, web sémantique
-permalink: en/posts/{{ title | slugify }}
+permalink: en/posts/{{ title | slugify }}/
 linkedin: 
 bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3lmjua3eh722e
 mastodon: https://mastodon.social/@MarieMuller/114319008733603790

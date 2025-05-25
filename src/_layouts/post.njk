@@ -13,12 +13,9 @@ bodyClass: single single-post
 >
 
 
+    {% set image = page.rawInput | extractFirstImage %}
     {% if image %}
-    <!--
-    <figure  style="text-align:center;">
-        <img src="{{ image | relative(page) }}" style="width:80%" />
-    </figure>
-    -->
+        <meta itemprop="image" content="{{ metadata.url }}{{ image }}" />
     {% endif %}
 
     <div class="post__header">

@@ -5,7 +5,7 @@ author: Marie Muller
 date: 2025-05-13
 description: "L'appel à communication est lancé, envoyez vos propositions au comité de programme avant le 30 juin 2025 !"
 tags: semwebpro, semweb, websem, opendata, linkeddata, linkedopendata, knowledgegraph, thesaurus, ontology, RDF, SPARQL, SHACL, OWL, JSONLD
-permalink: en/posts/{{ title | slugify }}
+permalink: en/posts/{{ title | slugify }}/
 linkedin: https://fr.linkedin.com/posts/logilab_semwebpro-2024-activity-7322537842335772672-z8cw
 bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3loxjtbflz22e
 mastodon: https://mastodon.logilab.fr/@logilab/114414639668131818

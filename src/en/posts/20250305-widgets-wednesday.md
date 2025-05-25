@@ -5,7 +5,7 @@ author: Marie Muller
 date: 2025-03-05
 description: All the possible ways to select a criteria value in Sparnatural !
 tags: Sparnatural, SPARQL, RDF
-permalink: en/posts/{{ title | slugify }}
+permalink: en/posts/{{ title | slugify }}/
 bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3lfs6zh7ub22k
 mastodon: https://mastodon.social/@MarieMuller/113833367867395813
 ---

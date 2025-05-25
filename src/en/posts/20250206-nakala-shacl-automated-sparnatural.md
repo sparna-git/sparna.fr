@@ -5,7 +5,7 @@ author: Marie Muller
 date: 2025-02-06
 description: A usecase of an automated version of Sparnatural submitted as an example for Veronika Heimsbakk’s "SHACL for the Practitioner" upcoming book
 tags: Sparnatural, SHACL
-permalink: en/posts/{{ title | slugify }}
+permalink: en/posts/{{ title | slugify }}/
 linkedin: https://www.linkedin.com/posts/thomasfrancart_nakala-from-an-rdf-dataset-to-a-query-ui-activity-7293376368736698370-44Ns
 bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3lhj5sy4ojc2k
 mastodon: https://mastodon.social/@MarieMuller/113957039282718478
