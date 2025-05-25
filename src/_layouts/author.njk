@@ -3,18 +3,18 @@ layout: sparna.njk
 bodyClass: page page-id-posts
 ---
 {% if locale == "fr" %}
-  <h1>Posts<br>médias sociaux</h1>
+  <h1>Posts de<br>{{ name }}</h1>
 {% endif %}
 
 {% if locale == "en" %}
-  <h1>Social media <br>posts</h1>
+  <h1>Posts by<br>{{ name }}</h1>
 {% endif %}
 
-{% set posts = collections.posts %}
+{% set posts = collections.posts | filterByAuthor(name) %}
 <ol class="postlist">
   {%- for post in posts | reverse -%}
   <li class="postlist__item">
-    <h2 class="postlist_title"><a href="{{ post.page.url | locale_url | relative(page) }}">{{post.data.title}}</a></h2>
+    <h2 class="postlist_title"><a href="{{post.page.url | relative(page)}}">{{post.data.title}}</a></h2>
     <div class="postlist__meta">
       <time class="postlist__date" datetime="{{ post.data.date | dateToISO }}">{{ post.data.date | readableDate('dd LLL yyyy', locale) }}</time>
       {% if post.data.tags %}

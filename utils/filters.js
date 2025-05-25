@@ -19,7 +19,7 @@ module.exports = {
 
     dateToISO: function (date) {
         return DateTime.fromJSDate(date, { zone: 'utc' }).toISO({
-            includeOffset: false,
+            includeOffset: true,
             suppressMilliseconds: true
         })
     },
@@ -60,5 +60,11 @@ module.exports = {
         return match[1];
       }
       return null;
+    },
+
+    filterByAuthor: function(collection, author) {
+      if (!author) return collection;
+        const filtered = collection.filter(item => item.data.author == author)
+        return filtered;
     }
 }
