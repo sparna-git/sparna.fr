@@ -10,7 +10,7 @@ bodyClass: page page-id-posts
   <h1>Social media <br>posts</h1>
 {% endif %}
 
-{% set posts = collections.posts %}
+{% set posts = collections.posts | localeFilter(locale) %}
 <ol class="postlist">
   {%- for post in posts | reverse -%}
   <li class="postlist__item">
