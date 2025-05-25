@@ -103,14 +103,19 @@ bodyClass: single single-post
     <h3 class="postsection__title">{{ 'Other posts' | i18n }}</h3>
     <ol class="otherposts">
         {% for post in otherposts | reverse %}
+            {% set hasUrlInLang = (post.url | locale_links | hasUrlInLang(lang)) %}
+            {% if (post.data.lang == lang) or not hasUrlInLang %}
             <li class="otherposts__item">
                 <a href="{{post.page.url}}" class="otherposts__link">
+                    <img class="otherposts__flag" src="/assets/images/{{ post.data.lang | upper }}.png" alt="flag" />
+                    &middot;
                     <time class="otherposts__date" datetime="{{ post.date | dateToISO }}" aria-label=", written {{ post.date | readableDate('dd LLL yyyy', locale) }}">
                         {{ post.date | readableDate('dd LLL yyyy', locale) }}
                     </time>
                     <span class="otherposts__title">{{ post.data.title }}</span>
                 </a>
             </li>
+            {% endif %}
         {% endfor %}
     </ol>
 </div>

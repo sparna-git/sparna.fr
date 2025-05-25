@@ -1,6 +1,7 @@
 const { DateTime } = require('luxon')
 
 module.exports = {
+
     readableDate: function (date, format, locale = "fr") {
         // default to Europe/Vienna Timezone
         const dt = DateTime.fromJSDate(date, { zone: 'UTC+2' })
@@ -49,9 +50,9 @@ module.exports = {
     },
 
     localeFilter: function(collection, locale) {
-    if (!locale) return collection;
-      const filtered = collection.filter(item => item.data.locale == locale)
-      return filtered;
+        if (!locale) return collection;
+        const filtered = collection.filter(item => item.data.locale == locale)
+        return filtered;
     },
 
     extractFirstImage: function(content) {
@@ -64,7 +65,11 @@ module.exports = {
 
     filterByAuthor: function(collection, author) {
       if (!author) return collection;
-        const filtered = collection.filter(item => item.data.author == author)
-        return filtered;
+      const filtered = collection.filter(item => item.data.author == author)
+      return filtered;
+    },
+
+    hasUrlInLang: function(alternatives, locale) {
+      return alternatives.some(item => item.lang == locale);
     }
 }
