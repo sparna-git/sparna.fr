@@ -19,7 +19,7 @@ bodyClass: page page-id-posts
   {% if (post.data.lang == lang) or not hasUrlInLang %}
   <li class="postlist__item">
     <img class="postlist__flag" src="/assets/images/{{ post.data.lang | upper }}.png" alt="flag" />
-    <h2 class="postlist_title"><a href="{{ post.page.url | locale_url | relative(page) }}">{{post.data.title}}</a></h2>
+    <h2 class="postlist_title"><a href="{{ post.page.url | locale_url | relative(page) }}" hreflang="{{ post.data.lang }}">{{post.data.title}}</a></h2>
     <div class="postlist__meta">
       <time class="postlist__date" datetime="{{ post.data.date | dateToISO }}">{{ post.data.date | readableDate('dd LLL yyyy', locale) }}</time>
       {% if post.data.tags %}

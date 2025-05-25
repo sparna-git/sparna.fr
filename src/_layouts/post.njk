@@ -106,7 +106,7 @@ bodyClass: single single-post
             {% set hasUrlInLang = (post.url | locale_links | hasUrlInLang(lang)) %}
             {% if (post.data.lang == lang) or not hasUrlInLang %}
             <li class="otherposts__item">
-                <a href="{{post.page.url}}" class="otherposts__link">
+                <a href="{{post.page.url}}" class="otherposts__link" hreflang="{{ post.data.lang }}">
                     <img class="otherposts__flag" src="/assets/images/{{ post.data.lang | upper }}.png" alt="flag" />
                     &middot;
                     <time class="otherposts__date" datetime="{{ post.date | dateToISO }}" aria-label=", written {{ post.date | readableDate('dd LLL yyyy', locale) }}">
