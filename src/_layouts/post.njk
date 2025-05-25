@@ -26,6 +26,9 @@ bodyClass: single single-post
         <div class="post__meta">
             <p>
                 <time class="post__date dt-published" itemprop="datePublished" datetime="{{ page.date | dateToISO }}">{{ page.date | readableDate('dd MMM yyyy', locale) }}</time>
+                {% if author %}
+                <span aria-label="author">&middot;</span> <span class="post__author p-author">by <span itemprop="author">{{ author }}</span></span>
+                {% endif %}
                 {% if tags %}
                 <span aria-label="in category">&middot;</span> <span class="post__tags p-category">{{ tags | join(', ') }}</span>
                 {% endif %}
@@ -45,7 +48,7 @@ bodyClass: single single-post
         </div>
 
         <p class="post__footer-info">
-            {% if tags %}Published in [{{ tags | join(', ') }}] &middot; {% endif %}{{ page.date | readableDate('dd LLL yyyy', locale) }} <br/>
+            {% if tags %}Published in {{ tags | join(', ') }} &middot; {% endif %}{{ page.date | readableDate('dd LLL yyyy', locale) }} <br/>
             <a href="{{ metadata.repo }}/tree/master/{{ page.inputPath }}" title="suggest a change to this post by submitting a PR">edit this post</a>
         </p>
 
