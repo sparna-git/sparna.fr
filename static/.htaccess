@@ -12,3 +12,10 @@ RewriteRule ^$ /fr/ [L,R=302]
 
 # else redirect to the English version
 RewriteRule ^$ /en/ [L,R=302]
+
+# Transfer everything from http to https
+# And also everything without www to the same with www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^.*$ https://www.%1%{REQUEST_URI} [L,NE,R=301]

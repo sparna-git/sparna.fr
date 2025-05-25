@@ -28,14 +28,13 @@
 	<script type='text/javascript' src="{{ '/assets/js/sparna.js' | relative(page) }}"></script>
 
 	<!-- Jetpack Open Graph Tags -->
-	<meta property="og:type" content="website" />
+	<meta property="og:type" content="article" />
 	<meta property="og:title" content="Sparna" />
 	<meta property="og:description" content="Web de données | Architecture de l&#039;informations | Accès aux connaissances" />
-	<meta property="og:url" content="https://www.sparna.fr/" />
+	<meta property="og:url" content="{{ metadata.url }}{{ page.url }}" />
 	<meta property="og:site_name" content="Sparna" />
 	<meta property="og:image" content="{{ '/assets/images/logo.png' | relative(page) }}" />
 	<meta property="og:locale" content="{{ page.lang }}" />
-	<meta name="twitter:card" content="summary" />
 
 
 	{% analytics %}
