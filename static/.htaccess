@@ -17,5 +17,4 @@ RewriteRule ^$ /en/ [L,R=302]
 # And also everything without www to the same with www
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
 RewriteRule ^.*$ https://www.%1%{REQUEST_URI} [L,NE,R=301]
