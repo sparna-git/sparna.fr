@@ -3,7 +3,7 @@ RewriteEngine on
 
 # Transfer everything from http to https
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=302,L]
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # Redirect visitors who request the root domain path (e.g. www.sparna.fr) to the appropriate language version
 # Fallback to English version if no matching browser language defined
