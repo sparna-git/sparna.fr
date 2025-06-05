@@ -1,10 +1,17 @@
 {
-  "title": "Sparna.fr",
+  "title": "Sparna website",
   "description": "Linked Data - Knowledge Graphs - Ontologies - AI | Sparna",
   "url": "https://www.sparna.fr",
   "author": {
     "name": "Thomas Francart",
+    "email": "thomas.francart@sparna.fr",
     "url": "https://www.linkedin.com/in/thomasfrancart/"
+  },
+  "feed": {
+    "id":"sparna.fr-123456uuid",
+    "title":"Sparna blog posts",
+    "subtitle":"About Linked Data - Knowledge Graphs - Ontologies - AI",
+    "path":"https://www.sparna.fr/rss.xml"
   },
   "repo":"https://github.com/sparna-git/sparna.fr"
 }

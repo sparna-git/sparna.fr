@@ -1,0 +1,37 @@
+{% macro schemaorg(object) %}
+{% set image = page.rawInput | extractFirstImage %}
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "@id" : "{{ site.url }}{{ page.url | url }}",
+        "headline" : "{{ title }}",
+        "datePublished" : "{{ page.date | dateToISO }}",
+        "publisher" : {
+            "@type" : "Organization",
+            "name" : "Sparna",
+            "@id" : "https://sparna.fr",
+            "url" : "https://www.sparna.fr"
+        },
+        "inLanguage" : "{{ page.lang }}"{% if author %},
+        "author": {
+            "@type" : "Person",
+            "name" : "{{ author }}",
+            "url" : "{{ site.url }}/{{ lang }}/auteurs/{{ author | slugify }}"
+        }{%  endif %}{% if image %},
+        "image": "{{ site.url }}{{ image }}"{% endif %}{% if tags %},
+        "keywords": "{{ tags | join(', ') }}",
+        "about": [
+            {%- for tag in tags -%}
+                {% if loop.index0 > 0 %},{% endif%}"{{ tag | trim }}"
+            {% endfor %}
+        ]{% endif %}{% if linkedin or mastodon or bluesky %},
+        "discussionUrl": [
+            {% if linkedin %}"{{ linkedin }}"{% if mastodon or bluesky %},{% endif %}{% endif %}
+            {% if mastodon %}"{{ mastodon }}"{% if bluesky %},{% endif %}{% endif %}
+            {% if bluesky %}"{{ bluesky }}"{% endif %}
+        ]
+        {% endif %}
+    }
+</script>
+{% endmacro %}

@@ -3,33 +3,29 @@ layout: sparna.njk
 bodyClass: single single-post
 ---
 
+{# "with context" means the imported templates will have access to all data #}
+{# see https://mozilla.github.io/nunjucks/templating.html#import #}
+{% import "src/_layouts/post-schemaorg.njk" as schemaorg with context %}
+
+{{ schemaorg.schemaorg(page.data) }}
+
 <article 
     id="{{ title | slug }}" 
     class="post h-entry" 
     role="article" 
     itemscope 
     itemtype="http://schema.org/BlogPosting"
+    itemid="{{ site.url }}{{ page.url | url }}"
     aria-labelledby="{{ title | slug }}-title" 
 >
 
-
-    {% set image = page.rawInput | extractFirstImage %}
-    {% if image %}
-        <meta itemprop="image" content="{{ metadata.url }}{{ image }}" />
-    {% endif %}
-
     <div class="post__header">
-        <h1 id="{{ title | slug }}-title" class="post__title p-name title" itemprop="headline">{{ title }}</h1>
+        <h1 id="{{ title | slug }}-title" class="post__title p-name title">{{ title }}</h1>
         <div class="post__meta">
             <p>
-                <time class="post__date dt-published" itemprop="datePublished" datetime="{{ page.date | dateToISO }}">{{ page.date | readableDate('dd MMM yyyy', locale) }}</time>
+                <time class="post__date dt-published">{{ page.date | readableDate('dd MMM yyyy', locale) }}</time>
                 {% if author %}
-                <span aria-label="author">&middot;</span> <span class="post__author p-author">by 
-                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                        <a href="/{{ lang }}/auteurs/{{ author | slugify }}" itemprop="url">
-                        <span itemprop="name">{{ author }}</span>
-                        </a>
-                    </span>
+                <span aria-label="author">&middot;</span> <span class="post__author p-author">by <span>{{ author }}</span>
                 </span>
                 {% endif %}
                 {% if tags %}
@@ -52,7 +48,7 @@ bodyClass: single single-post
 
         <p class="post__footer-info">
             {% if tags %}Published in {{ tags | join(', ') }} &middot; {% endif %}{{ page.date | readableDate('dd LLL yyyy', locale) }} <br/>
-            <a href="{{ metadata.repo }}/tree/master/{{ page.inputPath }}" title="suggest a change to this post by submitting a PR">edit this post</a>
+            <a href="{{ site.repo }}/tree/master/{{ page.inputPath }}" title="suggest a change to this post by submitting a PR">edit this post</a>
         </p>
 
 
