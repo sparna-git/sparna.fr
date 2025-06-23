@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Multilingualism, multi-labels : how to play and display the literals of a graph in Sparnatural"
-author: Marie Muller, Thomas Francart
+author: Marie Muller
 date: 2025-05-07
 description: "Making your data accessible to users that don’t necessarily speak the same language as the one used in your dataset"
 tags: multilingualism, Sparnatural, labels

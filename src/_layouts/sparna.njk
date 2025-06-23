@@ -5,11 +5,11 @@
 	<meta name="viewport" content="width=device-width">
 	<title>{{ title }}</title>
 	<meta name="google-site-verification" content="IkU6vMBuAjxGZlU-z2UeeeDTxfSy_M5bSfF9vcPCAsI" />
-	<link rel="canonical" href="{{ metadata.url }}{{ page.url }}" />
+	<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
-	<link rel="alternate" hreflang="{{ page.lang }}" href="{{ metadata.url }}{{ page.url }}"/>
+	<link rel="alternate" hreflang="{{ page.lang }}" href="{{ site.url }}{{ page.url }}"/>
 	{% for link in page.url | locale_links %}
-    <link rel="alternate" hreflang="{{ link.lang }}" href="{{ metadata.url }}{{link.url}}">
+    <link rel="alternate" hreflang="{{ link.lang }}" href="{{ site.url }}{{link.url}}">
   	{% endfor %}
 
   	<link rel="icon" href="{{ '/assets/icons/favicon.ico' | relative(page) }}">
@@ -28,14 +28,13 @@
 	<script type='text/javascript' src="{{ '/assets/js/sparna.js' | relative(page) }}"></script>
 
 	<!-- Jetpack Open Graph Tags -->
-	<meta property="og:type" content="website" />
+	<meta property="og:type" content="article" />
 	<meta property="og:title" content="Sparna" />
 	<meta property="og:description" content="Web de données | Architecture de l&#039;informations | Accès aux connaissances" />
-	<meta property="og:url" content="https://www.sparna.fr/" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 	<meta property="og:site_name" content="Sparna" />
 	<meta property="og:image" content="{{ '/assets/images/logo.png' | relative(page) }}" />
 	<meta property="og:locale" content="{{ page.lang }}" />
-	<meta name="twitter:card" content="summary" />
 
 
 	{% analytics %}

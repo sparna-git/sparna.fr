@@ -1,10 +1,15 @@
+
+RewriteEngine on
+
+# Transfer everything from http to https
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 # Redirect visitors who request the root domain path (e.g. www.sparna.fr) to the appropriate language version
 # Fallback to English version if no matching browser language defined
 # Based on language version being at e.g. www.sparna.fr/en/
 # This has no effect on any subpaths of the website
 # Using a 302 temporary redirect header stops the redirection from being cached in the browser.
-
-RewriteEngine on
 
 # language starts with FR
 RewriteCond %{HTTP:Accept-Language} ^fr [NC]

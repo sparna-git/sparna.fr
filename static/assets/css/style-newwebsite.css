@@ -64,6 +64,11 @@ body.page-id-posts #contenu {
 .postlist__excerpt {
   font-size: 1.375rem;
 }
+.postlist__flag {
+  filter: grayscale(75%);
+  position:absolute;
+  translate:-30px 15px;
+}
 
 body.single-post #contenu {
   margin-top: 80px;
@@ -223,6 +228,9 @@ body.single-post .post__footer-info {
 .otherposts__item  a {
   text-decoration: none;
   color: #aa1223;
+}
+.otherposts__flag {
+  filter: grayscale(75%);
 }
 
 .postsection__title {

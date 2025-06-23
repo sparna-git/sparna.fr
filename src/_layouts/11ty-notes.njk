@@ -2,17 +2,17 @@
 eleventyComputed:
   meta:
     site:
-      name: "{{ metadata.title }}"
-      description: "{{ metadata.description }}"
-      url: "{{ metadata.url }}"
+      name: "{{ site.title }}"
+      description: "{{ site.description }}"
+      url: "{{ site.url }}"
       logo:
         src: https://example.com/images/logo.png
         width: 1200
         height: 630
-    title: "{{ title or metadata.title }}"
-    description: "{{ description or metadata.description }}"
+    title: "{{ title or site.title }}"
+    description: "{{ description or site.description }}"
     image:
-      src: "{% if image %}{{ metadata.url }}{{ image }}{% endif %}"
+      src: "{% if image %}{{ site.url }}{{ image }}{% endif %}"
 ---
 
 <!DOCTYPE html>
