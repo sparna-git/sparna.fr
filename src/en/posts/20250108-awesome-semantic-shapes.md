@@ -5,7 +5,7 @@ author: Thomas Francart
 date: 2025-01-08
 description: A curated Github repository of RDF shape resources
 tags: SHACL
-permalink: en/posts/{{ title | slugify }}
+permalink: "{{ lang }}/posts/{{ title | slugify }}/"
 linkedin: https://www.linkedin.com/posts/thomasfrancart_github-w3c-cgawesome-semantic-shapes-activity-7282682509249638400-F-6f?utm_source=share&utm_medium=member_desktop
 ---
 

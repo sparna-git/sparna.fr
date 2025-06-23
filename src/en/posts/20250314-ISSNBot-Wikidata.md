@@ -5,7 +5,7 @@ author: Thomas Francart
 date: 2025-03-14
 description: The ISSN International Center uses a bot developped by Sparna to automatically populate Wikidata items with attributes from its catalog
 tags: Wikidata, ISSN
-permalink: en/posts/{{ title | slugify }}
+permalink: "{{ lang }}/posts/{{ title | slugify }}/"
 linkedin: https://www.linkedin.com/posts/thomasfrancart_issn-wikidata-activity-7307355529201238016-zhtQ
 bluesky: 
 mastodon: 
