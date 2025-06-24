@@ -1,20 +1,20 @@
 ---
 layout: post.njk
-title: "Appel à candidatures pour le comité de programme SemWeb.Pro"
+title: "Call for nominations for the SemWeb.Pro program committee"
 author: Marie Muller
 date: 2025-04-11
-description: "La conférence SemWeb.Pro est LA journée annuelle de présentations et de rencontres dédiées au web sémantique dans le monde professionnel"
-tags: semwebpro, linkeddata, web sémantique
+description: "The SemWeb.Pro conference is THE annual day of presentations and meetings dedicated to the semantic web in the professional world."
+tags: semwebpro, linkeddata, semantic web
 permalink: "{{ lang }}/posts/{{ title | slugify }}/"
 linkedin: 
 bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3lmjua3eh722e
 mastodon: https://mastodon.social/@MarieMuller/114319008733603790
 ---
 
-La conférence [https://semweb.pro](https://semweb.pro) est LA journée annuelle de présentations et de rencontres dédiées au web sémantique dans le monde professionnel qui a lieu chaque année à Paris depuis 2011.
+The [https://semweb.pro](https://semweb.pro) conference is THE annual day of presentations and meetings dedicated to the semantic web in the professional world, held annually in Paris since 2011.
 
-Dans un but d'ouverture et de renouvellement, le comité de programme souhaite intégrer de nouveaux membres (la contribution est bénévole).
+In the interests of openness and renewal, the program committee would like to welcome new members (contributions are voluntary).
 
-Les candidatures sont à envoyer par mail avant le **30 avril 2025** à l'adresse [contact@semweb.pro](mailto:contact@semweb.pro).
+Applications should be sent by e-mail before **April 30, 2025** to [contact@semweb.pro](mailto:contact@semweb.pro).
 
-Pour en savoir plus, lisez l'annonce postée sur la liste Web sémantique francophone de l'Inria : [https://sympa.inria.fr/sympa/arc/web.semantique/2025-03/msg00027.html](https://sympa.inria.fr/sympa/arc/web.semantique/2025-03/msg00027.html)
+To find out more, read the announcement posted on Inria's French-language Semantic Web list: [https://sympa.inria.fr/sympa/arc/web.semantique/2025-03/msg00027.html](https://sympa.inria.fr/sympa/arc/web.semantique/2025-03/msg00027.html)

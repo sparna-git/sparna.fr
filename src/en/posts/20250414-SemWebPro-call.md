@@ -1,9 +1,9 @@
 ---
 layout: post.njk
-title: "Appel à communication SemWeb.Pro 2025"
+title: "Call for papers SemWeb.Pro 2025"
 author: Marie Muller
 date: 2025-05-13
-description: "L'appel à communication est lancé, envoyez vos propositions au comité de programme avant le 30 juin 2025 !"
+description: "The call for papers is now open. Send your proposals to the program committee before June 30, 2025!"
 tags: semwebpro, semweb, websem, opendata, linkeddata, linkedopendata, knowledgegraph, thesaurus, ontology, RDF, SPARQL, SHACL, OWL, JSONLD
 permalink: "{{ lang }}/posts/{{ title | slugify }}/"
 linkedin: https://fr.linkedin.com/posts/logilab_semwebpro-2024-activity-7322537842335772672-z8cw
@@ -11,20 +11,20 @@ bluesky: https://bsky.app/profile/chutjeveille.bsky.social/post/3loxjtbflz22e
 mastodon: https://mastodon.logilab.fr/@logilab/114414639668131818
 ---
 
-<p class="lead">Organisée par Logilab, SemWeb.Pro est LA conférence francophone dédiée au Web sémantique et aux graphes de connaissances qui réunit chaque année une cinquantaine de personnes depuis sa première édition en 2011.</p>
+<p class="lead">Organized by Logilab, SemWeb.Pro is THE French-language conference dedicated to the Semantic Web and knowledge graphs, bringing together some 50 people every year since its first edition in 2011.</p>.
 
 It's happening again.
 
-La prochaine conférence autour du Web sémantique, SemWeb.pro aura lieu à Paris le 27 novembre 2025. 
+The next Semantic Web conference, SemWeb.pro, will take place in Paris on November 27, 2025.
 
-L'appel à communication est lancé, c'est par ici : [https://semweb.pro/](https://semweb.pro/)
+The call for papers is here: [https://semweb.pro/](https://semweb.pro/)
 
-Date limite de soumission : 30 juin 2025 
+Submission deadline: June 30, 2025
 
-Préparez vos sujets !
+Get your topics ready!
 
-Date de la conférence : 27 Novembre 2025
+Conference date: November 27, 2025
 
-Lieu : FIAP Paris (30 rue Cabanis, 75014 PARIS)
+Venue: FIAP Paris (30 rue Cabanis, 75014 PARIS)
 
 [![](/assets/posts-images/call-swep-2025.jpg)](/assets/posts-images/call-swep-2025.jpg)
