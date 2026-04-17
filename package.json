@@ -4,7 +4,8 @@
   "description": "sparna.fr website",
   "scripts": {    
     "build": "ENVIRONMENT=prod eleventy",
-    "start": "ENVIRONMENT=dev eleventy --serve"
+    "start": "ENVIRONMENT=dev eleventy --serve",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.0",
