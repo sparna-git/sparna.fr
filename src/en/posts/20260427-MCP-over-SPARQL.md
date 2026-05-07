@@ -6,9 +6,9 @@ date: 2026-04-25
 description: "Setting up a GraphRAG architecture does not only require access to your SPARQL endpoint. It also requires the ability for the agent to understand the graph structure, and lookup entity URIs."
 tags: SPARQL, SHACL, AI, MCP, graphRAG
 permalink: "{{ lang }}/posts/{{ title | slugify }}/"
-linkedin: 
+linkedin: https://www.linkedin.com/posts/thomasfrancart_mcp-servers-over-sparql-endpoints-graphrag-share-7453438921474056193-X7s5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAiD3YwBJvGpu4Ak2jXNNvmSX7ws2MZ_uLE
 bluesky:
-mastodon:
+mastodon: https://mstdn.social/@sparna/116533117381952849
 ---
 
 <p class="lead">GraphRAG architecture requires 3 things : an access to a SPARQL service, an understanding of what the graph looks like, and the ability to lookup entities from their names.</p>

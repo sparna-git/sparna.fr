@@ -6,7 +6,7 @@ date: 2026-04-24
 description: "Deploying QLever on a 400 million triples dataset on a 4 CPU, 32Gb RAM server"
 tags: RDF, QLever, triplestore, Isidore, Huma-Num
 permalink: "{{ lang }}/posts/{{ title | slugify }}/"
-linkedin: 
+linkedin: https://www.linkedin.com/posts/thomasfrancart_isidore-sparql-endpoint-experiment-with-share-7453438168160428033-nUQT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAiD3YwBJvGpu4Ak2jXNNvmSX7ws2MZ_uLE
 bluesky:
 mastodon:
 ---
